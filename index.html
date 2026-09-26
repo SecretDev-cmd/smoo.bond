@@ -368,10 +368,16 @@
 <script>
 (function(){
   const SERVERS = [
-    { idx: 0, host: "srdev.bond:1027", ip: "176.189.251.231" },
-    { idx: 1, host: "90.65.160.139:1027", ip: "90.65.160.139" },
-    { idx: 2, host: "90.65.160.139:1028", ip: "90.65.160.139" }
+    { idx: 0, ip: "176.189.251.231" },
+    { idx: 1, ip: "90.65.160.139" },
+    { idx: 2, ip: "90.65.160.139" }
   ];
+
+  // status.json is written every ~5 min by a GitHub Action that does a real
+  // TCP connect from GitHub's servers (avoids browser CORS restrictions
+  // entirely, since check-host.net and similar APIs don't allow browser
+  // cross-origin calls).
+  const STATUS_URL = 'status.json';
 
   async function locateIp(ip, idx){
     const locFlag = document.getElementById('locFlag-' + idx);
@@ -425,80 +431,53 @@
     }
   }
 
-  function sleep(ms){ return new Promise(r => setTimeout(r, ms)); }
+  function timeAgo(iso){
+    if(!iso) return '';
+    const diffMs = Date.now() - new Date(iso).getTime();
+    const mins = Math.round(diffMs / 60000);
+    if(mins < 1) return 'just now';
+    if(mins === 1) return '1 minute ago';
+    if(mins < 60) return mins + ' minutes ago';
+    const hrs = Math.round(mins / 60);
+    return hrs === 1 ? '1 hour ago' : hrs + ' hours ago';
+  }
 
-  async function checkOne(server){
-    const { idx, host } = server;
-    const stateText = document.getElementById('stateText-' + idx);
-    stateText.textContent = '…';
-    setState(idx, 'loading');
-
-    try {
-      const startRes = await fetch(
-        'https://check-host.net/check-tcp?host=' + encodeURIComponent(host) + '&max_nodes=3',
-        { headers: { 'Accept': 'application/json' } }
-      );
-      if(!startRes.ok) throw new Error('start_failed');
-      const startData = await startRes.json();
-      if(!startData.ok || !startData.request_id) throw new Error('no_request_id');
-
-      const requestId = startData.request_id;
-      const expectedNodes = Object.keys(startData.nodes || {}).length || 3;
-
-      let attempts = 0;
-      let finalResult = null;
-      while(attempts < 8 && !finalResult){
-        await sleep(1500);
-        attempts++;
-        const resultRes = await fetch(
-          'https://check-host.net/check-result/' + requestId,
-          { headers: { 'Accept': 'application/json' } }
-        );
-        if(!resultRes.ok) continue;
-        const resultData = await resultRes.json();
-
-        const nodeResults = Object.values(resultData || {}).filter(v => v !== null);
-        // Wait until every node has reported in, not just the first to respond,
-        // so one fast/stale node can't decide the result on its own.
-        if(nodeResults.length < expectedNodes) continue;
-
-        let successCount = 0, failureCount = 0, bestTime, errMsg;
-        for(const nr of nodeResults){
-          const entry = Array.isArray(nr) ? nr[0] : nr;
-          if(!entry) continue;
-          if(entry.time !== undefined){
-            successCount++;
-            if(bestTime === undefined || entry.time < bestTime) bestTime = entry.time;
-          } else if(entry.error){
-            failureCount++;
-            errMsg = entry.error;
-          }
-        }
-
-        const totalReporting = successCount + failureCount;
-        if(totalReporting === 0) continue;
-
-        // Require a majority of nodes to succeed before calling it online.
-        if(successCount > 0 && successCount >= Math.ceil(totalReporting / 2)){
-          finalResult = { status: 'online', time: bestTime };
-        } else if(failureCount > 0){
-          finalResult = { status: 'offline', reason: errMsg };
-        }
-      }
-
-      if(!finalResult){
-        finalResult = { status: 'unknown', reason: 'Check timed out waiting for a result. Try again in a moment.' };
-      }
-
-      render(idx, finalResult);
-    } catch (err) {
-      render(idx, { status: 'unknown', reason: 'Could not reach the check service from this browser.' });
+  function showLastChecked(iso){
+    let el = document.getElementById('lastChecked');
+    if(!el){
+      el = document.createElement('div');
+      el.id = 'lastChecked';
+      el.className = 'status-sub';
+      btn.insertAdjacentElement('afterend', el);
     }
+    el.textContent = iso ? ('Last checked: ' + timeAgo(iso)) : '';
   }
 
   async function runCheck(){
     btn.disabled = true;
-    await Promise.all(SERVERS.map(checkOne));
+    SERVERS.forEach(s => setState(s.idx, 'loading'));
+
+    try {
+      // Cache-bust so we always get the latest committed status.json,
+      // not a stale cached copy from GitHub Pages' CDN.
+      const res = await fetch(STATUS_URL + '?t=' + Date.now());
+      if(!res.ok) throw new Error('status_fetch_failed');
+      const data = await res.json();
+
+      const byIdx = {};
+      (data.servers || []).forEach(s => { byIdx[s.idx] = s; });
+
+      SERVERS.forEach(s => {
+        const result = byIdx[s.idx] || { status: 'unknown' };
+        render(s.idx, result);
+      });
+
+      showLastChecked(data.generated_at);
+    } catch (err) {
+      SERVERS.forEach(s => render(s.idx, { status: 'unknown' }));
+      showLastChecked(null);
+    }
+
     btn.disabled = false;
   }
 
