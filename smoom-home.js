@@ -21,32 +21,6 @@
     try { localStorage.setItem(KEY, String(toggle.checked)) } catch (e) { /* ignore */ }
   })
 
-  // ---- Play / Host dropdowns ----------------------------------------------
-  var dropdowns = Array.prototype.slice.call(document.querySelectorAll('.dropdown'))
-
-  function closeAll (except) {
-    dropdowns.forEach(function (dd) {
-      if (dd === except) return
-      dd.classList.remove('open')
-      var caret = dd.querySelector('.split-caret')
-      if (caret) caret.setAttribute('aria-expanded', 'false')
-    })
-  }
-
-  dropdowns.forEach(function (dd) {
-    var caret = dd.querySelector('.split-caret')
-    caret.addEventListener('click', function (e) {
-      e.stopPropagation()
-      var open = !dd.classList.contains('open')
-      closeAll(dd)
-      dd.classList.toggle('open', open)
-      caret.setAttribute('aria-expanded', String(open))
-    })
-  })
-
-  document.addEventListener('click', function () { closeAll() })
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeAll() })
-
   // ---- Hamburger menu (small screens) -------------------------------------
   var navToggle = document.getElementById('navToggle')
   var navList = document.getElementById('navigation')
