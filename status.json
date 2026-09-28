@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-28T16:21:10Z",
+  "generated_at": "2026-09-28T16:33:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 491,
+      "latency_ms": 567,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "AttrapQ-_-",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioPrimitiveMan"
@@ -20,9 +20,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
