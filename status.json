@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-09-28T16:46:06Z",
+  "generated_at": "2026-09-28T16:51:07Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 437,
-      "players": 4,
+      "latency_ms": 531,
+      "players": 2,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "AttrapQ-_-",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioDiddyKong",
-            "body": "MarioPrimitiveMan"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        },
         {
           "name": "Sanyx",
           "kingdom": "Mushroom Kingdom",
