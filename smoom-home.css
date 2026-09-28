@@ -155,6 +155,9 @@ code {
 .dropdown-menu a:hover { background: var(--nav-open-bg); text-decoration: none; }
 .dropdown-menu a.disabled { opacity: 0.5; pointer-events: none; cursor: default; }
 
+/* nav entries whose pages don't exist yet: visible but not clickable */
+.smoo-nav .nav-disabled { color: var(--nav-link); opacity: 0.5; cursor: default; pointer-events: none; }
+
 /* hamburger toggle (small screens) */
 .nav-toggle {
   display: none;
