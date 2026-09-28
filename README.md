@@ -36,9 +36,3 @@ the `SERVERS` list in `scripts/check_servers.py`, and the table rows
 
 Play, Host and FAQ nav entries (`/play/...`, `/host/...`, `/faq`) still 404,
 as in the original home port.
-
-## Licensing
-
-The home page files derive from smoo.it (MPL-2.0); see
-`LICENSE-smoo.it-MPL-2.0.md`. Keep that file and the attribution
-(c) Robin C. Ladiges, https://github.com/Istador/smoo.it.
