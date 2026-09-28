@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-28T16:33:54Z",
+  "generated_at": "2026-09-28T16:35:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 308,
+      "latency_ms": 365,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "AttrapQ-_-",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioPrimitiveMan"
@@ -20,9 +20,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
