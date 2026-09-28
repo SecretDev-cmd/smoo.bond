@@ -28,6 +28,7 @@
     background: var(--bg);
     color:var(--text);
     font-family: Avenir, Helvetica, Arial, sans-serif;
+    line-height:1.5;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
   }
@@ -38,7 +39,7 @@
     margin:0 auto;
   }
 
-  header{ margin-bottom:1.5rem; }
+  header{ margin-bottom:0; }
   header .logo{ outline:unset; display:inline-block; text-decoration:none; }
   header .logo img{ width:144px; height:128px; max-width:100%; height:auto; }
 
@@ -623,6 +624,8 @@
   .dropdown-menu a{ display:block; padding:.25rem 1.5rem; white-space:nowrap; }
   .dropdown-menu a:hover{ background:rgba(255,255,255,.05); text-decoration:none; }
   .dropdown-menu a.disabled{ opacity:.5; pointer-events:none; cursor:default; }
+  .smoo-nav .nav-disabled{ color:#1f96ad; opacity:.5; cursor:default; pointer-events:none; }
+  .smoo-nav .nav-disabled:hover{ text-decoration:none; }
   .nav-toggle{ display:none; background:none; border:1px solid var(--border); border-radius:.25rem; padding:.25rem .75rem; cursor:pointer; }
   .nav-toggle-icon{ display:inline-block; width:1.5em; height:1.5em; vertical-align:middle; background:no-repeat center/100% 100%;
     background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='%231f96ad' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); }
@@ -655,35 +658,9 @@
           <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="/servers/" class="nav-link active" aria-current="page">Servers</a></li>
 
-          <li class="dropdown">
-            <span class="nav-split">
-              <a href="/play" class="nav-link split-main">Play</a><button class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Play menu"></button>
-            </span>
-            <ul class="dropdown-menu">
-              <li><a href="/play/hide-and-seek">Hide &amp; Seek rules</a></li>
-              <li><a href="/play/switch">Play on Switch</a></li>
-              <li><a href="/play/ryujinx">Play with Ryujinx</a></li>
-              <li><a href="/play/build">Build the mod</a></li>
-            </ul>
-          </li>
-
-          <li class="dropdown">
-            <span class="nav-split">
-              <a href="/host" class="nav-link split-main">Host</a><button class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Host menu"></button>
-            </span>
-            <ul class="dropdown-menu">
-              <li><a href="/host/binary">Run with binary files</a></li>
-              <li><a href="/host/docker">Run with <code>docker-compose</code></a></li>
-              <li><a href="/host/settings">Edit <code>settings.json</code></a></li>
-              <li><a href="/host/commands">Interactive commands</a></li>
-              <li><a href="/host/discord">Discord bot</a></li>
-              <li><a href="/host/router">Behind a router</a></li>
-              <li><a href="/host/vpn">Virtual Private Network</a></li>
-              <li><a class="disabled" aria-disabled="true">Remote server</a></li>
-            </ul>
-          </li>
-
-          <li><a href="/faq" class="nav-link">FAQ</a></li>
+          <li><span class="nav-link nav-disabled" aria-disabled="true">Play</span></li>
+          <li><span class="nav-link nav-disabled" aria-disabled="true">Host</span></li>
+          <li><span class="nav-link nav-disabled" aria-disabled="true">FAQ</span></li>
         </ul>
       </nav>
     </header>
@@ -1223,28 +1200,6 @@
 </script>
 <script>
 (function(){
-  var dropdowns = Array.prototype.slice.call(document.querySelectorAll('.dropdown'));
-  function closeAll(except){
-    dropdowns.forEach(function(dd){
-      if(dd === except) return;
-      dd.classList.remove('open');
-      var c = dd.querySelector('.split-caret');
-      if(c) c.setAttribute('aria-expanded','false');
-    });
-  }
-  dropdowns.forEach(function(dd){
-    var caret = dd.querySelector('.split-caret');
-    caret.addEventListener('click', function(e){
-      e.stopPropagation();
-      var open = !dd.classList.contains('open');
-      closeAll(dd);
-      dd.classList.toggle('open', open);
-      caret.setAttribute('aria-expanded', String(open));
-    });
-  });
-  document.addEventListener('click', function(){ closeAll(); });
-  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeAll(); });
-
   var navToggle = document.getElementById('navToggle');
   var navList = document.getElementById('navigation');
   navToggle.addEventListener('click', function(){
