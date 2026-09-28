@@ -1,40 +1,10 @@
 {
-  "generated_at": "2026-09-28T16:51:07Z",
+  "generated_at": "2026-09-28T16:56:06Z",
   "servers": [
     {
       "idx": 0,
-      "status": "online",
-      "latency_ms": 531,
-      "players": 2,
-      "max_players": 8,
-      "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "Thanatos",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
-        }
-      ],
-      "settings_info": {
-        "scenario_merge": false,
-        "shine_sync": false,
-        "persist_shines": false,
-        "capture_sync": true
-      },
+      "status": "offline",
+      "error": "timed out",
       "country_name": "France",
       "country_code": "FR"
     },
