@@ -1,8 +1,76 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-09-28T16:21:10Z",
   "servers": [
-    { "idx": 0, "status": "unknown" },
-    { "idx": 1, "status": "unknown" },
-    { "idx": 2, "status": "unknown" }
+    {
+      "idx": 0,
+      "status": "online",
+      "latency_ms": 491,
+      "players": 4,
+      "max_players": 8,
+      "player_list": [
+        {
+          "name": "AttrapQ-_-",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioDiddyKong",
+            "body": "MarioPrimitiveMan"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
+          }
+        }
+      ],
+      "settings_info": {
+        "scenario_merge": false,
+        "shine_sync": false,
+        "persist_shines": false,
+        "capture_sync": true
+      },
+      "country_name": "France",
+      "country_code": "FR"
+    },
+    {
+      "idx": 1,
+      "status": "offline",
+      "error": "timed out",
+      "country_name": "France",
+      "country_code": "FR"
+    },
+    {
+      "idx": 2,
+      "status": "offline",
+      "error": "timed out",
+      "country_name": "France",
+      "country_code": "FR"
+    }
   ]
 }

@@ -30,15 +30,21 @@ jobs:
           python-version: '3.12'
 
       - name: Run server checks
+        env:
+          # Repo secret: a JSON object mapping server idx -> JSON API token,
+          # e.g. {"0": "SECURETOKEN"}. Only needed for servers where you've
+          # enabled the JSON API and set "jsonapi_url" in SERVERS. Add it at
+          # Settings -> Secrets and variables -> Actions -> New repository secret.
+          JSONAPI_TOKENS: ${{ secrets.JSONAPI_TOKENS }}
         run: python scripts/check_servers.py
 
-      - name: Commit status.json if changed
+      - name: Commit status.json and geo_cache.json if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add status.json
+          git add status.json geo_cache.json
           if git diff --cached --quiet; then
-            echo "No change in status.json"
+            echo "No change in status.json or geo_cache.json"
           else
             git commit -m "Update server status [skip ci]"
             git push

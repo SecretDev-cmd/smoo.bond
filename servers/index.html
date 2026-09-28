@@ -1,0 +1,1257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>smoom.bond</title>
+<meta name="description" content="Live status check for the Super Mario Odyssey Online servers">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<style>
+  :root{
+    --bg: #0d1117;
+    --text: #c9d1d9;
+    --muted: #9ea5ae;
+    --border: #30363d;
+    --stripe: rgba(28,34,43,0.5);
+    --link: #cc20dd;
+    --link-hover: #c9d1d9;
+    --green: #28a745;
+    --red: #dc3545;
+    color-scheme: dark;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background: var(--bg);
+    color:var(--text);
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+  .app{
+    text-align:center;
+    padding: max(20px, env(safe-area-inset-top)) 20px max(20px, env(safe-area-inset-bottom));
+    max-width:1100px;
+    margin:0 auto;
+  }
+
+  header{ margin-bottom:1.5rem; }
+  header .logo{ outline:unset; display:inline-block; text-decoration:none; }
+  header .logo img{ width:144px; height:128px; max-width:100%; height:auto; }
+
+  h1.page-title{
+    font-size:1.75rem;
+    font-weight:700;
+    color:#fff;
+    margin:0 0 1rem;
+  }
+
+  /* ===== table, matches servers.scss + bootstrap dark-mode.scss ===== */
+  .servers-view{
+    display:flex;
+    justify-content:center;
+    overflow-x:auto;
+    width:726.63px;
+    max-width:100%;
+    margin:0 auto;
+    flex:none;
+  }
+  table{
+    width:726.63px;
+    max-width:100%;
+    table-layout:fixed;
+    display:table;
+    border-collapse:collapse;
+    text-align:center;
+    font-size:1rem;
+    color:var(--text);
+  }
+  thead th{
+    position:sticky;
+    top:0;
+    background:var(--bg);
+    z-index:2;
+    border-top:0;
+    border-bottom:2px solid var(--border);
+    padding:12px 22.4px 12px 12px;
+    height:49px;
+    font-weight:700;
+    color:#fff;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    vertical-align:bottom;
+  }
+  thead th:nth-child(1){ width:93.97px; }
+  thead th:nth-child(2){ width:242.73px; }
+  thead th:nth-child(3){ width:172.27px; }
+  thead th:nth-child(4){ width:217.66px; }
+  thead th svg{ opacity:0.5; width:0.8em; height:0.8em; margin-left:0.2em; }
+  tbody tr{ height:97px; }
+  tbody td{
+    padding:12px;
+    vertical-align:middle;
+    border-top:1px solid rgba(201,209,217,0.1);
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  tbody td.td-state{
+    overflow: visible;
+    text-overflow: clip;
+  }
+  tbody tr:nth-of-type(odd){
+    background: rgba(13,17,23,0.5);
+  }
+
+  /* State column, matching SmooServerState.vue: bare colored icon+text, no pill unless online w/ known players (btn-success) */
+  .state-component{
+    display:inline-flex;
+    align-items:center;
+    gap:0.35em;
+    white-space:nowrap;
+    font-size:0.95em;
+  }
+  .state-component svg.dot{ width:1em; height:1em; flex:none; }
+  .state-component.loading{ color: orange; }
+  .state-component.loading svg.dot{ animation: spin 1s linear infinite; }
+  @keyframes spin{ from{ transform:rotate(0deg);} to{ transform:rotate(360deg);} }
+  .state-component.offline{ color: var(--red); }
+  .state-component.online{ color: var(--green); }
+  .state-component.unknown{ color: var(--muted); }
+
+  .state-component .btn-success{
+    appearance:none;
+    -webkit-appearance:none;
+    display:inline-flex;
+    align-items:center;
+    gap:0.4em;
+    background: #28A745;
+    border:1px solid #1e7e34;
+    color:#FFFFFF;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-size:16px;
+    padding:6px 12px;
+    border-radius:0.25rem;
+    line-height:1;
+    cursor:default;
+  }
+  .state-component .btn-success:disabled{
+    opacity:1;
+  }
+  .state-component .btn-success svg{ width:1.1em; height:1.1em; fill:currentColor; }
+
+  /* Server column */
+  .td-server .name{ font-weight:700; color:#fff; margin-bottom:0.15rem; }
+  .td-server .host,
+  .td-server .port{
+    font-family: monospace;
+    font-size:0.92em;
+  }
+  .td-server .host::before,
+  .td-server .port::before{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    font-weight:700;
+    font-size:0.75em;
+    opacity:0.25;
+  }
+  .td-server .host::before{ content:'Host: '; }
+  .td-server .port::before{ content:'Port: '; }
+  .td-server .port.default{ opacity:0.5; }
+  .td-server .port.default::before{ opacity:0.5; }
+
+  .td-server .host{
+    position:relative;
+    cursor:help;
+    border-bottom:1px dotted var(--muted);
+    display:inline-block;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .td-server .host .ip-tooltip{
+    position:absolute;
+    left:0;
+    bottom:calc(100% + 6px);
+    background:#161b22;
+    color:var(--text);
+    border:1px solid var(--border);
+    padding:0.35rem 0.6rem;
+    border-radius:4px;
+    font-size:0.85em;
+    white-space:nowrap;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(4px);
+    transition:opacity 0.15s ease, transform 0.15s ease;
+    z-index:5;
+    pointer-events:none;
+    box-shadow:0 4px 12px rgba(0,0,0,0.4);
+  }
+  .td-server .host .ip-tooltip::after{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:1em;
+    border:5px solid transparent;
+    border-top-color:var(--border);
+  }
+  .td-server .host:hover .ip-tooltip,
+  .td-server .host:focus-visible .ip-tooltip,
+  .td-server .host.tapped .ip-tooltip{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+
+  /* extern links: magenta, underlined, with the little box-arrow-up-right icon after */
+  a.extern{
+    color: var(--link);
+    text-decoration: underline;
+  }
+  a.extern:hover{ color: var(--link-hover); }
+  a.extern .ext-icon{
+    display:inline-block;
+    width:0.7em; height:0.7em;
+    margin-left:0.35em;
+    vertical-align:middle;
+  }
+
+  .td-location > div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    white-space:nowrap;
+  }
+  .td-location .flag-icon{ margin-right:0.5em; margin-top:-0.1em; width:1.6em; height:1.2em; object-fit:cover; line-height:1; border-radius:2px; box-shadow:0 0 0 1px rgba(255,255,255,0.1); }
+
+  .td-version a{ color:var(--link); text-decoration:underline; }
+  .td-version a:hover{ color:var(--link-hover); }
+
+  .status-sub{
+    margin-top:1.25rem;
+    color:var(--muted);
+    font-size:0.9rem;
+  }
+  /* Player-count pill becomes clickable when we have per-player
+     details, opening the modal below. It also carries a small hover
+     tooltip (Players + a few server toggles), shown on hover/focus. */
+  .state-component{ position:relative; }
+  .state-component .btn-success{ cursor:pointer; }
+  .state-component .btn-success:focus-visible{ outline:2px solid #fff; outline-offset:2px; }
+
+  /* Rendered as a single shared element fixed-positioned via JS
+     (see positionTooltip()), NOT nested inside the table -- the
+     table's sticky thead creates its own stacking/paint context that
+     clips or paints over an absolutely-positioned child tooltip
+     regardless of z-index, so escaping to a body-level fixed element
+     sidesteps that entirely. */
+  #statusTooltip{
+    position:fixed;
+    min-width:190px;
+    background:#161b22;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px 14px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.45);
+    font-size:0.85rem;
+    text-align:left;
+    white-space:nowrap;
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0.12s ease;
+    z-index:60;
+    pointer-events:none;
+  }
+  #statusTooltip.open{ opacity:1; visibility:visible; }
+  /* Default: tooltip sits above the pill, arrow points down from its
+     bottom edge. */
+  #statusTooltip::after{
+    content:'';
+    position:absolute;
+    top:100%;
+    left:var(--arrow-left, 18px);
+    border:6px solid transparent;
+    border-top-color:var(--border);
+  }
+  #statusTooltip::before{
+    content:'';
+    position:absolute;
+    top:calc(100% - 1px);
+    left:var(--arrow-left, 18px);
+    border:5px solid transparent;
+    border-top-color:#161b22;
+    z-index:1;
+  }
+  /* Near the top of the page there's no room above the pill, so JS
+     places the tooltip below it instead -- flip the arrow to point up
+     from the tooltip's top edge in that case. */
+  #statusTooltip.below::after{
+    top:auto; bottom:100%;
+    border-top-color:transparent;
+    border-bottom-color:var(--border);
+  }
+  #statusTooltip.below::before{
+    top:auto; bottom:calc(100% - 1px);
+    border-top-color:transparent;
+    border-bottom-color:#161b22;
+  }
+  #statusTooltip .tip-row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1.2em;
+    padding:2px 0;
+    color:var(--muted);
+  }
+  #statusTooltip .tip-row + .tip-row{ border-top:1px dashed rgba(201,209,217,0.08); }
+  #statusTooltip .tip-row b{ color:var(--text); font-weight:600; }
+  #statusTooltip .tip-row .tip-true{ color:var(--green); font-weight:600; }
+  #statusTooltip .tip-row .tip-false{ color:var(--red); font-weight:600; }
+
+  @media (max-width:700px){
+    #statusTooltip{ white-space:normal; min-width:160px; }
+  }
+
+  /* Players modal: dim overlay + centered dialog, styled to match the
+     rest of the dark theme. */
+  .players-modal-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background: rgba(1,4,9,0.72);
+    z-index:50;
+    align-items:flex-start;
+    justify-content:center;
+    padding:9vh 16px 16px;
+    overflow-y:auto;
+  }
+  .players-modal-overlay.open{ display:flex; }
+
+  .players-modal{
+    background:#161b22;
+    border:1px solid var(--border);
+    border-radius:12px;
+    width:100%;
+    max-width:700px;
+    max-height:80vh;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+  }
+  .players-modal-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:16px 18px;
+    border-bottom:1px solid var(--border);
+    flex:none;
+  }
+  .players-modal-header h2{
+    margin:0;
+    font-size:1.15rem;
+    font-weight:700;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    gap:0.4em;
+    flex-wrap:wrap;
+  }
+  .players-modal-header h2 .server-name{ color: var(--link); font-weight:700; }
+  .players-modal-close{
+    appearance:none;
+    background:transparent;
+    border:0;
+    color: var(--muted);
+    font-size:1.4rem;
+    line-height:1;
+    cursor:pointer;
+    padding:4px 8px;
+    border-radius:6px;
+  }
+  .players-modal-close:hover{ color:#fff; background: rgba(255,255,255,0.08); }
+  .players-modal-close:focus-visible{ outline:2px solid var(--link); outline-offset:2px; }
+
+  .players-modal-body{
+    padding:6px 18px 18px;
+    overflow-y:auto;
+    flex:1 1 auto;
+    min-height:0;
+  }
+  .players-modal-body .empty{ color:var(--muted); font-size:0.9rem; padding:14px 0; }
+
+  table.players-table{
+    width:100%;
+    border-collapse:collapse;
+    text-align:left;
+    font-size:0.92rem;
+  }
+  table.players-table thead th{
+    position:sticky;
+    top:0;
+    background:#161b22;
+    color: var(--muted);
+    font-weight:700;
+    font-size:0.78rem;
+    text-transform:none;
+    padding:10px 10px;
+    border-bottom:1px solid var(--border);
+    white-space:nowrap;
+    z-index:1;
+  }
+  table.players-table thead th:first-child{ width:22%; }
+  table.players-table thead th:nth-child(2){ width:34%; }
+  table.players-table thead th:nth-child(3){ width:44%; }
+  /* The page-wide "tbody tr{ height:97px }" (for the server list) also
+     matches this table, which is what made every player row huge. */
+  table.players-table tbody tr{ height:auto; }
+  table.players-table tbody td{
+    padding:8px 10px;
+    vertical-align:middle;
+    border-top:0;
+    border-bottom:1px solid rgba(201,209,217,0.08);
+    overflow:visible;
+    text-overflow:clip;
+    white-space:normal;
+  }
+  table.players-table tbody tr:last-child td{ border-bottom:0; }
+  table.players-table tbody tr:nth-of-type(odd){ background: rgba(255,255,255,0.02); }
+  table.players-table .p-name{ font-weight:700; color:#fff; white-space:normal; word-break:break-word; }
+  table.players-table .p-location{ color:var(--text); }
+  table.players-table .p-costume{ color:var(--muted); line-height:1.5; }
+  table.players-table .p-costume b{ color:var(--text); font-weight:600; }
+  table.players-table .p-costume .costume-line{ display:block; white-space:nowrap; }
+  @media (max-width:560px){
+    table.players-table .p-costume .costume-line{ white-space:normal; }
+  }
+  table.players-table .p-none{ color:var(--muted); }
+
+  @media (max-width:560px){
+    .players-modal-overlay{ padding:0; align-items:flex-end; }
+    .players-modal{ max-width:none; border-radius:12px 12px 0 0; max-height:85vh; }
+    table.players-table thead{ display:none; }
+    table.players-table tbody td{ display:block; padding:4px 0; border-bottom:0; }
+    table.players-table tbody tr{
+      display:block;
+      padding:12px 4px;
+      border-bottom:1px solid rgba(201,209,217,0.08);
+    }
+    table.players-table tbody tr:nth-of-type(odd){ background:none; }
+  }
+
+  .status-sub code{
+    background: rgba(255,255,255,0.08);
+    padding:0.1em 0.45em;
+    border-radius:4px;
+    font-size:0.92em;
+    color:var(--text);
+  }
+
+  .meta-row{
+    margin-top:0.6rem;
+    display:flex; gap:18px; flex-wrap:wrap; justify-content:center;
+    font-size:0.82rem; color:var(--muted);
+  }
+  .meta-row b{ color:var(--text); font-weight:600; }
+
+  button.recheck{
+    appearance:none;
+    border:1px solid var(--link);
+    background:transparent;
+    color:var(--link);
+    font-family:inherit; font-size:0.9rem; font-weight:600;
+    padding:0.375rem 1rem; border-radius:0.25rem;
+    cursor:pointer;
+    margin-top:1.25rem;
+    transition: background 0.15s ease, color 0.15s ease;
+    min-height:44px; /* comfortable touch target */
+  }
+  button.recheck:hover{ background: var(--link); color:#0d1117; }
+  button.recheck:active{ transform: translateY(1px); }
+  button.recheck:focus-visible{ outline:2px solid var(--link); outline-offset:2px; }
+  button.recheck:disabled{ opacity:0.5; cursor:default; background:transparent; color:var(--link); }
+
+  .fallback{
+    display:none;
+    margin-top:0.9rem;
+    font-size:0.82rem;
+    color:var(--muted);
+    max-width:44ch;
+    line-height:1.5;
+    margin-left:auto; margin-right:auto;
+  }
+  .fallback.show{ display:block; }
+  .fallback a{ color: var(--link); }
+  .fallback a:hover{ color: var(--link-hover); }
+
+  footer{
+    margin-top:2.5rem;
+    font-size:0.78rem;
+    color:var(--muted);
+    text-align:center;
+    line-height:1.7;
+  }
+  footer a{ color:var(--link); text-decoration:underline; }
+  footer a:hover{ color:var(--link-hover); text-decoration:none; }
+
+  /* ============================================================
+     MOBILE LAYOUT (< 700px)
+     The fixed-width table doesn't work well when squeezed into a
+     narrow viewport -- four columns of already-tight content just
+     get crushed. Instead, below 700px we switch the table into a
+     stack of "cards": each row becomes a bordered block, and each
+     cell gets a small uppercase label (via ::before + data-label)
+     so it still reads like State / Server / Location / Version
+     without needing four visual columns side by side.
+     ============================================================ */
+  @media (max-width:700px){
+    .servers-view{ width:100%; overflow-x:visible; }
+    table, thead, tbody, tr, td{ display:block; width:100%; }
+    table{ max-width:520px; }
+
+    thead{
+      position:static;
+      border:0; clip:rect(0 0 0 0); height:1px; margin:-1px; overflow:hidden;
+      padding:0; white-space:nowrap; width:1px; /* visually hidden, kept for a11y */
+    }
+
+    tbody tr{
+      height:auto;
+      background: #11161d;
+      border:1px solid var(--border);
+      border-radius:10px;
+      margin-bottom:14px;
+      padding:14px;
+      text-align:left;
+    }
+    tbody tr:nth-of-type(odd){ background:#11161d; }
+
+    tbody td{
+      border-top:0;
+      padding:8px 0;
+      white-space:normal;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    tbody td + td{ border-top:1px dashed rgba(201,209,217,0.08); }
+
+    tbody td::before{
+      content: attr(data-label);
+      flex:0 0 84px;
+      font-size:0.68rem;
+      font-weight:700;
+      letter-spacing:0.04em;
+      text-transform:uppercase;
+      color:var(--muted);
+      opacity:0.7;
+    }
+
+    .td-state{ justify-content:flex-start; }
+    .td-server{ display:block; }
+    .td-server::before{
+      content: attr(data-label);
+      display:block;
+      font-size:0.68rem;
+      font-weight:700;
+      letter-spacing:0.04em;
+      text-transform:uppercase;
+      color:var(--muted);
+      opacity:0.7;
+      margin-bottom:4px;
+    }
+    .td-server .name{ font-size:1.05rem; }
+
+    .td-location > div{ justify-content:flex-start; }
+    .td-location span.name{ display:inline; } /* keep country name visible on mobile */
+
+    .td-version{ }
+    .td-version a{ display:inline-flex; align-items:center; }
+
+    /* Tap-to-reveal for the host tooltip: hover doesn't fire reliably
+       on touch, so a tap toggles the .tapped class via JS and the
+       tooltip becomes a small inline reveal instead of a floater,
+       to avoid it clipping off the edge of a narrow screen. */
+    .td-server .host{
+      border-bottom:1px dotted var(--muted);
+    }
+    .td-server .host .ip-tooltip{
+      position:static;
+      display:block;
+      transform:none;
+      max-width:none;
+      margin-top:6px;
+      white-space:normal;
+      word-break:break-all;
+      box-shadow:none;
+    }
+    .td-server .host .ip-tooltip::after{ display:none; }
+
+    h1.page-title{ font-size:1.4rem; }
+    header .logo img{ width:104px; height:auto; }
+    .app{ padding-left:14px; padding-right:14px; }
+  }
+
+  @media (max-width:380px){
+    tbody td::before, .td-server::before{ flex-basis:70px; font-size:0.62rem; }
+  }
+
+  /* ===== shared site nav (matches the home page header) ===== */
+  header .logo img{ display:block; }
+  .smoo-nav{ position:relative; margin-bottom:1.5rem; }
+  .nav-list{ list-style:none; margin:0; padding:0; display:flex; justify-content:center; align-items:center; gap:.25rem; }
+  .nav-list > li{ position:relative; }
+  .smoo-nav a, .smoo-nav .split-caret{ color:#1f96ad; }
+  .smoo-nav a{ text-decoration:none; outline:unset; }
+  .smoo-nav a:not(.disabled):hover{ color:var(--text); }
+  .smoo-nav a:hover, .smoo-nav a:focus-visible{ text-decoration:underline; }
+  .nav-link{ display:inline-block; padding:.5rem; border-radius:.25rem; }
+  .nav-link.active{ font-weight:bold; }
+  .nav-split{ display:inline-flex; align-items:center; }
+  .split-main{ padding-right:0 !important; }
+  .split-caret{ background:none; border:0; cursor:pointer; padding:.5rem .5rem .5rem .25rem; line-height:1; }
+  .split-caret::after{ content:""; display:inline-block; margin-left:.15em; vertical-align:.255em;
+    border-top:.3em solid; border-right:.3em solid transparent; border-left:.3em solid transparent; }
+  .dropdown.open > .nav-split{ background:#1c222b; border-radius:.25rem; }
+  .dropdown-menu{ display:none; position:absolute; top:100%; left:0; z-index:1000; min-width:12rem; margin:.125rem 0 0;
+    padding:.5rem 0; list-style:none; text-align:left; background:#1c222b; border:1px solid var(--border);
+    border-radius:.25rem; box-shadow:0 6px 12px rgba(0,0,0,.25); }
+  .dropdown.open > .dropdown-menu{ display:block; }
+  .dropdown-menu a{ display:block; padding:.25rem 1.5rem; white-space:nowrap; }
+  .dropdown-menu a:hover{ background:rgba(255,255,255,.05); text-decoration:none; }
+  .dropdown-menu a.disabled{ opacity:.5; pointer-events:none; cursor:default; }
+  .nav-toggle{ display:none; background:none; border:1px solid var(--border); border-radius:.25rem; padding:.25rem .75rem; cursor:pointer; }
+  .nav-toggle-icon{ display:inline-block; width:1.5em; height:1.5em; vertical-align:middle; background:no-repeat center/100% 100%;
+    background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='%231f96ad' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); }
+  @media (max-width:575.98px){
+    .nav-toggle{ display:block; margin:0 auto; }
+    .nav-list{ display:none; flex-direction:column; align-items:stretch; margin:.5rem 0 0; border:1px solid var(--border); border-radius:.25rem; text-align:left; }
+    .nav-list.show{ display:flex; }
+    .nav-list > li:not(:last-child){ border-bottom:1px solid var(--border); }
+    .dropdown-menu{ position:static; box-shadow:none; margin:0; border:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="app">
+    <header class="smoo-header">
+      <a class="logo" href="/" aria-label="Home">
+        <img
+          alt="Super Mario Odyssey: Online Logo"
+          title="Super Mario Odyssey: Online"
+          src="/img/logo.png" width="144" height="128"
+        />
+      </a>
+
+      <nav class="smoo-nav" aria-label="Main">
+        <button class="nav-toggle" id="navToggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-icon"></span>
+        </button>
+
+        <ul class="nav-list" id="navigation">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/servers/" class="nav-link active" aria-current="page">Servers</a></li>
+
+          <li class="dropdown">
+            <span class="nav-split">
+              <a href="/play" class="nav-link split-main">Play</a><button class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Play menu"></button>
+            </span>
+            <ul class="dropdown-menu">
+              <li><a href="/play/hide-and-seek">Hide &amp; Seek rules</a></li>
+              <li><a href="/play/switch">Play on Switch</a></li>
+              <li><a href="/play/ryujinx">Play with Ryujinx</a></li>
+              <li><a href="/play/build">Build the mod</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <span class="nav-split">
+              <a href="/host" class="nav-link split-main">Host</a><button class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Host menu"></button>
+            </span>
+            <ul class="dropdown-menu">
+              <li><a href="/host/binary">Run with binary files</a></li>
+              <li><a href="/host/docker">Run with <code>docker-compose</code></a></li>
+              <li><a href="/host/settings">Edit <code>settings.json</code></a></li>
+              <li><a href="/host/commands">Interactive commands</a></li>
+              <li><a href="/host/discord">Discord bot</a></li>
+              <li><a href="/host/router">Behind a router</a></li>
+              <li><a href="/host/vpn">Virtual Private Network</a></li>
+              <li><a class="disabled" aria-disabled="true">Remote server</a></li>
+            </ul>
+          </li>
+
+          <li><a href="/faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1 class="page-title">Servers</h1>
+
+    <div class="servers-view">
+      <table>
+        <thead>
+          <tr>
+            <th>State</th>
+            <th>Server</th>
+            <th>Location</th>
+            <th>Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-idx="0" data-server-name="SrDev">
+            <td class="td-state" data-label="State">
+              <span class="state-component loading" id="stateComponent-0">
+                <svg class="dot" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                </svg>
+                <span id="stateText-0">&hellip;</span>
+              </span>
+            </td>
+            <td class="td-server" data-label="Server">
+              <div class="name">SrDev</div>
+              <div class="host" tabindex="0">srdev.bond<span class="ip-tooltip">176.189.251.231</span></div>
+              <div class="port">1027</div>
+            </td>
+            <td class="td-location" data-label="Location">
+              <div><img class="flag-icon" id="locFlag-0" alt="" src="" style="display:none;"><span class="name" id="locName-0">Locating&hellip;</span></div>
+            </td>
+            <td class="td-version" data-label="Version"><a href="https://github.com/Sanae6/SmoOnlineServer.git" target="_blank" rel="noopener">Sanae6/master</a></td>
+          </tr>
+
+          <tr data-idx="1" data-server-name="HuskX (Main)">
+            <td class="td-state" data-label="State">
+              <span class="state-component loading" id="stateComponent-1">
+                <svg class="dot" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                </svg>
+                <span id="stateText-1">&hellip;</span>
+              </span>
+            </td>
+            <td class="td-server" data-label="Server">
+              <div class="name">HuskX (Main)</div>
+              <div class="host" tabindex="0">90.65.160.139<span class="ip-tooltip">90.65.160.139</span></div>
+              <div class="port">1027</div>
+            </td>
+            <td class="td-location" data-label="Location">
+              <div><img class="flag-icon" id="locFlag-1" alt="" src="" style="display:none;"><span class="name" id="locName-1">Locating&hellip;</span></div>
+            </td>
+            <td class="td-version" data-label="Version"><a href="https://github.com/Sanae6/SmoOnlineServer.git" target="_blank" rel="noopener">Sanae6/master</a></td>
+          </tr>
+
+          <tr data-idx="2" data-server-name="HuskX (1028)">
+            <td class="td-state" data-label="State">
+              <span class="state-component loading" id="stateComponent-2">
+                <svg class="dot" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/>
+                </svg>
+                <span id="stateText-2">&hellip;</span>
+              </span>
+            </td>
+            <td class="td-server" data-label="Server">
+              <div class="name">HuskX (1028)</div>
+              <div class="host" tabindex="0">90.65.160.139<span class="ip-tooltip">90.65.160.139</span></div>
+              <div class="port">1028</div>
+            </td>
+            <td class="td-location" data-label="Location">
+              <div><img class="flag-icon" id="locFlag-2" alt="" src="" style="display:none;"><span class="name" id="locName-2">Locating&hellip;</span></div>
+            </td>
+            <td class="td-version" data-label="Version"><a href="https://github.com/Sanae6/SmoOnlineServer.git" target="_blank" rel="noopener">Sanae6/master</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <button class="recheck" id="recheckBtn">Refresh server list</button>
+  </div>
+
+  <div id="statusTooltip" role="tooltip"></div>
+
+  <div class="players-modal-overlay" id="playersModalOverlay">
+    <div class="players-modal" role="dialog" aria-modal="true" aria-labelledby="playersModalTitle">
+      <div class="players-modal-header">
+        <h2 id="playersModalTitle">Players on <span class="server-name" id="playersModalServerName"></span></h2>
+        <button type="button" class="players-modal-close" id="playersModalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="players-modal-body" id="playersModalBody"></div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const SERVERS = [
+    { idx: 0 },
+    { idx: 1 },
+    { idx: 2 }
+  ];
+
+  const STATUS_URL = '/status.json';
+
+  const btn = document.getElementById('recheckBtn');
+
+  const dotFilled = '<svg class="dot" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="8"/></svg>';
+  const dotSpin = '<svg class="dot" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"/></svg>';
+  const personCircleIcon = '<svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="width:1em;height:1em;"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"></path></svg>';
+  // Keep each server's player_list around so a re-render (e.g. after
+  // a refresh click) can rebuild the modal if it's currently open.
+  const playerData = {};
+  let openModalIdx = null;
+  let lastFocusedEl = null;
+
+  const modalOverlay = document.getElementById('playersModalOverlay');
+  const modalServerName = document.getElementById('playersModalServerName');
+  const modalBody = document.getElementById('playersModalBody');
+  const modalClose = document.getElementById('playersModalClose');
+
+  // Internal costume IDs (what the server's JSON API returns) -> the
+  // in-game display names. Anything not listed falls back to the raw
+  // ID, so a costume added in a future game/mod version still shows
+  // up instead of rendering blank.
+  const COSTUMES = {
+    Cap: {
+      Mario: 'Mario Cap',
+      MarioCaptain: "Captain's Hat",
+      MarioTailCoat: 'Black Top Hat',
+      MarioPrimitiveMan: 'Caveman Headwear',
+      MarioPoncho: 'Sombrero',
+      MarioGunman: 'Cowboy Hat',
+      MarioSwimwear: 'Swim Goggles',
+      MarioExplorer: 'Explorer Hat',
+      MarioScientist: 'Scientist Visor',
+      MarioPilot: 'Aviator Cap',
+      MarioMaker: 'Builder Helmet',
+      MarioGolf: 'Golf Cap',
+      MarioSnowSuit: 'Snow Hood',
+      MarioAloha: 'Resort Hat',
+      MarioSailor: 'Sailor Hat',
+      MarioCook: 'Chef Hat',
+      MarioPainter: "Painter's Cap",
+      MarioArmor: 'Samurai Helmet',
+      MarioHappi: 'Happi Headband',
+      MarioSpaceSuit: 'Space Helmet',
+      Mario64: 'Mario 64 Cap',
+      MarioShopman: 'Employee Cap',
+      MarioNew3DS: 'Fashionable Cap',
+      MarioMechanic: 'Mechanic Cap',
+      MarioSuit: 'Black Fedora',
+      MarioPirate: 'Pirate Hat',
+      MarioClown: 'Clown Hat',
+      MarioFootball: 'Football Helmet',
+      MarioColorClassic: 'Classic Cap',
+      MarioColorLuigi: 'Luigi Cap',
+      MarioDoctor: 'Doctor Headwear',
+      MarioColorWaluigi: 'Waluigi Cap',
+      MarioDiddyKong: 'Diddy Kong Hat',
+      MarioColorWario: 'Wario Cap',
+      MarioKoopa: "Bowser's Top Hat",
+      MarioPeach: 'Bridal Veil',
+      MarioTuxedo: "Mario's Top Hat",
+      MarioColorGold: 'Gold Mario Cap',
+      Mario64Metal: 'Metal Mario Cap',
+      MarioKing: "King's Crown",
+      MarioInvisible: 'Invisibility Hat'
+    },
+    Body: {
+      Mario: 'Mario Suit',
+      MarioTailCoat: 'Black Tuxedo',
+      MarioPrimitiveMan: 'Caveman Outfit',
+      MarioPoncho: 'Poncho',
+      MarioGunman: 'Cowboy Outfit',
+      MarioSwimwear: 'Swimwear',
+      MarioExplorer: 'Explorer Outfit',
+      MarioScientist: 'Scientist Outfit',
+      MarioPilot: 'Aviator Outfit',
+      MarioMaker: 'Builder Outfit',
+      MarioGolf: 'Golf Outfit',
+      MarioSnowSuit: 'Snow Suit',
+      MarioAloha: 'Resort Outfit',
+      MarioSailor: 'Sailor Suit',
+      MarioCook: 'Chef Suit',
+      MarioPainter: 'Painter Outfit',
+      MarioArmor: 'Samurai Armor',
+      MarioHappi: 'Happi Outfit',
+      MarioSpaceSuit: 'Space Suit',
+      Mario64: 'Mario 64 Suit',
+      MarioShopman: 'Employee Uniform',
+      MarioUnderwear: 'Boxer Shorts',
+      MarioNew3DS: 'Fashionable Outfit',
+      MarioMechanic: 'Mechanic Outfit',
+      MarioSuit: 'Black Suit',
+      MarioPirate: 'Pirate Outfit',
+      MarioClown: 'Clown Suit',
+      MarioFootball: 'Football Uniform',
+      MarioColorClassic: 'Classic Suit',
+      MarioBone: 'Skeleton Suit',
+      MarioColorLuigi: 'Luigi Suit',
+      MarioDoctor: 'Doctor Outfit',
+      MarioColorWaluigi: 'Waluigi Suit',
+      MarioDiddyKong: 'Diddy Kong Suit',
+      MarioColorWario: 'Wario Suit',
+      MarioHakama: 'Hakama',
+      MarioKoopa: "Bowser's Tuxedo",
+      MarioPeach: 'Bridal Gown',
+      MarioTuxedo: "Mario's Tuxedo",
+      MarioColorGold: 'Gold Mario Suit',
+      Mario64Metal: 'Metal Mario Suit',
+      MarioKing: "King's Outfit"
+    }
+  };
+
+  function costumeName(kind, id){
+    if(!id) return '';
+    const table = COSTUMES[kind] || {};
+    return Object.prototype.hasOwnProperty.call(table, id) ? table[id] : id;
+  }
+
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function tipRow(label, value){
+    if(value === true)  return '<div class="tip-row">' + label + ': <span class="tip-true">true</span></div>';
+    if(value === false) return '<div class="tip-row">' + label + ': <span class="tip-false">false</span></div>';
+    return '<div class="tip-row">' + label + ': <b>' + escapeHtml(String(value)) + '</b></div>';
+  }
+
+  // Builds the small hover tooltip's inner HTML: player count plus
+  // whichever server-wide toggles this server's token permissions
+  // returned (see check_servers.py's extract_settings_fields). Any
+  // subset is valid -- rows just don't appear for settings the token
+  // wasn't granted.
+  function buildTooltipInnerHtml(label, settingsInfo){
+    const rows = [tipRow('Players', label)];
+    const s = settingsInfo || {};
+    if(typeof s.capture_sync === 'boolean')   rows.push(tipRow('CaptureSync', s.capture_sync));
+    if(typeof s.scenario_merge === 'boolean') rows.push(tipRow('ScenarioMerge', s.scenario_merge));
+    if(typeof s.shine_sync === 'boolean')     rows.push(tipRow('ShineSync', s.shine_sync));
+    if(typeof s.persist_shines === 'boolean') rows.push(tipRow('PersistShines', s.persist_shines));
+    return rows.join('');
+  }
+
+  // Single shared tooltip element, fixed-positioned in JS relative to
+  // whichever pill is currently hovered/focused/tapped -- see the CSS
+  // comment on #statusTooltip for why this can't just live inside the
+  // table as an absolutely-positioned child.
+  const statusTooltipEl = document.getElementById('statusTooltip');
+  const tooltipInfo = {}; // idx -> { label, settingsInfo }
+
+  function positionTooltip(pillEl){
+    const rect = pillEl.getBoundingClientRect();
+    statusTooltipEl.style.left = '0px';
+    statusTooltipEl.style.top = '0px';
+    // Measure after content is set (caller sets innerHTML first) so
+    // offsetWidth/offsetHeight are accurate for this tooltip's content.
+    const tw = statusTooltipEl.offsetWidth;
+    const th = statusTooltipEl.offsetHeight;
+    const margin = 8;
+
+    let left = rect.left;
+    let top = rect.top - th - margin;
+    let arrowLeft = 18; // px from tooltip's left edge, matches the ~1.1em default
+
+    // Keep it on-screen horizontally.
+    const maxLeft = window.innerWidth - tw - 8;
+    if(left > maxLeft) left = Math.max(8, maxLeft);
+    arrowLeft = Math.max(12, Math.min(tw - 12, (rect.left + rect.width / 2) - left));
+
+    // If there's no room above (near the top of the page), show it
+    // below the pill instead.
+    if(top < 8){
+      top = rect.bottom + margin;
+      statusTooltipEl.classList.add('below');
+    } else {
+      statusTooltipEl.classList.remove('below');
+    }
+
+    statusTooltipEl.style.left = left + 'px';
+    statusTooltipEl.style.top = top + 'px';
+    statusTooltipEl.style.setProperty('--arrow-left', arrowLeft + 'px');
+  }
+
+  function showTooltipFor(idx, pillEl){
+    const info = tooltipInfo[idx];
+    if(!info) return;
+    statusTooltipEl.innerHTML = buildTooltipInnerHtml(info.label, info.settingsInfo);
+    statusTooltipEl.classList.add('open');
+    positionTooltip(pillEl);
+  }
+
+  function hideTooltip(){
+    statusTooltipEl.classList.remove('open');
+  }
+
+  function serverDisplayName(idx){
+    const row = document.querySelector('tr[data-idx="' + idx + '"]');
+    return (row && row.getAttribute('data-server-name')) || ('Server ' + idx);
+  }
+
+  function renderPlayersTable(idx){
+    const list = playerData[idx];
+    modalServerName.textContent = serverDisplayName(idx);
+
+    if(!list || !list.length){
+      modalBody.innerHTML = '<div class="empty">No per-player details available for this server.</div>';
+      return;
+    }
+
+    const rows = list.map(p => {
+      const name = p.name ? escapeHtml(p.name) : '<span class="p-none">Unknown</span>';
+      const location = p.kingdom
+        ? escapeHtml(p.kingdom)
+        : (p.stage ? escapeHtml(p.stage) : '<span class="p-none">&mdash;</span>');
+      const scenario = (typeof p.scenario === 'number') ? (' <span style="opacity:.6">(Scenario ' + p.scenario + ')</span>') : '';
+
+      let costume = '<span class="p-none">&mdash;</span>';
+      if(p.costume && (p.costume.cap || p.costume.body)){
+        const capLine = p.costume.cap ? ('<span class="costume-line">Cap: <b>' + escapeHtml(costumeName('Cap', p.costume.cap)) + '</b></span>') : '';
+        const bodyLine = p.costume.body ? ('<span class="costume-line">Body: <b>' + escapeHtml(costumeName('Body', p.costume.body)) + '</b></span>') : '';
+        costume = capLine + bodyLine;
+      }
+
+      return '<tr>' +
+        '<td class="p-name" data-label="Player">' + name + '</td>' +
+        '<td class="p-location" data-label="Location">' + location + scenario + '</td>' +
+        '<td class="p-costume" data-label="Costume">' + costume + '</td>' +
+        '</tr>';
+    }).join('');
+
+    modalBody.innerHTML =
+      '<table class="players-table">' +
+        '<thead><tr><th>Player</th><th>Location</th><th>Costume</th></tr></thead>' +
+        '<tbody>' + rows + '</tbody>' +
+      '</table>';
+  }
+
+  function openPlayersModal(idx){
+    hideTooltip();
+    lastFocusedEl = document.activeElement;
+    openModalIdx = idx;
+    renderPlayersTable(idx);
+    modalOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    modalClose.focus();
+    const btn = document.querySelector('#stateComponent-' + idx + ' .btn-success');
+    if(btn) btn.setAttribute('aria-expanded', 'true');
+  }
+
+  function closePlayersModal(){
+    if(openModalIdx !== null){
+      const btn = document.querySelector('#stateComponent-' + openModalIdx + ' .btn-success');
+      if(btn) btn.setAttribute('aria-expanded', 'false');
+    }
+    modalOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+    openModalIdx = null;
+    if(lastFocusedEl && typeof lastFocusedEl.focus === 'function') lastFocusedEl.focus();
+  }
+
+  // A fixed-position tooltip goes stale if the page moves under it.
+  window.addEventListener('scroll', () => hideTooltip(), { passive: true });
+  window.addEventListener('resize', () => hideTooltip());
+
+  modalClose.addEventListener('click', closePlayersModal);
+  modalOverlay.addEventListener('click', (e) => {
+    if(e.target === modalOverlay) closePlayersModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape' && modalOverlay.classList.contains('open')) closePlayersModal();
+  });
+
+  function renderLocation(idx, result){
+    const locFlag = document.getElementById('locFlag-' + idx);
+    const locName = document.getElementById('locName-' + idx);
+    const country = result.country_name || 'Unknown';
+    locName.textContent = country;
+
+    if(result.country_code){
+      const cc = result.country_code.toLowerCase();
+      locFlag.src = 'https://flagcdn.com/w40/' + cc + '.png';
+      locFlag.alt = country;
+      locFlag.style.display = 'inline-block';
+    } else {
+      locFlag.style.display = 'none';
+    }
+  }
+
+  function render(idx, result){
+    const stateComponent = document.getElementById('stateComponent-' + idx);
+    stateComponent.textContent = '';
+
+    if(result.status === 'loading'){
+      stateComponent.className = 'state-component loading';
+      stateComponent.innerHTML = dotSpin + '<span id="stateText-' + idx + '">&hellip;</span>';
+    } else if(result.status === 'online'){
+      stateComponent.className = 'state-component online';
+      if(typeof result.players === 'number'){
+        const label = result.players + (typeof result.max_players === 'number' ? ('/' + result.max_players) : '');
+        const hasList = Array.isArray(result.player_list) && result.player_list.length > 0;
+        playerData[idx] = hasList ? result.player_list : null;
+
+        tooltipInfo[idx] = { label, settingsInfo: result.settings_info };
+
+        if(hasList){
+          const isOpen = openModalIdx === idx;
+          stateComponent.innerHTML =
+            '<button type="button" class="btn btn-success btn-sm" ' +
+            'aria-haspopup="dialog" aria-expanded="' + (isOpen ? 'true' : 'false') + '" ' +
+            'aria-label="' + label + ' players online, click to view details">' +
+            personCircleIcon +
+            '<span id="stateText-' + idx + '">' + label + '</span></button>';
+          const pillBtn = stateComponent.querySelector('button');
+          pillBtn.addEventListener('click', () => openPlayersModal(idx));
+          if(isOpen) renderPlayersTable(idx); // keep an already-open modal in sync on refresh
+        } else {
+          stateComponent.innerHTML =
+            '<button type="button" class="btn btn-success btn-sm" disabled ' +
+            'aria-label="person circle ' + label + '">' +
+            personCircleIcon +
+            '<span id="stateText-' + idx + '">' + label + '</span></button>';
+          if(openModalIdx === idx) closePlayersModal();
+        }
+
+        const pillBtn2 = stateComponent.querySelector('button');
+        pillBtn2.addEventListener('mouseenter', () => showTooltipFor(idx, pillBtn2));
+        pillBtn2.addEventListener('mouseleave', hideTooltip);
+        pillBtn2.addEventListener('focus', () => showTooltipFor(idx, pillBtn2));
+        pillBtn2.addEventListener('blur', hideTooltip);
+      } else {
+        stateComponent.innerHTML = dotFilled + '<span id="stateText-' + idx + '">online</span>';
+      }
+    } else if(result.status === 'offline'){
+      stateComponent.className = 'state-component offline';
+      stateComponent.innerHTML = dotFilled + '<span id="stateText-' + idx + '">offline</span>';
+      playerData[idx] = null;
+      delete tooltipInfo[idx];
+      if(openModalIdx === idx) closePlayersModal();
+      hideTooltip();
+    } else {
+      stateComponent.className = 'state-component unknown';
+      stateComponent.innerHTML = dotFilled + '<span id="stateText-' + idx + '">unknown</span>';
+      playerData[idx] = null;
+      delete tooltipInfo[idx];
+      if(openModalIdx === idx) closePlayersModal();
+      hideTooltip();
+    }
+    renderLocation(idx, result);
+  }
+
+  function timeAgo(iso){
+    if(!iso) return '';
+    const diffMs = Date.now() - new Date(iso).getTime();
+    const mins = Math.round(diffMs / 60000);
+    if(mins < 1) return 'just now';
+    if(mins === 1) return '1 minute ago';
+    if(mins < 60) return mins + ' minutes ago';
+    const hrs = Math.round(mins / 60);
+    return hrs === 1 ? '1 hour ago' : hrs + ' hours ago';
+  }
+
+  function showLastChecked(iso){
+    let el = document.getElementById('lastChecked');
+    if(!el){
+      el = document.createElement('div');
+      el.id = 'lastChecked';
+      el.className = 'status-sub';
+      btn.insertAdjacentElement('afterend', el);
+    }
+    el.textContent = iso ? ('Last checked: ' + timeAgo(iso)) : '';
+  }
+
+  async function runCheck(){
+    btn.disabled = true;
+    SERVERS.forEach(s => render(s.idx, { status: 'loading' }));
+
+    try {
+      const res = await fetch(STATUS_URL + '?t=' + Date.now());
+      if(!res.ok) throw new Error('status_fetch_failed');
+      const data = await res.json();
+
+      const byIdx = {};
+      (data.servers || []).forEach(s => { byIdx[s.idx] = s; });
+
+      SERVERS.forEach(s => {
+        const result = byIdx[s.idx] || { status: 'unknown' };
+        render(s.idx, result);
+      });
+
+      showLastChecked(data.generated_at);
+    } catch (err) {
+      SERVERS.forEach(s => render(s.idx, { status: 'unknown' }));
+      showLastChecked(null);
+    }
+
+    btn.disabled = false;
+  }
+
+  // Tap-to-reveal for host tooltips on touch devices (hover doesn't
+  // fire reliably on tap-only screens). Tapping toggles a class that
+  // reveals the tooltip inline (styled as a block under 700px);
+  // tapping elsewhere closes any open ones.
+  document.querySelectorAll('.td-server .host').forEach(host => {
+    host.addEventListener('click', (e) => {
+      const wasOpen = host.classList.contains('tapped');
+      document.querySelectorAll('.td-server .host.tapped').forEach(h => h.classList.remove('tapped'));
+      if(!wasOpen) host.classList.add('tapped');
+    });
+  });
+  document.addEventListener('click', (e) => {
+    if(!e.target.closest('.td-server .host')){
+      document.querySelectorAll('.td-server .host.tapped').forEach(h => h.classList.remove('tapped'));
+    }
+  });
+
+  // Touch devices have no real ':hover', so a finger press on the
+  // player-count pill briefly shows the status tooltip before the
+  // pill's own click handler opens the full modal a moment later --
+  // gives a quick glance without requiring the modal every time.
+  document.addEventListener('touchstart', (e) => {
+    const pill = e.target.closest('.state-component.online .btn-success');
+    if(pill){
+      const idx = pill.closest('.state-component').id.replace('stateComponent-', '');
+      showTooltipFor(idx, pill);
+    } else {
+      hideTooltip();
+    }
+  }, { passive: true });
+
+  btn.addEventListener('click', runCheck);
+  runCheck();
+})();
+</script>
+<script>
+(function(){
+  var dropdowns = Array.prototype.slice.call(document.querySelectorAll('.dropdown'));
+  function closeAll(except){
+    dropdowns.forEach(function(dd){
+      if(dd === except) return;
+      dd.classList.remove('open');
+      var c = dd.querySelector('.split-caret');
+      if(c) c.setAttribute('aria-expanded','false');
+    });
+  }
+  dropdowns.forEach(function(dd){
+    var caret = dd.querySelector('.split-caret');
+    caret.addEventListener('click', function(e){
+      e.stopPropagation();
+      var open = !dd.classList.contains('open');
+      closeAll(dd);
+      dd.classList.toggle('open', open);
+      caret.setAttribute('aria-expanded', String(open));
+    });
+  });
+  document.addEventListener('click', function(){ closeAll(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeAll(); });
+
+  var navToggle = document.getElementById('navToggle');
+  var navList = document.getElementById('navigation');
+  navToggle.addEventListener('click', function(){
+    var show = navList.classList.toggle('show');
+    navToggle.setAttribute('aria-expanded', String(show));
+  });
+})();
+</script>
+</body>
+</html>
