@@ -657,10 +657,35 @@
         <ul class="nav-list" id="navigation">
           <li><a href="/" class="nav-link">Home</a></li>
           <li><a href="/servers/" class="nav-link active" aria-current="page">Servers</a></li>
-
-          <li><span class="nav-link nav-disabled" aria-disabled="true">Play</span></li>
-          <li><span class="nav-link nav-disabled" aria-disabled="true">Host</span></li>
-          <li><span class="nav-link nav-disabled" aria-disabled="true">FAQ</span></li>
+          <li class="dropdown">
+            <div class="nav-split">
+              <a href="/play/" class="nav-link split-main">Play</a>
+              <button type="button" class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Play menu"></button>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="/play/#hide-and-seek">Hide &amp; Seek rules</a></li>
+              <li><a href="/play/#switch">Play on Switch</a></li>
+              <li><a href="/play/#ryujinx">Play with Ryujinx</a></li>
+              <li><a href="/play/#build">Build the mod</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="nav-split">
+              <a href="/host/" class="nav-link split-main">Host</a>
+              <button type="button" class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Host menu"></button>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="/host/#binary">Run with binary files</a></li>
+              <li><a href="/host/#docker">Run with <code>docker-compose</code></a></li>
+              <li><a href="/host/#settings">Edit <code>settings.json</code></a></li>
+              <li><a href="/host/#commands">Interactive commands</a></li>
+              <li><a href="/host/#discord">Discord bot</a></li>
+              <li><a href="/host/#router">Behind a router</a></li>
+              <li><a href="/host/#vpn">Virtual Private Network</a></li>
+              <li><a class="disabled" aria-disabled="true" tabindex="-1">Remote server</a></li>
+            </ul>
+          </li>
+          <li><a href="/faq/" class="nav-link">FAQ</a></li>
         </ul>
       </nav>
     </header>
@@ -1208,5 +1233,6 @@
   });
 })();
 </script>
+<script src="/smoom-nav.js"></script>
 </body>
 </html>
