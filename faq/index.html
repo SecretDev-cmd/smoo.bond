@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>SMOO FAQ</title>
+  <meta name="description" content="Frequently asked questions about Super Mario Odyssey: Online." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SMOO FAQ" />
+  <meta property="og:description" content="Frequently asked questions about Super Mario Odyssey: Online." />
+  <meta property="og:image" content="/img/logo.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="/smoom-home.css" />
+  <link rel="stylesheet" href="/smoom-pages.css" />
+  <noscript><style>.collapse { display: block; }</style></noscript>
+</head>
+<body class="smoo-dark-mode">
+  <div class="app">
+
+    <header class="smoo-header">
+      <a href="/" class="logo" aria-label="Home">
+        <img
+          alt="Super Mario Odyssey: Online Logo"
+          title="Super Mario Odyssey: Online"
+          src="/img/logo.png"
+          width="144" height="128" />
+      </a>
+
+      <nav class="smoo-nav" aria-label="Main">
+        <button class="nav-toggle" id="navToggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-icon"></span>
+        </button>
+
+        <ul class="nav-list" id="navigation">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/servers/" class="nav-link">Servers</a></li>
+          <li class="dropdown">
+            <div class="nav-split">
+              <a href="/play/" class="nav-link split-main">Play</a>
+              <button type="button" class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Play menu"></button>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="/play/#hide-and-seek">Hide &amp; Seek rules</a></li>
+              <li><a href="/play/#switch">Play on Switch</a></li>
+              <li><a href="/play/#ryujinx">Play with Ryujinx</a></li>
+              <li><a href="/play/#build">Build the mod</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="nav-split">
+              <a href="/host/" class="nav-link split-main">Host</a>
+              <button type="button" class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Host menu"></button>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="/host/#binary">Run with binary files</a></li>
+              <li><a href="/host/#docker">Run with <code>docker-compose</code></a></li>
+              <li><a href="/host/#settings">Edit <code>settings.json</code></a></li>
+              <li><a href="/host/#commands">Interactive commands</a></li>
+              <li><a href="/host/#discord">Discord bot</a></li>
+              <li><a href="/host/#router">Behind a router</a></li>
+              <li><a href="/host/#vpn">Virtual Private Network</a></li>
+              <li><a class="disabled" aria-disabled="true" tabindex="-1">Remote server</a></li>
+            </ul>
+          </li>
+          <li><a href="/faq/" class="nav-link active" aria-current="page">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="faq-view">
+    <div class="card-stack smoo-accordion accordion" data-accordion="faq" data-route="1">
+<section class="card smoo-card" id="scroll-101" data-key="101">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-101"><span><svg class="bi bi-controller" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z"/>
+  <path d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27"/>
+</svg> How do I control the mod?</span></header>
+  <div class="collapse" id="collapse-101">
+    <div class="card-body"><div>
+        <p>
+          Main menu:
+          <ul>
+            <li><b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> + <b class="smoo-btn" title="A"><span class="A">A</span></b> - Mod configuration</li>
+          </ul>
+        </p>
+        <p>
+          Pause menu:
+          <ul>
+            <li><b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> + <b class="smoo-btn" title="A"><span class="A">A</span></b> or <b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> + <b class="smoo-btn" title="B"><span class="B">B</span></b> - Mod configuration</li>
+          </ul>
+        </p>
+        <p>
+          In-game:
+          <ul>
+            <li><b class="smoo-btn" title="L"><span class="L">L</span></b> + <b class="smoo-btn" title="D-Pad Left"><svg class="bi bi-arrow-left-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></b> - Enable/disable Hide &amp; Seek [H&amp;S]</li>
+            <li>[H&amp;S] <b class="smoo-btn" title="D-Pad Up"><svg class="bi bi-arrow-up-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+</svg></b> - Switch between hider and seeker</li>
+            <li>[H&amp;S] [Hider] <b class="smoo-btn" title="D-Pad Left"><svg class="bi bi-arrow-left-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></b> - Decrease hiding time</li>
+            <li>[H&amp;S] [Hider] <b class="smoo-btn" title="D-Pad Right"><svg class="bi bi-arrow-right-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></b> - Increase hiding time</li>
+            <li>[H&amp;S] [Hider] <b class="smoo-btn" title="L"><span class="L">L</span></b> + <b class="smoo-btn" title="D-Pad Down"><svg class="bi bi-arrow-down-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+</svg></b> - Reset hiding time</li>
+            <li>[H&amp;S] [Gravity] <b class="smoo-btn" title="L"><span class="L">L</span></b> + <b class="smoo-btn" title="D-Pad Right"><svg class="bi bi-arrow-right-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></b> - Toggle gravity camera</li>
+            <li style="margin-top: 0.75em;"><b class="smoo-btn" title="ZR"><span class="ZR">ZR</span></b> + <b class="smoo-btn" title="D-Pad Up"><svg class="bi bi-arrow-up-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+</svg></b> - Open/close [Debug] menu</li>
+            <li>[Debug] <b class="smoo-btn" title="ZR"><span class="ZR">ZR</span></b> + <b class="smoo-btn" title="D-Pad Left"><svg class="bi bi-arrow-left-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></b> - Previous page</li>
+            <li>[Debug] <b class="smoo-btn" title="ZR"><span class="ZR">ZR</span></b> + <b class="smoo-btn" title="D-Pad Right"><svg class="bi bi-arrow-right-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></b> - Next page</li>
+            <li>[Debug] <b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> + <b class="smoo-btn" title="D-Pad Left"><svg class="bi bi-arrow-left-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></b> - Previous player</li>
+            <li>[Debug] <b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> + <b class="smoo-btn" title="D-Pad Right"><svg class="bi bi-arrow-right-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></b> - Next player</li>
+          </ul>
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-102" data-key="102">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-102"><span><svg class="bi bi-alt" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M1 13.5a.5.5 0 0 0 .5.5h3.797a.5.5 0 0 0 .439-.26L11 3h3.5a.5.5 0 0 0 0-1h-3.797a.5.5 0 0 0-.439.26L5 13H1.5a.5.5 0 0 0-.5.5m10 0a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5"/>
+</svg> How do I change the server I'm connected to?</span></header>
+  <div class="collapse" id="collapse-102">
+    <div class="card-body"><div>
+        By one of these methods:
+        <ul>
+          <li>
+            In the main or pause menu hold <b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> and press <b class="smoo-btn" title="A"><span class="A">A</span></b> to enter the hidden options menu
+            where you can <code>Change Server IP</code>.
+            You have to restart the game after saving the game.
+            <span class="tip-icon" data-tip="&lt;p&gt; With mod version &lt;code&gt;v1.0.0&lt;/code&gt; you&#x27;ll need to manually save the game. &lt;/p&gt; &lt;p&gt; Newer versions of the mod will automatically save the game after changing the IP or port. Just wait a moment until you gain the control back before quitting. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+            
+          </li>
+          <li>
+            Hold/press <b class="smoo-btn" title="ZL"><span class="ZL">ZL</span></b> while starting the game. This will prompt you for the IP.
+            <span class="tip-icon" data-tip="Might not work with older versions of the mod." tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+            
+          </li>
+          <li>
+            Delete the <code>common.bin</code> file in the save directory.
+            <span class="tip-icon" data-tip="&lt;p&gt; Inside the &lt;a class=&quot;intern&quot; href=&quot;/play/#ryujinx&quot;&gt;Ryujinx&lt;/a&gt; emulator you can right click on the game to get to its save directory. &lt;/p&gt; &lt;p&gt; On the &lt;a class=&quot;intern&quot; href=&quot;/play/#switch&quot;&gt;Switch&lt;/a&gt; this file is on the internal storage and not on the SD card, which makes it difficult to delete easily. You could use a save file backup app, to export, modify and then restore the directory. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+            
+          </li>
+        </ul>
+        <div class="alert alert-warning mt-3" role="alert">
+          <svg class="bi bi-exclamation-triangle text-danger" aria-hidden="true" style="font-size:1.5em" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+</svg>
+          <b>Don't use the reconnect feature under any circumstances.</b>
+          <br/>
+          It will likely corrupt your connection to the current server, not connect to the new one, and possibly even crash your game.
+        </div>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-103" data-key="103">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-103"><span><svg class="bi bi-tools" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+</svg> How do I hack my Switch?</span></header>
+  <div class="collapse" id="collapse-103">
+    <div class="card-body"><div>
+        <p>
+          You need an <a class="extern" href="https://ismyswitchpatched.com/" target="_blank" rel="noopener">unpatched</a>
+          older revision of the Nintendo Switch, a microSDXC card, a USB-C connection cable,
+          and a computer (PC/Laptop/Smartphone) or a specific payload injecting device.
+          To make the RCM exploit safer and easier, it's advised to use a RCM jig.
+        </p>
+        <p>
+          Follow this <a class="extern" href="https://nh-server.github.io/switch-guide/" target="_blank" rel="noopener">guide</a>.
+        </p>
+        <hr/>
+        <p>
+          The SD card should be formatted with <code>FAT32</code> and not with <code>exFAT</code>.
+          Because <code>exFAT</code> is known for having issues with the Nintendo Switch causing corrupted files and crashes.
+        </p>
+        <p>
+          For the purpose of
+          <a class="intern" href="/play/#switch">downgrading</a>
+          the game to version <code>1.0.0</code> and/or to
+          <a class="intern" href="/faq/#104">dump</a>
+          the game ROM to be used for emulators,
+          make sure that you back up the console keys
+          using <a class="extern" href="https://google.com/search?q=Lockpick+RCM" target="_blank" rel="noopener">Lockpick RCM</a>.
+        </p>
+        <p>
+          Because you need to connect the Nintendo Switch to the internet to play online, make sure that you properly
+          <a class="extern" href="https://nh-server.github.io/switch-guide/extras/blocking_nintendo/" target="_blank" rel="noopener">block Nintendo servers</a>
+          to
+          <a class="extern" href="https://nh-server.github.io/switch-guide/faq/#is-it-safe-to-use-homebrew-will-i-get-banned" target="_blank" rel="noopener">not get banned</a>.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-104" data-key="104">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-104"><span><svg class="bi bi-download" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+</svg> How do I obtain a SMO ROM for emulators?</span></header>
+  <div class="collapse" id="collapse-104">
+    <div class="card-body"><div>
+        <p>
+          The only <i>legal</i> way to obtain a ROM is by dumping it from your
+          <a class="intern" href="/faq/#103">hacked Nintendo Switch</a>
+          onto the SD card.
+        </p>
+        <hr/>
+        <p>
+          The short version is that you download the latest
+          <a class="extern" href="https://github.com/DarkMatterCore/nxdumptool/releases" target="_blank" rel="noopener">nxdumptool</a>
+          <span class="tip-icon" data-tip="Please keep in mind, that &lt;code&gt;nxdumptool&lt;/code&gt; needs the &lt;a class=&quot;intern&quot; href=&quot;/faq/#103&quot;&gt;console keys&lt;/a&gt; on the SD card in order to work." tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+          
+          and put it onto your SD card. (If it isn't already there. Some guides include it by default.)
+          You then run it on the Nintendo Switch from the homebrew menu in the <code>title override mode</code>.
+          <span class="tip-icon" data-tip="This means that you don&#x27;t start the homebrew menu via the &lt;code&gt;Album&lt;/code&gt;, but instead you hold down &lt;b class=&quot;smoo-btn&quot; title=&quot;R&quot;&gt;&lt;span class=&quot;R&quot;&gt;R&lt;/span&gt;&lt;/b&gt; while launching any game." tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+          
+        </p>
+        <p>
+          Dump game from inserted gamecard:
+          <ul>
+            <li><code>Dump gamecard content</code></li>
+            <li><code>Nintendo Submission Package (NSP) dump</code></li>
+            <li><code>Split output dump (FAT32 support): Yes</code></li>
+            <li><code>Start NSP dump process</code></li>
+          </ul>
+        </p>
+        <p>
+          Dump installed game (eShop):
+          <ul>
+            <li><code>Dump installed SD card / eMMC content</code></li>
+            <li>Select SMO</li>
+            <li><code>Nintendo Submission Package (NSP) dump</code></li>
+            <li><code>Dump base application NSP</code></li>
+            <li><code>Split output dump (FAT32 support): Yes</code></li>
+            <li><code>Remove console specific data: Yes</code></li>
+            <li><code>Generate ticket-less dump: Yes</code></li>
+            <li><code>Start NSP dump process</code></li>
+          </ul>
+        </p>
+        <p>
+          The resulting ROM will be located on the SD card inside <code>/switch/nxdumptool/NSP/</code>.
+          Because the SMO game has a size of over 4 GB the dump will be splitted into two files.
+          On your computer (with a partition that isn't <code>FAT32</code>) you should merge the files together using the
+          <a class="extern" href="https://github.com/emiyl/nxDumpMerger/releases" target="_blank" rel="noopener">nxDumpMerger</a>.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-111" data-key="111">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-111"><span><svg class="bi bi-laptop" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5"/>
+</svg> Which emulator should I use?</span></header>
+  <div class="collapse" id="collapse-111">
+    <div class="card-body"><div>
+        <a class="intern" href="/play/#ryujinx">Ryujinx</a>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-105" data-key="105">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-105"><span><svg class="bi bi-arrow-down-up" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5"/>
+</svg> Am I on SMO version <code>1.0.0</code>?</span></header>
+  <div class="collapse" id="collapse-105">
+    <div class="card-body"><div>
+        <p>
+          When the game is downgraded using the
+          <a class="extern" href="https://github.com/Istador/odyssey-downgrade/releases/latest" target="_blank" rel="noopener">Odyssey Downgrade</a>
+          tool on the Nintendo Switch, the system and the main menu will show the game as being on version <code>1.3.0</code>.
+          This is correct, because technically that is still the installed version.
+        </p>
+        <p>
+          A good indicator if the game is really downgraded to <code>1.0.0</code>
+          and is not running version <code>1.3.0</code> anymore
+          is the <code>"Playing in VR"</code> option in the main menu.
+          When the option is visible that means that the downgrade didn't work correctly
+          and the game is still on version <code>1.3.0</code>.
+        </p>
+        <p>
+          For emulators a real <code>1.0.0</code> ROM is needed, which can be
+          <a class="intern" href="/faq/#104">dumped</a>
+          from the Nintendo Switch.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-106" data-key="106">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-106"><span><svg class="bi bi-box-arrow-right" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z"/>
+  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+</svg> Will the mod work for SMO version <code>1.3.0</code> in the future?</span></header>
+  <div class="collapse" id="collapse-106">
+    <div class="card-body"><div>
+        No, it's too much effort to develop, test, build, release and support different versions of the mod.
+        Also apparently version <code>1.3.0</code> is more difficult to mod than version <code>1.0.0</code> of the game.
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-112" data-key="112">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-112"><span><svg class="bi bi-building" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"/>
+  <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z"/>
+</svg> How do I host my own server?</span></header>
+  <div class="collapse" id="collapse-112">
+    <div class="card-body"><div>
+        <ol>
+          <li>
+            Run the server by one of these options:
+            <ul>
+              <li>
+                <span class="badge badge-success">easy</span>
+                run a <a class="intern" href="/host/#binary">binary file</a> that you download.
+              </li>
+              <li>
+                <span class="badge badge-warning">advanced</span>
+                run a <a class="intern" href="/host/#docker">docker image</a> that is already build for you.
+              </li>
+              <li>
+                <span class="badge badge-danger">hard</span>
+                build the binary file or docker image yourself from the source code.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Allow people to connect to your server.
+            <ul>
+              <li>
+                This is difficult to understand for regular people.
+                Generally speaking there needs to be a connection path between your server and its players that is not blocked
+                (e.g. for security reasons by a router or firewall).
+              </li>
+              <li>
+                It depends on where you run your server and how people can/should connect to it:
+                <ul>
+                  <li>
+                    <span class="badge badge-success">easy</span>
+                    It runs on your PC and only computers within your home network connect to it.
+                  </li>
+                  <li>
+                    <span class="badge badge-warning">advanced</span>
+                    It runs on your PC behind a <a class="intern" href="/host/#router">router</a> with others connecting to your <a class="intern" href="/faq/#107">public IP address</a>.
+                  </li>
+                  <li>
+                    <span class="badge badge-warning">advanced</span>
+                    It runs on your PC which connects to its players via a shared <a class="intern" href="/host/#vpn">VPN</a> network.
+                  </li>
+                  <li>
+                    <span class="badge badge-primary">todo</span>
+                    <span class="badge badge-warning">advanced</span>
+                     It runs on your PC which is connected to a <a class="intern" href="/host/#remote">proxy</a> server or service to which players connect to.
+                  </li>
+                  <li>
+                    <span class="badge badge-primary">todo</span>
+                    <span class="badge badge-danger">hard</span>
+                    It runs on a <a class="intern" href="/host/#remote">remote server</a> somewhere else on the internet.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Information you might also need:
+                <ul>
+                  <li><a class="intern" href="/faq/#107">FAQ: What is a public/private IPv4 address?</a></li>
+                  <li><a class="intern" href="/faq/#109">FAQ: How do I port forward?</a></li>
+                  <li><a class="intern" href="/host/#router">Firewall settings</a>.</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Configure and control your server:
+            <ul>
+              <li>
+                <span class="badge badge-success">easy</span>
+                by modifying the <a class="intern" href="/host/#settings">settings.json</a> file that is automatically created when running the server.
+              </li>
+              <li>
+                <span class="badge badge-success">easy</span>
+                by typing <a class="intern" href="/host/#commands">server commands</a> into the server window that opens up (command line interface).
+              </li>
+              <li>
+                <span class="badge badge-warning">advanced</span>
+                by messaging <a class="intern" href="/host/#commands">server commands</a> to the <a class="intern" href="/host/#discord">discord bot</a> of your server.
+              </li>
+              <li>
+                <span class="badge badge-danger">hard</span>
+                by sending <a class="intern" href="/host/#commands">server commands</a> to the
+                <a class="extern" href="https://github.com/Sanae6/SmoOnlineServer/blob/master/Server/JsonApi/README.md" target="_blank" rel="noopener"><svg class="bi bi-github mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg>JSON API</a>
+                of your server.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-113" data-key="113">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-113"><span><svg class="bi bi-list-ul" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2m0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+</svg> How do I get my server listed as a public server?</span></header>
+  <div class="collapse" id="collapse-113">
+    <div class="card-body"><div>
+        <p>
+          To get listed on the <a class="intern" href="/servers/">server list</a> of this website you can:
+          <ul>
+            <li><a class="extern" href="https://github.com/Istador/smoo.it/blob/public/src/store/servers.ts" target="_blank" rel="noopener"><svg class="bi bi-github mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg>Edit the file</a> yourself and submit a GitHub pull request.</li>
+            <li><a class="extern" href="https://rcl.smoo.it/contact" target="_blank" rel="noopener"><svg class="bi bi-envelope mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+</svg>Contact</a> its developer.</li>
+          </ul>
+        </p>
+        <p>
+          To get listed on the official <a class="extern" href="https://discord.gg/w3TnB899ww" target="_blank" rel="noopener"><svg class="bi bi-discord mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+</svg>Discord</a> server
+          with channels for your server contact a Discord server admin, e.g. <code>Sanae</code>.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-107" data-key="107">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-107"><span><svg class="bi bi-broadcast" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+</svg> What is a public/private IPv4 address?</span></header>
+  <div class="collapse" id="collapse-107">
+    <div class="card-body"><div>
+        <p>
+          <b>TL;DR</b>
+          <ul>
+            <li>
+              When you're hosting a server, then
+              <a class="extern" href="https://www.google.com/search?q=What+is+my+IP" target="_blank" rel="noopener">google "What is my IP"</a>
+              and give your public IP to other players (requires <a class="intern" href="/faq/#109">port forwarding</a>).
+            </li>
+            <li>
+              In an emulator with the server running on the same PC: use <code>127.0.0.1</code> (only valid on your PC).
+            </li>
+            <li>
+              On a Nintendo Switch connecting to the server on your PC: use the private IP of your PC (only valid inside your network).
+            </li>
+            <li>
+              Use <code>0.0.0.0</code> only in the <a class="intern" href="/host/#settings">settings.json</a>.
+            </li>
+          </ul>
+        </p>
+        <hr/>
+        <p>
+          A public IPv4 address is the address under which a computer is accessible on the internet by other computers.
+          Usually your router receives a public IPv4 address from your ISP.
+          But be aware that there are internet subscriptions that don't give you a public IPv4 address but only a IPv6 address (e.g. LTE, DS Lite).
+        </p>
+        <p>
+          Private IPv4 addresses are usually only used inside your home network or for VPN networks and aren't publicly reachable from the internet.
+          You can easily detect them by their leading numbers:
+          <code>10.x.x.x</code>, <code>172.[16-31].x.x</code>, and <code>192.168.x.x</code> are all private addresses.
+        </p>
+        <p>
+          Additionally <code>127.x.x.x</code> is reserved for the local computer.
+          You can input <code>127.0.0.1</code> as the server IP in the <a class="intern" href="/play/">mod</a>,
+          if you're playing with an emulator on the same computer that runs the <a class="intern" href="/host/">server</a>.
+        </p>
+        <p>
+          <code>0.0.0.0</code> usually stands for an invalid IPv4 address.
+          It is only valid in context of hosting a <a class="intern" href="/host/">server</a>
+          inside the <a class="intern" href="/host/#settings">settings.json</a> file to denote listening to connections from all networks.
+          (On some systems it's a workable alias for <code>127.0.0.1</code>, but you should avoid using it.)
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-108" data-key="108">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-108"><span><svg class="bi bi-wifi-off" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M10.706 3.294A12.6 12.6 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4q.946 0 1.852.148zM8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065 8.45 8.45 0 0 1 3.51-1.27zm2.596 1.404.785-.785q.947.362 1.785.907a.482.482 0 0 1 .063.745.525.525 0 0 1-.652.065 8.5 8.5 0 0 0-1.98-.932zM8 10l.933-.933a6.5 6.5 0 0 1 2.013.637c.285.145.326.524.1.75l-.015.015a.53.53 0 0 1-.611.09A5.5 5.5 0 0 0 8 10m4.905-4.905.747-.747q.886.451 1.685 1.03a.485.485 0 0 1 .047.737.52.52 0 0 1-.668.05 11.5 11.5 0 0 0-1.811-1.07M9.02 11.78c.238.14.236.464.04.66l-.707.706a.5.5 0 0 1-.707 0l-.707-.707c-.195-.195-.197-.518.04-.66A2 2 0 0 1 8 11.5c.374 0 .723.102 1.021.28zm4.355-9.905a.53.53 0 0 1 .75.75l-10.75 10.75a.53.53 0 0 1-.75-.75z"/>
+</svg> Does this mod work with IPv6?</span></header>
+  <div class="collapse" id="collapse-108">
+    <div class="card-body"><div>
+        <p>
+          No.
+          The Nintendo Switch doesn't support IPv6 natively.
+          As long as Nintendo doesn't change this, or there's a homebrew network stack that supports it, this will likely never change.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-109" data-key="109">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-109"><span><svg class="bi bi-skip-forward" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M15.5 3.5a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V8.752l-6.267 3.636c-.52.302-1.233-.043-1.233-.696v-2.94l-6.267 3.636C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696L7.5 7.248v-2.94c0-.653.713-.998 1.233-.696L15 7.248V4a.5.5 0 0 1 .5-.5M1 4.633v6.734L6.804 8zm7.5 0v6.734L14.304 8z"/>
+</svg> How do I port forward?</span></header>
+  <div class="collapse" id="collapse-109">
+    <div class="card-body"><div>
+        <p>This depends on your specific router model.</p>
+        <p>
+          Usually you open the web interface of your router, login there, and search for an option that let you configure port forwarding.
+          Common router addresses are:
+          <ul>
+            <li><a class="extern" href="http://192.168.0.1/" target="_blank" rel="noopener">192.168.0.1</a></li>
+            <li><a class="extern" href="http://192.168.1.1/" target="_blank" rel="noopener">192.168.1.1</a></li>
+          </ul>
+          If you can't figure it out, check the outside of your router (usually there's a sticker on it),
+          consult its manual, or check the default gateway of your network adapter.
+        </p>
+        <p>
+          Once you found the settings, you want to configure:
+          <ul>
+            <li>Port: <code>1027</code> (internal &amp; external)</li>
+            <li>Protocol: <code>TCP</code></li>
+          </ul>
+          Additionally you also need to say to which computer inside your network the port shall be forwarded to.
+          You want to forward the port to the computer that runs the <a class="intern" href="/host/">server</a>.
+          Most routers will give you the option to select one of the currently connected devices.
+          (Or you have already selected it to reach the port forwarding settings.)
+          But sometimes you need to provide its private IP address manually.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-114" data-key="114">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-114"><span><svg class="bi bi-arrows-angle-contract" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M.172 15.828a.5.5 0 0 0 .707 0l4.096-4.096V14.5a.5.5 0 1 0 1 0v-3.975a.5.5 0 0 0-.5-.5H1.5a.5.5 0 0 0 0 1h2.768L.172 15.121a.5.5 0 0 0 0 .707M15.828.172a.5.5 0 0 0-.707 0l-4.096 4.096V1.5a.5.5 0 1 0-1 0v3.975a.5.5 0 0 0 .5.5H14.5a.5.5 0 0 0 0-1h-2.768L15.828.879a.5.5 0 0 0 0-.707"/>
+</svg> How do I join the game of my friend?</span></header>
+  <div class="collapse" id="collapse-114">
+    <div class="card-body"><div>
+        <p>You don't.</p>
+        <p>The SMOO mod does not contain a component that could connect games directly.</p>
+        <p>Instead the mod needs to connect to a server, which is its own piece of software separate from the mod.</p>
+        <p>
+          You can <a class="intern" href="/faq/#112">host your own private server</a> to which you and your friend(s) connect to (which might be a bit difficult).
+          Or y'all can connect to one of the <a class="intern" href="/servers/">public servers</a> that are hosted voluntarily for everyone to use.
+        </p>
+      </div></div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-110" data-key="110">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-110"><span><svg class="bi bi-question-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+</svg> Something doesn't work / Where do I get help?</span></header>
+  <div class="collapse" id="collapse-110">
+    <div class="card-body"><div>
+        <p>
+          Make sure that you read all instructions on this website thoroughly before bothering other people.
+        </p>
+        <p>
+          If you still can't figure it out or have problems, head over to the
+          <a class="extern" href="https://discord.gg/w3TnB899ww" target="_blank" rel="noopener">official Discord server</a>.
+          It's an active community of people that might be able and willing to help you in one of the help channels.
+        </p>
+        <p>
+          The issues sections of the GitHub projects for the
+          <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/issues" target="_blank" rel="noopener">mod</a>
+          and the
+          <a class="extern" href="https://github.com/Sanae6/SmoOnlineServer/issues" target="_blank" rel="noopener">server</a>
+          are NOT for support,
+          but for submitting actual bugs and feature requests.
+          When submitting a bug, make sure that you describe it in detail
+          and that you provide log files and/or crash reports if available.
+        </p>
+      </div></div>
+  </div>
+</section>
+    </div>
+    </main>
+
+    <footer class="smoo-footer">
+      <nav>
+        <a class="extern" href="https://discord.gg/w3TnB899ww" target="_blank" rel="noopener">Discord</a>
+        <a class="extern" href="https://github.com/Istador/smoo.it" target="_blank" rel="noopener">GitHub</a>
+        <label class="dark-mode">
+          <input type="checkbox" id="darkToggle" checked /> Dark mode
+        </label>
+      </nav>
+    </footer>
+
+  </div>
+
+  <script src="/smoom-home.js"></script>
+  <script src="/smoom-nav.js"></script>
+  <script src="/smoom-pages.js"></script>
+</body>
+</html>
