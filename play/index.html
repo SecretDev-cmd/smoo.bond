@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Playing the SMOO Mod</title>
+  <meta name="description" content="How to play Super Mario Odyssey: Online on a Nintendo Switch or with an emulator, plus the Hide &amp; Seek rules." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Playing the SMOO Mod" />
+  <meta property="og:description" content="How to play Super Mario Odyssey: Online on a Nintendo Switch or with an emulator, plus the Hide &amp; Seek rules." />
+  <meta property="og:image" content="/img/logo.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <link rel="stylesheet" href="/smoom-home.css" />
+  <link rel="stylesheet" href="/smoom-pages.css" />
+  <noscript><style>.collapse { display: block; }</style></noscript>
+</head>
+<body class="smoo-dark-mode">
+  <div class="app">
+
+    <header class="smoo-header">
+      <a href="/" class="logo" aria-label="Home">
+        <img
+          alt="Super Mario Odyssey: Online Logo"
+          title="Super Mario Odyssey: Online"
+          src="/img/logo.png"
+          width="144" height="128" />
+      </a>
+
+      <nav class="smoo-nav" aria-label="Main">
+        <button class="nav-toggle" id="navToggle" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="nav-toggle-icon"></span>
+        </button>
+
+        <ul class="nav-list" id="navigation">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/servers/" class="nav-link">Servers</a></li>
+          <li class="dropdown">
+            <div class="nav-split">
+              <a href="/play/" class="nav-link split-main active" aria-current="page">Play</a>
+              <button type="button" class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Play menu"></button>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="/play/#hide-and-seek">Hide &amp; Seek rules</a></li>
+              <li><a href="/play/#switch">Play on Switch</a></li>
+              <li><a href="/play/#ryujinx">Play with Ryujinx</a></li>
+              <li><a href="/play/#build">Build the mod</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <div class="nav-split">
+              <a href="/host/" class="nav-link split-main">Host</a>
+              <button type="button" class="split-caret" aria-haspopup="true" aria-expanded="false" aria-label="Host menu"></button>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="/host/#binary">Run with binary files</a></li>
+              <li><a href="/host/#docker">Run with <code>docker-compose</code></a></li>
+              <li><a href="/host/#settings">Edit <code>settings.json</code></a></li>
+              <li><a href="/host/#commands">Interactive commands</a></li>
+              <li><a href="/host/#discord">Discord bot</a></li>
+              <li><a href="/host/#router">Behind a router</a></li>
+              <li><a href="/host/#vpn">Virtual Private Network</a></li>
+              <li><a class="disabled" aria-disabled="true" tabindex="-1">Remote server</a></li>
+            </ul>
+          </li>
+          <li><a href="/faq/" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="play-view">
+
+    <div class="card-group-columns">
+      <section class="card">
+        <header class="card-header">Requirements</header>
+        <div class="card-body">
+          <ul class="ul-icons">
+          <li><svg class="bi bi-tools" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.27 3.27a.997.997 0 0 0 1.414 0l1.586-1.586a.997.997 0 0 0 0-1.414l-3.27-3.27a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3q0-.405-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814zm9.646 10.646a.5.5 0 0 1 .708 0l2.914 2.915a.5.5 0 0 1-.707.707l-2.915-2.914a.5.5 0 0 1 0-.708M3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+</svg> Hacked Nintendo Switch</li>
+          <li><svg class="bi bi-sd-card" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M6.25 3.5a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0zm2 0a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0zm2 0a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0zm2 0a.75.75 0 0 0-1.5 0v2a.75.75 0 0 0 1.5 0z"/>
+  <path fill-rule="evenodd" d="M5.914 0H12.5A1.5 1.5 0 0 1 14 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5V3.914c0-.398.158-.78.44-1.06L4.853.439A1.5 1.5 0 0 1 5.914 0M13 1.5a.5.5 0 0 0-.5-.5H5.914a.5.5 0 0 0-.353.146L3.146 3.561A.5.5 0 0 0 3 3.914V14.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5z"/>
+</svg> Super Mario Odyssey version 1.0.0</li>
+          <li><svg class="bi bi-wifi" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.44 12.44 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.52.52 0 0 0 .668.05A11.45 11.45 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049"/>
+  <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.46 9.46 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065m-2.183 2.183c.226-.226.185-.605-.1-.75A6.5 6.5 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.5 5.5 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091zM9.06 12.44c.196-.196.198-.52-.04-.66A2 2 0 0 0 8 11.5a2 2 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+</svg> Internet connection</li>
+          </ul>
+        </div>
+      </section>
+      <section class="card">
+        <header class="card-header">Links</header>
+        <div class="card-body">
+          <div class="btn-group-vertical">
+          <a class="btn btn-outline-secondary" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline" target="_blank" rel="noopener"><svg class="bi bi-github" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg> Mod GitHub [Official]</a>
+          <a class="btn btn-outline-secondary" href="https://gamebanana.com/mods/384214" target="_blank" rel="noopener"><svg class="bi bi-joystick" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M10 2a2 2 0 0 1-1.5 1.937v5.087c.863.083 1.5.377 1.5.726 0 .414-.895.75-2 .75s-2-.336-2-.75c0-.35.637-.643 1.5-.726V3.937A2 2 0 1 1 10 2"/>
+  <path d="M0 9.665v1.717a1 1 0 0 0 .553.894l6.553 3.277a2 2 0 0 0 1.788 0l6.553-3.277a1 1 0 0 0 .553-.894V9.665c0-.1-.06-.19-.152-.23L9.5 6.715v.993l5.227 2.178a.125.125 0 0 1 .001.23l-5.94 2.546a2 2 0 0 1-1.576 0l-5.94-2.546a.125.125 0 0 1 .001-.23L6.5 7.708l-.013-.988L.152 9.435a.25.25 0 0 0-.152.23"/>
+</svg> Gamebanana [Outdated]</a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="card-stack" data-accordion="play" data-route="1">
+<section class="card smoo-card" id="scroll-hide-and-seek" data-key="hide-and-seek">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-hide-and-seek"><img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" /> <b>Hide &amp; Seek</b> game mode</header>
+  <div class="collapse" id="collapse-hide-and-seek">
+    <div class="card-body">
+    
+    <p>
+      The <b>Hide &amp; Seek</b> game mode was developed by
+      <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/" target="_blank" rel="noopener"><svg class="bi bi-github mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+</svg>CraftyBoss</a>
+      and released in 2022 with the first version <code>v1.0.0</code> of the official mod.
+    </p>
+    <p>
+      A kingdom that hasn't been played in is chosen randomly for a new round.
+      Some of the players that haven't started a round as a <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seeker before are chosen randomly to be <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers for this round.
+      (For fairness reasons the amount of <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers should be the same in all rounds or might be adjusted to the size of the kingdom.)
+    </p>
+    <p>
+      The <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers go into the Odyssey and start to count down for 60 or more seconds.
+      The <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hiders run away and look for a place to hide in.
+      After the time is up, the <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hiders switch to hider mode (which will unpause their timer) and the <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers start seeking them.
+      <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hiders can move around at any time whenever they want and aren't limited to the first minute.
+      Only <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers are allowed to use the checkpoints to warp around.
+    </p>
+    <p>
+      If a <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seeker touches a <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider, the <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider dies.
+      When a <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider dies their timer pauses and they become <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers.
+      Dying within the first few minutes of a round is forgivable, unless while being chased by a <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seeker.
+      Once everyone has become a <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seeker, the round is over.
+      When everyone has started a round as a <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seeker, the game is over and the player with the highest time wins.
+    </p>
+    <p>
+      After some time in a round - usually every two minutes - <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hiders are obligated to give the <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers a hint where they are.
+      <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seekers choose what kind of hint to provide.
+      Starting with more general hints and as the round goes on more specific hints.
+      The hint has to be a truthful statement at the moment given.
+      Even if a second later it isn't true anymore.
+      Common hints are:
+      <br/>
+      <ul>
+        <li>Being in a sub-area or in the overworld.</li>
+        <li>Top or bottom half of the in-game map.</li>
+        <li>Left or right half of the in-game map.</li>
+        <li>Cell coordinates of the in-game map (e.g. <code>C2</code>).</li>
+        <li>Drawing a picture that hints to where they are.</li>
+        <li>Sending a cutout of a screenshot.</li>
+      </ul>
+    </p>
+    <p>
+      Places that are forbidden to hide in:
+      <ul>
+        <li>Other kingdoms.</li>
+        <li>Inside the Odyssey.</li>
+        <li>Inside captures (using static captures like power lines temporarily to move somewhere is fine).</li>
+        <li>Inside something without collision that occludes the player completely (e.g. trees).</li>
+        <li>At a position where an object was located at before interacting with it (e.g. crates or chests).</li>
+        <li>In areas inaccessible by others (e.g. rooms only accessible by wearing specific costumes).</li>
+        <li>In special areas (e.g. the boss fight paintings in <code>Mushroom Kingdom</code> or race events like Koopa Freerunning).</li>
+        <li>Out of bounds.</li>
+      </ul>
+    </p>
+    <p>
+      Kingdom specific rules:
+      <ul>
+        <li>
+          <code>Deep Woods</code> is not considered to be a part of <code>Wooded Kingdom</code>.
+          Accidentally falling into it counts as dying.
+          It might be used as its own kingdom to play a round in.
+        </li>
+        <li>
+          In <code>Snow Kingdom</code> the hint for sub-area or not is extended by a third option: <code>Shiveria</code>.
+          This option aggregates all (sub-)areas that are accessible after falling down the hole.
+        </li>
+      </ul>
+    </p>
+    <p>
+      Controls:
+      <ul>
+        <li><b class="smoo-btn" title="L"><span class="L">L</span></b> + <b class="smoo-btn" title="D-Pad Left"><svg class="bi bi-arrow-left-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></b> - Enable/disable the Hide &amp; Seek game mode.</li>
+        <li><b class="smoo-btn" title="D-Pad Up"><svg class="bi bi-arrow-up-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+</svg></b> - Switch between <img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider and <img class="smoo-role-icon" src="/assets/tag/seek.png" alt="role icon" />Seeker.</li>
+        <li>[<img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider] <b class="smoo-btn" title="D-Pad Left"><svg class="bi bi-arrow-left-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+</svg></b> - Decrease hiding time.</li>
+        <li>[<img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider] <b class="smoo-btn" title="D-Pad Right"><svg class="bi bi-arrow-right-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></b> - Increase hiding time.</li>
+        <li>[<img class="smoo-role-icon" src="/assets/tag/hide.png" alt="role icon" />Hider] <b class="smoo-btn" title="L"><span class="L">L</span></b> + <b class="smoo-btn" title="D-Pad Down"><svg class="bi bi-arrow-down-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+</svg></b> - Reset hiding time.</li>
+        <li>[Gravity] <b class="smoo-btn" title="L"><span class="L">L</span></b> + <b class="smoo-btn" title="D-Pad Right"><svg class="bi bi-arrow-right-circle" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></b> - Toggle gravity camera.</li>
+      </ul>
+    </p>
+    <p>
+      Game mode settings in the Hide &amp; Seek config menu:
+      <ul>
+        <li><b>H&amp;S Gravity</b>: The players gravity changes depending on the ground Mario stands on. E.g. to run on walls.</li>
+        <li><b>Mario Collision</b>: Prevents running trough other players.</li>
+        <li><b>Mario Bounce</b>: Jumping onto other players bounces the own player upwards.</li>
+        <li><b>Cappy Collision</b>: Prevents running trough Cappy from other players.</li>
+        <li><b>Cappy Bounce</b>: Jumping onto Cappy from other players bounces the own player upwards.</li>
+      </ul>
+    </p>
+  </div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-switch" data-key="switch">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-switch">Play on a hacked <code>Nintendo Switch</code> console</header>
+  <div class="collapse" id="collapse-switch">
+    <div class="card-body">
+    
+
+    <!-- Hack the Nintendo Switch -->
+    <h5>Hack the Nintendo Switch</h5>
+    <p>
+      In order to install any custom software on the Nintendo Switch, it first needs to be
+      <a class="intern" href="/faq/#103">hacked</a>.
+      If you have already done this in the past,
+      make sure to check out the instructions anyway,
+      so you don't miss out on anything important.
+    </p>
+
+    <!-- Downgrade Super Mario Odyssey to 1.0.0 -->
+    <h5>Downgrade Super Mario Odyssey to 1.0.0</h5>
+    <p>
+      The multiplayer mod does not work with SMO version <code>1.3.0</code>, but requires version <code>1.0.0</code>.
+      If you have that version installed already you're done with this step.
+      But even if you are on version <code>1.0.0</code>
+      it's advisable to upgrade to version <code>1.3.0</code> anyway and downgrade the game in the following way.
+      Because then the operation system of the Nintendo Switch won't complain on every software start
+      that there is a new game update available that you should install.
+    </p>
+    <p>
+      To conveniently downgrade, there is the <code>Odyssey Downgrade</code> tool made by Shadów.
+      Unlike other tools (like <code>Tinfoil</code>, <code>Goldleaf</code>, <code>dbi</code>, ...) that mess around with software installations (which might get you a console ban)
+      it makes a dump of the base game and applies it as a mod to the game.
+      That way the installed game will stay on version <code>1.3.0</code> but it will launch as <code>1.0.0</code>.
+    </p>
+    <div class="alert alert-warning" role="alert">
+      <p>
+        <svg class="bi bi-exclamation-triangle text-danger" aria-hidden="true" style="font-size:1.5em" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z"/>
+  <path d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z"/>
+</svg>
+        Using <code>exFAT</code> instead of <code>FAT32</code> for the SD card will likely result in a corrupted downgrade that will crash the game or console.
+      </p>
+      <p>
+        A prerequisite for the downgrader is that you already
+        backed up the <code>console keys</code> with <code>Lockpick_RCM</code>,
+        which you should have already done when <a class="intern" href="/faq/#103">hacking the console</a> for safety reasons.
+      </p>
+    </div>
+    <p>
+      <ul>
+        <li>
+          Download the <code>odyssey_downgrade.nro</code> file from the
+          <a class="extern" href="https://github.com/Istador/odyssey-downgrade/releases/latest" target="_blank" rel="noopener">latest release</a>
+          of the downgrader in the assets list.
+        </li>
+        <li>
+          Put the file onto your SD card into the <code>/switch/</code> directory.
+        </li>
+        <li>
+          Launch the homebrew menu by opening the <code>Album</code>.
+          Select the <code>Odyssey Downgrade</code> app
+          from the list and launch it by pressing <b class="smoo-btn" title="A"><span class="A">A</span></b>.
+        </li>
+        <li>
+          In the simple menu that opens choose <code>Add downgrade</code> and press <b class="smoo-btn" title="A"><span class="A">A</span></b>.
+          This will dump the game which takes about 2-3 minutes and requires about <code>5.2 GiB</code> of space on the SD card.
+          Once that is done press <b class="smoo-btn" title="B"><span class="B">B</span></b> to get back to the menu.
+        </li>
+        <li>
+          Choose <code>Add patch</code> and press <b class="smoo-btn" title="A"><span class="A">A</span></b>.
+          This second step only takes a brief moment after which
+          you can exit the <code>Odyssey Downgrade</code> app by pressing <b class="smoo-btn" title="B"><span class="B">B</span></b> twice.
+          If you're using a cartridge, then you'll need to remove and reinsert the cartridge now before you can start the game.
+        </li>
+        <li>
+          <a class="intern" href="/faq/#105">Now go check</a> that the game is on version <code>1.0.0</code>.
+        </li>
+      </ul>
+    </p>
+    <p>
+      If you ever want to remove the downgrade,
+      simply launch the <code>Odyssey Downgrade</code> app again, and choose <code>Remove downgrade</code> and <code>Remove patch</code>
+      to get back to version <code>1.3.0</code>.
+    </p>
+
+    <!-- Install the Super Mario Odyssey Online mod -->
+    <h5>Install the Super Mario Odyssey Online mod</h5>
+    <p>
+      <b>Step 1</b>:
+      Download the
+      <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/latest" target="_blank" rel="noopener">latest release</a>
+      of the mod from the assets list.
+      The filename you need ends with <code>_for_Switch.zip</code>.
+    </p>
+    <p>
+      <b>Step 2</b>:
+      Extract the downloaded <code>.zip</code> file to receive an <code>atmosphere</code> folder,
+      which you need to copy to the root directory of the SD card.
+      Ignore the <code>subsdk1.elf</code> file.
+    </p>
+    <p>
+      Please notice, that there should already be an <code>atmosphere</code> folder on the SD card.
+      The folder from the mod does not replace the existing directory, but is meant to be merged with it.
+      Existing directories and files should be overwritten.
+    </p>
+    <p>
+      If you ever want to uninstall the mod (why?!) look at the file structure from the <code>.zip</code> file and remove all the files manually.
+      <span class="tip-icon" data-tip="At the time of writing, the following folders and file can be deleted: &lt;ul&gt; &lt;li&gt;&lt;code class=&quot;text-danger&quot;&gt;/atmosphere/contents/0100000000010000/exefs/&lt;/code&gt;&lt;/li&gt; &lt;li&gt;&lt;code class=&quot;text-danger&quot;&gt;/atmosphere/contents/0100000000010000/romfs/&lt;/code&gt;&lt;/li&gt; &lt;li&gt;&lt;code class=&quot;text-danger&quot;&gt;/atmosphere/exefs_patches/StarlightBase/3CA12DFAAF9C82DA064D1698DF79CDA1.ips&lt;/code&gt;&lt;/li&gt; &lt;/ul&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+      
+    </p>
+
+    <!-- Test that it works -->
+    <div>
+    <!-- Test that it works -->
+    <h5>Test that it works</h5>
+    <p>
+      When starting the game with the mod for the first time a keyboard dialog should pop up before the main menu asking for a server IP.
+      Choose one of the <a class="intern" href="/servers/">public servers</a> and type in its hostname.
+      <span class="tip-icon" data-tip="&lt;p&gt; The &lt;code&gt;Host&lt;/code&gt; entry in the server list is a convenient alternative to entering the IPv4 address. &lt;/p&gt; &lt;p&gt; It is not possible with the &lt;code&gt;v1.0.0&lt;/code&gt; version of the mod, but requires mod version &lt;code&gt;v1.1.0&lt;/code&gt; or &lt;a class=&quot;extern&quot; href=&quot;https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/latest&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;later&lt;/a&gt;. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+      
+      On version <code>v1.1.0</code> or later of the mod the game will also ask for the server port.
+    </p>
+    <p>
+      If it can't connect to the server it'll briefly show the text <code>Failed to Connect!</code> before it continues to the main menu.
+      Verify that the server is online and that your device is connected to the internet.
+      Try out other public servers to rule out a (temporary) problem with a specific server by
+      <a class="intern" href="/faq/#102">changing the server</a>.
+    </p>
+    <p>
+      When there is no immediate error, then <code>Start</code> a new game or <code>Resume</code> an existing save.
+      Check out the in-game <a class="intern" href="/faq/#101">debug menu</a> for the
+      <code>Client Socket Connection Status: Socket Connected</code> <span class="tip-icon" data-tip="&lt;p&gt; If you are not connected it should read &lt;code&gt;Client Socket Connection Status: Socket unavailable&lt;/code&gt; instead. &lt;/p&gt; &lt;p&gt; Note that the &lt;code&gt;Connection Status: Online&lt;/code&gt; or &lt;code&gt;Connection Status: Offline&lt;/code&gt; further down in the menu is not your own connection status, but the status of the selected puppet slot for other players. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+      at the top of the menu.
+      
+      If there are other players connected to the server, the <code>Total Connected Players</code> count should be above <code>1</code>
+      and they should appear in the player list.
+    </p>
+    <p>
+      <a class="intern" href="/faq/#110">FAQ: Something doesn't work / Where do I get help?</a>
+    </p>
+  </div>
+  </div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-ryujinx" data-key="ryujinx">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-ryujinx">Play with the <code>Ryujinx</code> emulator</header>
+  <div class="collapse" id="collapse-ryujinx">
+    <div class="card-body">
+    
+
+    <!-- Introduction -->
+    <h5>Introduction</h5>
+    <p>
+      This guide assumes that you have already
+      <a class="intern" href="/faq/#103">hacked your Nintendo Switch</a>
+      and have properly installed and set up the
+      <a class="extern" href="https://ryujinx.org/download" target="_blank" rel="noopener">latest</a>
+      Ryujinx version.
+      If you haven't, then please consult the
+      <a class="extern" href="https://github.com/Ryujinx/Ryujinx/wiki/Ryujinx-Setup-&amp;-Configuration-Guide" target="_blank" rel="noopener">Ryujinx Setup &amp; Configuration Guide</a>
+      first.
+    </p>
+    <p>
+      Version <code>v1.0.0</code> of the mod doesn't work with emulators.
+      Use the
+      <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/latest" target="_blank" rel="noopener">latest release</a>
+      instead.
+    </p>
+    <p>
+      The multiplayer mod does not work with SMO version <code>1.3.0</code>, but requires version <code>1.0.0</code>.
+      <br><a class="intern" href="/faq/#104">FAQ: How do I obtain a SMO ROM for emulators?</a>
+    </p>
+
+    <!-- Configure Ryujinx -->
+    <h5>Configure Ryujinx</h5>
+    <p>
+      <ul>
+        <li>
+          Open the <code>Options &gt; Settings</code> in Ryujinx,
+          go to the <code>Network</code> section and check <code>Guest Internet Access/LAN Mode</code>
+          to allow outgoing connections to the internet by the emulator.
+        </li>
+        <li>
+          Ryujinx's default user profile should not be used with SMOO, because the
+          <a class="intern" href="/host/">server</a> uses the profile ID to differentiate between players.
+          <span class="tip-icon" data-tip="The ID of the default profile is always &lt;code&gt;00000000-0000-0001-0000-000000000000&lt;/code&gt;. This causes issues with people connected to the same server who also use Ryujinx with the default profile ID. Public servers usually block this profile ID for that reason." tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+          
+          Open the <code>Options &gt; Manage User Profiles</code> window in Ryujinx and click on the
+          <code>+</code> button to create a new user profile.
+          It'll ask you for the name of the new profile, which will be shown to other players.
+          Once the profile is created, simply click on it to select it.
+        </li>
+      </ul>
+    </p>
+
+    <!-- Install the Super Mario Odyssey Online mod -->
+    <h5>Install the Super Mario Odyssey Online mod</h5>
+    <p>
+      <b>Step 1</b>:
+      Download the
+      <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/latest" target="_blank" rel="noopener">latest release</a>
+      of the mod from the assets list.
+      The filename you need ends with <code>_for_Emulators.zip</code>.
+      <div class="alert alert-info" role="alert">
+        <p>
+          <svg class="bi bi-info-square text-primary" aria-hidden="true" style="font-size:1.5em" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+</svg>
+          If you want to play with Ryujinx on a
+          <b><svg class="fa fa-apple" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg> Mac</b>
+          there is a connectivity issue with the latest version. You should use version
+          <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/v1.3.0" target="_blank" rel="noopener">1.3.0</a>
+          of the mod for now instead.
+          Download the <code>_for_yuzu.zip</code> asset and <b>NOT</b> the <code>_for_Ryujinx.zip</code> asset.
+          <span class="tip-icon" data-tip="&lt;p&gt; Except for the file structure the &lt;code&gt;Ryujinx&lt;/code&gt; and &lt;code&gt;yuzu&lt;/code&gt; builds were identical. &lt;/p&gt; &lt;p&gt; The &lt;code&gt;1.3.0&lt;/code&gt; file structure for &lt;code&gt;Ryujinx&lt;/code&gt; would require more manual steps, that were covered in an &lt;a class=&quot;extern&quot; href=&quot;https://github.com/Istador/smoo.it/commit/c7ef5d2a262cc7597d8a33e26f50fc0455747395&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;svg class=&quot;bi bi-github mr-1&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 16 16&quot;&gt; &lt;path d=&quot;M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8&quot;/&gt; &lt;/svg&gt;older version&lt;/a&gt; of this guide. &lt;/p&gt; &lt;p&gt; It was changed to be identical to &lt;code&gt;yuzu&lt;/code&gt; with &lt;code&gt;1.4.0&lt;/code&gt;. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+          
+        </p>
+      </div>
+    </p>
+    <p>
+      <b>Step 2</b>:
+      In Ryujinx right-click on Super Mario Odyssey and choose <code>Open Mods Directory</code> to open the mod directory.
+      <span class="tip-icon" data-tip="On &lt;svg class=&quot;fa fa-windows&quot; fill=&quot;currentColor&quot; aria-hidden=&quot;true&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 448 512&quot;&gt;&lt;path d=&quot;M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z&quot;/&gt;&lt;/svg&gt; Windows it should be located at &lt;code&gt;%appdata%\Ryujinx\mods\contents\0100000000010000&lt;/code&gt;." tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+      
+    </p>
+    <p>
+      <b>Step 3</b>:
+      Extract the <code>SMOO</code> folder from the <code>.zip</code> file that you downloaded in step 1
+      into the mod directory that was opened at step 2.
+      Ignore the <code>subsdk1.elf</code> file.
+    </p>
+
+    <!-- Test that it works -->
+    <div>
+    <!-- Test that it works -->
+    <h5>Test that it works</h5>
+    <p>
+      When starting the game with the mod for the first time a keyboard dialog should pop up before the main menu asking for a server IP.
+      Choose one of the <a class="intern" href="/servers/">public servers</a> and type in its hostname.
+      <span class="tip-icon" data-tip="&lt;p&gt; The &lt;code&gt;Host&lt;/code&gt; entry in the server list is a convenient alternative to entering the IPv4 address. &lt;/p&gt; &lt;p&gt; It is not possible with the &lt;code&gt;v1.0.0&lt;/code&gt; version of the mod, but requires mod version &lt;code&gt;v1.1.0&lt;/code&gt; or &lt;a class=&quot;extern&quot; href=&quot;https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/latest&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;later&lt;/a&gt;. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+      
+      On version <code>v1.1.0</code> or later of the mod the game will also ask for the server port.
+    </p>
+    <p>
+      If it can't connect to the server it'll briefly show the text <code>Failed to Connect!</code> before it continues to the main menu.
+      Verify that the server is online and that your device is connected to the internet.
+      Try out other public servers to rule out a (temporary) problem with a specific server by
+      <a class="intern" href="/faq/#102">changing the server</a>.
+    </p>
+    <p>
+      When there is no immediate error, then <code>Start</code> a new game or <code>Resume</code> an existing save.
+      Check out the in-game <a class="intern" href="/faq/#101">debug menu</a> for the
+      <code>Client Socket Connection Status: Socket Connected</code> <span class="tip-icon" data-tip="&lt;p&gt; If you are not connected it should read &lt;code&gt;Client Socket Connection Status: Socket unavailable&lt;/code&gt; instead. &lt;/p&gt; &lt;p&gt; Note that the &lt;code&gt;Connection Status: Online&lt;/code&gt; or &lt;code&gt;Connection Status: Offline&lt;/code&gt; further down in the menu is not your own connection status, but the status of the selected puppet slot for other players. &lt;/p&gt;" tabindex="0"><svg class="bi bi-info-circle-fill" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"  viewBox="0 0 16 16">
+  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+</svg></span>
+      at the top of the menu.
+      
+      If there are other players connected to the server, the <code>Total Connected Players</code> count should be above <code>1</code>
+      and they should appear in the player list.
+    </p>
+    <p>
+      <a class="intern" href="/faq/#110">FAQ: Something doesn't work / Where do I get help?</a>
+    </p>
+  </div>
+  </div>
+  </div>
+</section>
+<section class="card smoo-card" id="scroll-build" data-key="build">
+  <header class="card-header collapsed" role="button" tabindex="0" aria-expanded="false" aria-controls="collapse-build">Build the mod from sources</header>
+  <div class="collapse" id="collapse-build">
+    <div class="card-body">
+    
+    <p>
+      You usually shouldn't need to do that, unless you want to take part in developing the mod.
+      The GitHub project of the mod should offer automatic builds for the
+      <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/latest" target="_blank" rel="noopener">latest release</a> and the
+      <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/releases/tag/latest-dev" target="_blank" rel="noopener">development branch</a>.
+    </p>
+    <p>
+      Building it natively requires you to install development software on your computer.
+      Check out the mods <a class="extern" href="https://github.com/CraftyBoss/SuperMarioOdysseyOnline/#building-prerequisites" target="_blank" rel="noopener">readme</a> for details.
+    </p>
+    <p>
+      An easier alternative is to use <a class="extern" href="https://docs.docker.com/get-docker/" target="_blank" rel="noopener">Docker</a>.
+      That way the only required software you need to install on your system is Docker.
+      All other dependencies will not be installed on your system directly but are only downloaded and used sandboxed.
+      The source code of the mod comes with an <code>docker-build.sh</code> script to easily trigger building the mod: <kbd>./docker-build.sh</kbd>.
+      The builded mod artifacts should be in the <code>starlight_patch_100</code> directory afterwards.
+    </p>
+    <p>
+      When building for emulators you'll need to tell it that it's for emulators, by setting the environment variable <kbd>ISEMU=1</kbd>.
+      With the docker script just call it with an additional parameter instead: <kbd>./docker-build.sh 1</kbd>.
+      When switching between emulator and Switch builds, you should delete the temporary <code>build100</code> directory inbetween.
+    </p>
+  </div>
+  </div>
+</section>
+    </div>
+    </main>
+
+    <footer class="smoo-footer">
+      <nav>
+        <a class="extern" href="https://discord.gg/w3TnB899ww" target="_blank" rel="noopener">Discord</a>
+        <a class="extern" href="https://github.com/Istador/smoo.it" target="_blank" rel="noopener">GitHub</a>
+        <label class="dark-mode">
+          <input type="checkbox" id="darkToggle" checked /> Dark mode
+        </label>
+      </nav>
+    </footer>
+
+  </div>
+
+  <script src="/smoom-home.js"></script>
+  <script src="/smoom-nav.js"></script>
+  <script src="/smoom-pages.js"></script>
+</body>
+</html>
