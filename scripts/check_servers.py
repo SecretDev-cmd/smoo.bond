@@ -133,6 +133,7 @@ SERVERS = [
     {"idx": 0, "host": "srdev.bond", "port": 1027, "jsonapi_enabled": True, "max_players": 8},
     {"idx": 1, "host": "90.65.160.139", "port": 1027},
     {"idx": 2, "host": "90.65.160.139", "port": 1028},
+    {"idx": 3, "host": "129.213.139.181", "port": 1027},
 ]
 
 TIMEOUT_SECONDS = 5
