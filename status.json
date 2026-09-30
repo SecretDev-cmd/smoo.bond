@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-30T22:16:06Z",
+  "generated_at": "2026-09-30T22:21:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 351,
+      "latency_ms": 477,
       "players": 0,
       "max_players": 8,
       "settings_info": {
@@ -33,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 21,
+      "latency_ms": 62,
       "country_name": "United States",
       "country_code": "US"
     }
