@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-30T18:51:08Z",
+  "generated_at": "2026-09-30T18:55:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 311,
+      "latency_ms": 495,
       "players": 4,
       "max_players": 8,
       "player_list": [
@@ -20,8 +20,8 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "JizoSwitchExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 6,
+      "latency_ms": 41,
       "country_name": "United States",
       "country_code": "US"
     }
