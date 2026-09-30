@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-09-30T19:11:06Z",
+  "generated_at": "2026-09-30T19:16:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 636,
+      "latency_ms": 277,
       "players": 4,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Thanatos",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
-        },
         {
           "name": "Sanyx",
           "kingdom": "Mushroom Kingdom",
@@ -47,6 +37,16 @@
             "cap": "MarioCaptain",
             "body": "MarioGunman"
           }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
+          }
         }
       ],
       "settings_info": {
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 36,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
