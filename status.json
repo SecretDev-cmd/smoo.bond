@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-09-30T19:46:06Z",
+  "generated_at": "2026-09-30T19:51:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 469,
-      "players": 1,
+      "latency_ms": 523,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Nononx :3",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioMaker"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": true,
@@ -45,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 64,
+      "latency_ms": 42,
       "country_name": "United States",
       "country_code": "US"
     }
