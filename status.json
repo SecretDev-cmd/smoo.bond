@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-09-30T19:41:07Z",
+  "generated_at": "2026-09-30T19:46:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 759,
-      "players": 3,
+      "latency_ms": 469,
+      "players": 1,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "CapAppearExStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
         {
           "name": "Nononx :3",
           "kingdom": "Cascade Kingdom",
@@ -26,16 +16,6 @@
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
-          }
-        },
-        {
-          "name": "Thanatos",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
           }
         }
       ],
@@ -65,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 64,
       "country_name": "United States",
       "country_code": "US"
     }
