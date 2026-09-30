@@ -1,28 +1,18 @@
 {
-  "generated_at": "2026-09-30T18:55:58Z",
+  "generated_at": "2026-09-30T19:01:39Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 495,
+      "latency_ms": 424,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
-          "name": "MeowskX",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        },
-        {
           "name": "Thanatos",
-          "kingdom": "Bowser's Kingdom",
-          "stage": "JizoSwitchExStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -30,22 +20,32 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
           }
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
-            "cap": "MarioNew3DS",
-            "body": "MarioBone"
+            "cap": "MarioPainter",
+            "body": "MarioMaker"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
           }
         }
       ],
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 41,
+      "latency_ms": 68,
       "country_name": "United States",
       "country_code": "US"
     }
