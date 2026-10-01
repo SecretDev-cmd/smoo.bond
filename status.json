@@ -1,10 +1,30 @@
 {
-  "generated_at": "2026-10-01T11:01:50Z",
+  "generated_at": "2026-10-01T11:05:56Z",
   "servers": [
     {
       "idx": 0,
-      "status": "offline",
-      "error": "timed out",
+      "status": "online",
+      "latency_ms": 279,
+      "players": 1,
+      "max_players": 8,
+      "player_list": [
+        {
+          "name": "SrDev",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioGunman",
+            "body": "MarioBone"
+          }
+        }
+      ],
+      "settings_info": {
+        "scenario_merge": false,
+        "shine_sync": true,
+        "persist_shines": false,
+        "capture_sync": true
+      },
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 42,
+      "latency_ms": 7,
       "country_name": "United States",
       "country_code": "US"
     }
