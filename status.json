@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-01T11:41:07Z",
+  "generated_at": "2026-10-01T11:46:07Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 446,
+      "latency_ms": 381,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "SrDev",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Snow Kingdom",
+          "stage": "SnowWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorClassic",
             "body": "MarioSuit"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Snow Kingdom",
+          "stage": "IceWaterBlockExStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Snow Kingdom",
+          "stage": "KillerRailCollisionExStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
@@ -40,9 +40,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Snow Kingdom",
+          "stage": "IceWalkerExStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 26,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
