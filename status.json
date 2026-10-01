@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-01T14:31:25Z",
+  "generated_at": "2026-10-01T14:35:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 289,
+      "latency_ms": 400,
       "players": 2,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -20,8 +20,8 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
