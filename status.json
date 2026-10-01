@@ -1,27 +1,17 @@
 {
-  "generated_at": "2026-10-01T12:16:09Z",
+  "generated_at": "2026-10-01T12:21:10Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 674,
-      "players": 6,
+      "latency_ms": 703,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
-          "name": "SrDev",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorClassic",
-            "body": "MarioSuit"
-          }
-        },
-        {
           "name": "Sanyx",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -30,8 +20,8 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
@@ -40,8 +30,8 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
@@ -50,8 +40,8 @@
         },
         {
           "name": "Laser :3",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -60,8 +50,8 @@
         },
         {
           "name": "Rover_V",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioSuit",
@@ -95,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 51,
       "country_name": "United States",
       "country_code": "US"
     }
