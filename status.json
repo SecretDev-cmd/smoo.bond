@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-01T16:55:53Z",
+  "generated_at": "2026-10-01T17:01:28Z",
   "servers": [
     {
       "idx": 0,
-      "status": "online",
-      "latency_ms": 692,
+      "status": "offline",
+      "error": "[Errno 111] Connection refused",
       "country_name": "France",
       "country_code": "FR"
     },
     {
       "idx": 1,
       "status": "online",
-      "latency_ms": 133,
+      "latency_ms": 154,
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 65,
       "country_name": "United States",
       "country_code": "US"
     }
