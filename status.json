@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01T18:51:06Z",
+  "generated_at": "2026-10-01T18:55:44Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 438,
+      "latency_ms": 675,
       "players": 0,
       "max_players": 8,
       "settings_info": {
@@ -19,7 +19,7 @@
     {
       "idx": 1,
       "status": "online",
-      "latency_ms": 148,
+      "latency_ms": 133,
       "country_name": "France",
       "country_code": "FR"
     },
@@ -33,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 64,
+      "latency_ms": 38,
       "country_name": "United States",
       "country_code": "US"
     }
