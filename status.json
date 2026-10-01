@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-01T11:25:59Z",
+  "generated_at": "2026-10-01T11:33:34Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 472,
+      "latency_ms": 261,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "SrDev",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
-            "cap": "MarioGunman",
-            "body": "MarioBone"
+            "cap": "MarioColorClassic",
+            "body": "MarioSuit"
           }
         },
         {
           "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
@@ -40,9 +40,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 61,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
