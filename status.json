@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-01T13:01:36Z",
+  "generated_at": "2026-10-01T13:05:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 437,
+      "latency_ms": 263,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "Rover_V",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Snow Kingdom",
+          "stage": "SnowWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioSuit",
@@ -20,8 +20,8 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Snow Kingdom",
+          "stage": "SnowWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
@@ -30,8 +30,8 @@
         },
         {
           "name": "Laser :3",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Snow Kingdom",
+          "stage": "SnowWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
