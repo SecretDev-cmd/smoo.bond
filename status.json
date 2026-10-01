@@ -1,38 +1,28 @@
 {
-  "generated_at": "2026-10-01T13:16:12Z",
+  "generated_at": "2026-10-01T13:21:12Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 468,
+      "latency_ms": 449,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "Rover_V",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioSuit",
             "body": "MarioGunman"
           }
         },
         {
-          "name": "MeowskX",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        },
-        {
           "name": "Laser :3",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioSuit"
@@ -40,12 +30,22 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
           }
         }
       ],
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 69,
       "country_name": "United States",
       "country_code": "US"
     }
