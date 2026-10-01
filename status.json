@@ -1,25 +1,17 @@
 {
-  "generated_at": "2026-10-01T19:35:48Z",
+  "generated_at": "2026-10-01T19:40:58Z",
   "servers": [
     {
       "idx": 0,
-      "status": "online",
-      "latency_ms": 466,
-      "players": 0,
-      "max_players": 8,
-      "settings_info": {
-        "scenario_merge": false,
-        "shine_sync": false,
-        "persist_shines": false,
-        "capture_sync": true
-      },
+      "status": "offline",
+      "error": "[Errno 111] Connection refused",
       "country_name": "France",
       "country_code": "FR"
     },
     {
       "idx": 1,
       "status": "online",
-      "latency_ms": 136,
+      "latency_ms": 114,
       "country_name": "France",
       "country_code": "FR"
     },
@@ -33,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 16,
       "country_name": "United States",
       "country_code": "US"
     }
