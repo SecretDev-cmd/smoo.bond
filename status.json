@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-01T11:05:56Z",
+  "generated_at": "2026-10-01T11:11:25Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 279,
-      "players": 1,
+      "latency_ms": 10666,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
@@ -16,6 +16,16 @@
           "costume": {
             "cap": "MarioGunman",
             "body": "MarioBone"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
           }
         }
       ],
@@ -45,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 7,
+      "latency_ms": 63,
       "country_name": "United States",
       "country_code": "US"
     }
