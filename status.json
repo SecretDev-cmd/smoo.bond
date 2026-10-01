@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-01T14:51:11Z",
+  "generated_at": "2026-10-01T14:56:00Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 406,
-      "players": 2,
+      "latency_ms": 626,
+      "players": 1,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
         {
           "name": "Nononx :3",
           "kingdom": "Bowser's Kingdom",
@@ -55,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 66,
+      "latency_ms": 16,
       "country_name": "United States",
       "country_code": "US"
     }
