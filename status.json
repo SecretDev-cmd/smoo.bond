@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-01T11:51:10Z",
+  "generated_at": "2026-10-01T11:55:56Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 517,
-      "players": 4,
+      "latency_ms": 429,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
           "name": "SrDev",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorClassic",
@@ -20,8 +20,8 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -30,8 +30,8 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
@@ -40,8 +40,18 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
+          }
+        },
+        {
+          "name": "Laser :3",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
@@ -75,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
