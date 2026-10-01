@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-01T12:21:10Z",
+  "generated_at": "2026-10-01T12:26:00Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 703,
-      "players": 5,
+      "latency_ms": 424,
+      "players": 4,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
         {
           "name": "Nononx :3",
           "kingdom": "Lake Kingdom",
@@ -85,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
