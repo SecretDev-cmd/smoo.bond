@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-01T12:26:00Z",
+  "generated_at": "2026-10-01T12:31:26Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 424,
-      "players": 4,
+      "latency_ms": 409,
+      "players": 3,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Nononx :3",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioMaker"
-          }
-        },
         {
           "name": "MeowskX",
           "kingdom": "Lake Kingdom",
@@ -40,8 +30,8 @@
         },
         {
           "name": "Rover_V",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioSuit",
@@ -75,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 66,
       "country_name": "United States",
       "country_code": "US"
     }
