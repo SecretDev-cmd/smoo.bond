@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-01T13:46:09Z",
+  "generated_at": "2026-10-01T13:51:11Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 650,
-      "players": 2,
+      "latency_ms": 426,
+      "players": 1,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Laser :3",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioSuit"
-          }
-        },
         {
           "name": "Sanyx",
           "kingdom": "Wooded Kingdom",
@@ -55,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 28,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
