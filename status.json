@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-01T11:16:08Z",
+  "generated_at": "2026-10-01T11:21:07Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 469,
-      "players": 3,
+      "latency_ms": 284,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
@@ -37,6 +37,16 @@
             "cap": "MarioPainter",
             "body": "MarioMaker"
           }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
+          }
         }
       ],
       "settings_info": {
@@ -65,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 16,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
