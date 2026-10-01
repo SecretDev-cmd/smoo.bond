@@ -1,12 +1,20 @@
 {
-  "generated_at": "2026-10-01T05:41:29Z",
+  "generated_at": "2026-10-01T05:46:08Z",
   "servers": [
     {
       "idx": 0,
-      "status": "offline",
-      "error": "[Errno -3] Temporary failure in name resolution",
-      "country_name": "Unknown",
-      "country_code": null
+      "status": "online",
+      "latency_ms": 526,
+      "players": 0,
+      "max_players": 8,
+      "settings_info": {
+        "scenario_merge": false,
+        "shine_sync": true,
+        "persist_shines": false,
+        "capture_sync": true
+      },
+      "country_name": "France",
+      "country_code": "FR"
     },
     {
       "idx": 1,
@@ -25,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 17,
+      "latency_ms": 51,
       "country_name": "United States",
       "country_code": "US"
     }
