@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-01T13:31:29Z",
+  "generated_at": "2026-10-01T13:36:17Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 406,
-      "players": 4,
+      "latency_ms": 331,
+      "players": 2,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Rover_V",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioSuit",
-            "body": "MarioGunman"
-          }
-        },
         {
           "name": "Laser :3",
           "kingdom": "Wooded Kingdom",
@@ -36,16 +26,6 @@
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
           }
         }
       ],
@@ -75,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 65,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
