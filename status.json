@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-01T11:46:07Z",
+  "generated_at": "2026-10-01T11:50:29Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 381,
+      "latency_ms": 592,
       "players": 4,
       "max_players": 8,
       "player_list": [
@@ -21,7 +21,7 @@
         {
           "name": "Sanyx",
           "kingdom": "Snow Kingdom",
-          "stage": "IceWaterBlockExStage",
+          "stage": "SnowWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -41,7 +41,7 @@
         {
           "name": "MeowskX",
           "kingdom": "Snow Kingdom",
-          "stage": "IceWalkerExStage",
+          "stage": "SnowWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
