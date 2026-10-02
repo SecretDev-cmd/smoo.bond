@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T13:25:59Z",
+  "generated_at": "2026-10-02T13:31:27Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 532,
+      "latency_ms": 491,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "AttrapQ-_-",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioClown"
@@ -20,9 +20,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cap Kingdom",
-          "stage": "PushBlockExStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Cap Kingdom",
-          "stage": "PoisonWaveExStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioPeach"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldTowerStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -50,9 +50,9 @@
         },
         {
           "name": "Lort0m",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldTowerStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioSuit",
             "body": "MarioSuit"
@@ -60,9 +60,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "PoisonWaveExStage",
-          "scenario": 4,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 16,
+      "latency_ms": 33,
       "country_name": "United States",
       "country_code": "US"
     }
