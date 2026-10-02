@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-02T18:35:58Z",
+  "generated_at": "2026-10-02T18:41:42Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 424,
+      "latency_ms": 481,
       "players": 2,
       "max_players": 8,
       "player_list": [
@@ -22,7 +22,7 @@
           "name": "Sneaky :3",
           "kingdom": "Cascade Kingdom",
           "stage": "WaterfallWorldHomeStage",
-          "scenario": 1,
+          "scenario": 2,
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioBone"
@@ -55,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 34,
+      "latency_ms": 37,
       "country_name": "United States",
       "country_code": "US"
     }
