@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-10-02T12:21:11Z",
+  "generated_at": "2026-10-02T12:25:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 538,
-      "players": 4,
+      "latency_ms": 818,
+      "players": 2,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "MeowskX",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "SrDev",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioTailCoat"
-          }
-        },
         {
           "name": "AttrapQ-_-",
           "kingdom": "Seaside Kingdom",
@@ -39,13 +19,13 @@
           }
         },
         {
-          "name": "Sanyx",
+          "name": "SrDev",
           "kingdom": "Seaside Kingdom",
           "stage": "SeaWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
+            "cap": "MarioMechanic",
+            "body": "MarioTailCoat"
           }
         }
       ],
@@ -75,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 16,
       "country_name": "United States",
       "country_code": "US"
     }
