@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T21:31:21Z",
+  "generated_at": "2026-10-02T21:35:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 298,
+      "latency_ms": 368,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
