@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T16:46:06Z",
+  "generated_at": "2026-10-02T16:51:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 325,
-      "players": 2,
+      "latency_ms": 506,
+      "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -26,6 +26,16 @@
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioPeach"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioTuxedo"
           }
         }
       ],
@@ -55,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 20,
       "country_name": "United States",
       "country_code": "US"
     }
