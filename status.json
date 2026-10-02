@@ -1,34 +1,12 @@
 {
-  "generated_at": "2026-10-02T11:46:10Z",
+  "generated_at": "2026-10-02T11:51:10Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 454,
-      "players": 2,
+      "latency_ms": 928,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "SrDev",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioTailCoat"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioTuxedo"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -55,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 64,
+      "latency_ms": 52,
       "country_name": "United States",
       "country_code": "US"
     }
