@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T13:01:40Z",
+  "generated_at": "2026-10-02T13:06:35Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 647,
+      "latency_ms": 524,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "AttrapQ-_-",
           "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
+          "stage": "MoonWorldCaptureParadeStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioMechanic",
@@ -41,7 +41,7 @@
         {
           "name": "Laser",
           "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
+          "stage": "MoonWorldCaptureParadeStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioMechanic",
@@ -61,7 +61,7 @@
         {
           "name": "Lort0m",
           "kingdom": "Moon Kingdom",
-          "stage": "MoonAthleticExStage",
+          "stage": "MoonWorldHomeStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioSuit",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 24,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
