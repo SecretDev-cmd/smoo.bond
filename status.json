@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T21:05:58Z",
+  "generated_at": "2026-10-02T21:11:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 452,
-      "players": 3,
+      "latency_ms": 681,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Metro Kingdom",
-          "stage": "ShootingCityExStage",
+          "stage": "CapRotatePackunExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -21,7 +21,7 @@
         {
           "name": "Sanyx",
           "kingdom": "Metro Kingdom",
-          "stage": "ShootingCityExStage",
+          "stage": "CapRotatePackunExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -30,12 +30,22 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Metro Kingdom",
+          "stage": "CapRotatePackunExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
+          }
+        },
+        {
+          "name": "Nononx :3",
+          "kingdom": "Metro Kingdom",
+          "stage": "CapRotatePackunExStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioPirate"
           }
         }
       ],
@@ -65,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 51,
       "country_name": "United States",
       "country_code": "US"
     }
