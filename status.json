@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T12:51:10Z",
+  "generated_at": "2026-10-02T12:55:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 708,
-      "players": 3,
+      "latency_ms": 513,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "AttrapQ-_-",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioMechanic",
@@ -20,8 +20,8 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioMechanic",
@@ -30,12 +30,42 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioSuit"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
+          }
+        },
+        {
+          "name": "Lort0m",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioSuit",
+            "body": "MarioSuit"
           }
         }
       ],
@@ -65,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 58,
+      "latency_ms": 45,
       "country_name": "United States",
       "country_code": "US"
     }
