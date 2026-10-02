@@ -1,12 +1,24 @@
 {
-  "generated_at": "2026-10-02T16:01:38Z",
+  "generated_at": "2026-10-02T16:06:00Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 266,
-      "players": 0,
+      "latency_ms": 293,
+      "players": 1,
       "max_players": 8,
+      "player_list": [
+        {
+          "name": "Sanyx",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
+          }
+        }
+      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -33,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 65,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
