@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-10-02T19:46:09Z",
+  "generated_at": "2026-10-02T19:51:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 575,
-      "players": 1,
+      "latency_ms": 300,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Lort0m",
-          "kingdom": "Bowser's Kingdom",
-          "stage": "SkyWorldHomeStage",
-          "scenario": 255,
-          "costume": {
-            "cap": "MarioSuit",
-            "body": "MarioSuit"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -45,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 34,
+      "latency_ms": 62,
       "country_name": "United States",
       "country_code": "US"
     }
