@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T16:21:10Z",
+  "generated_at": "2026-10-02T16:25:59Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 523,
+      "latency_ms": 280,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "Lift2DExStage",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 62,
       "country_name": "United States",
       "country_code": "US"
     }
