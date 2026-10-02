@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T21:35:58Z",
+  "generated_at": "2026-10-02T21:41:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 368,
+      "latency_ms": 340,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -19,19 +19,9 @@
           }
         },
         {
-          "name": "Sanyx",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
           "name": "Thanatos",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -40,12 +30,22 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
           }
         }
       ],
