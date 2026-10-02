@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T13:36:00Z",
+  "generated_at": "2026-10-02T13:41:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 642,
-      "players": 6,
+      "latency_ms": 462,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
@@ -39,16 +39,6 @@
           }
         },
         {
-          "name": "Lort0m",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioSuit",
-            "body": "MarioSuit"
-          }
-        },
-        {
           "name": "Sanyx",
           "kingdom": "Sand Kingdom",
           "stage": "SandWorldHomeStage",
@@ -56,16 +46,6 @@
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "AttrapQ-_-",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioClown"
           }
         }
       ],
@@ -95,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 54,
+      "latency_ms": 38,
       "country_name": "United States",
       "country_code": "US"
     }
