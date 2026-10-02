@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T21:01:36Z",
+  "generated_at": "2026-10-02T21:05:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 571,
-      "players": 2,
+      "latency_ms": 452,
+      "players": 3,
       "max_players": 8,
       "player_list": [
         {
@@ -26,6 +26,16 @@
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
           }
         }
       ],
@@ -55,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 59,
+      "latency_ms": 3,
       "country_name": "United States",
       "country_code": "US"
     }
