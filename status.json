@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T21:11:09Z",
+  "generated_at": "2026-10-02T21:16:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 681,
+      "latency_ms": 432,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 4,
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -41,8 +41,8 @@
         {
           "name": "Nononx :3",
           "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 4,
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioPirate"
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 65,
       "country_name": "United States",
       "country_code": "US"
     }
