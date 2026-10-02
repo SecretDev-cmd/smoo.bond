@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T12:35:58Z",
+  "generated_at": "2026-10-02T12:41:04Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 363,
-      "players": 5,
+      "latency_ms": 350,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
@@ -47,16 +47,6 @@
             "cap": "MarioMechanic",
             "body": "MarioTuxedo"
           }
-        },
-        {
-          "name": "Thanatos",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
         }
       ],
       "settings_info": {
@@ -85,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
