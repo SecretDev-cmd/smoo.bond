@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T21:21:09Z",
+  "generated_at": "2026-10-02T21:25:57Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 466,
+      "latency_ms": 488,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioHappi",
