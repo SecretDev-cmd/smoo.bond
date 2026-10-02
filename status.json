@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T20:55:55Z",
+  "generated_at": "2026-10-02T21:01:36Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 453,
+      "latency_ms": 571,
       "players": 2,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Bowser's Kingdom",
-          "stage": "SkyWorldHomeStage",
+          "kingdom": "Metro Kingdom",
+          "stage": "ShootingCityExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -20,8 +20,8 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Bowser's Kingdom",
-          "stage": "SkyWorldHomeStage",
+          "kingdom": "Metro Kingdom",
+          "stage": "ShootingCityExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -55,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 66,
+      "latency_ms": 59,
       "country_name": "United States",
       "country_code": "US"
     }
