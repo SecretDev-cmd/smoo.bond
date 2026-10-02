@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T14:51:13Z",
+  "generated_at": "2026-10-02T14:55:57Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 610,
+      "latency_ms": 345,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 16,
+      "latency_ms": 19,
       "country_name": "United States",
       "country_code": "US"
     }
