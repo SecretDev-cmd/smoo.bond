@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T21:16:06Z",
+  "generated_at": "2026-10-02T21:21:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 432,
+      "latency_ms": 466,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 4,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -40,12 +40,12 @@
         },
         {
           "name": "Nononx :3",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
           "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioPirate"
+            "cap": "MarioPainter",
+            "body": "MarioMaker"
           }
         }
       ],
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 65,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
