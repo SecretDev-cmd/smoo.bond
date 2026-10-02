@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T16:16:08Z",
+  "generated_at": "2026-10-02T16:21:10Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 546,
+      "latency_ms": 523,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
           "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "stage": "Lift2DExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 41,
+      "latency_ms": 51,
       "country_name": "United States",
       "country_code": "US"
     }
