@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-02T22:06:02Z",
+  "generated_at": "2026-10-02T22:11:04Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 468,
+      "latency_ms": 377,
       "players": 4,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "MeowskX",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
         {
           "name": "Thanatos",
           "kingdom": "Seaside Kingdom",
@@ -47,6 +37,16 @@
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
           }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioTuxedo"
+          }
         }
       ],
       "settings_info": {
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 34,
+      "latency_ms": 51,
       "country_name": "United States",
       "country_code": "US"
     }
