@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T17:25:57Z",
+  "generated_at": "2026-10-02T17:31:23Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 674,
+      "latency_ms": 285,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioPeach"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -40,9 +40,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 28,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
