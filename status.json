@@ -1,12 +1,24 @@
 {
-  "generated_at": "2026-10-02T20:46:06Z",
+  "generated_at": "2026-10-02T20:51:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 400,
-      "players": 0,
+      "latency_ms": 417,
+      "players": 1,
       "max_players": 8,
+      "player_list": [
+        {
+          "name": "MeowskX",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioMechanic",
+            "body": "MarioColorGold"
+          }
+        }
+      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -33,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
