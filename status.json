@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T13:16:08Z",
+  "generated_at": "2026-10-02T13:21:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 737,
-      "players": 7,
+      "latency_ms": 286,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
@@ -21,27 +21,17 @@
         {
           "name": "MeowskX",
           "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "stage": "RollingExStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioMechanic",
+            "cap": "MarioHappi",
             "body": "MarioTuxedo"
           }
         },
         {
-          "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
           "name": "Laser",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -59,23 +49,23 @@
           }
         },
         {
-          "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
           "name": "Lort0m",
           "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "stage": "CapWorldTowerStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioSuit",
             "body": "MarioSuit"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Cap Kingdom",
+          "stage": "FrogSearchExStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
           }
         }
       ],
@@ -105,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 64,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
