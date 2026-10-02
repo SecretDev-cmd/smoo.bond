@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-02T13:06:35Z",
+  "generated_at": "2026-10-02T13:11:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 524,
-      "players": 6,
+      "latency_ms": 508,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
           "name": "AttrapQ-_-",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldCaptureParadeStage",
-          "scenario": 3,
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioClown"
@@ -20,9 +20,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioTuxedo"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldCaptureParadeStage",
-          "scenario": 3,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioPeach"
@@ -50,22 +50,12 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
-          }
-        },
-        {
-          "name": "Lort0m",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioSuit",
-            "body": "MarioSuit"
           }
         }
       ],
@@ -95,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 67,
       "country_name": "United States",
       "country_code": "US"
     }
