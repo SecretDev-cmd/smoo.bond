@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-02T18:11:08Z",
+  "generated_at": "2026-10-02T18:16:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 608,
+      "latency_ms": 281,
       "players": 3,
       "max_players": 8,
       "player_list": [
@@ -34,8 +34,8 @@
           "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioColorGold"
+            "cap": "MarioPoncho",
+            "body": "MarioPoncho"
           }
         }
       ],
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 25,
+      "latency_ms": 34,
       "country_name": "United States",
       "country_code": "US"
     }
