@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-02T14:25:58Z",
+  "generated_at": "2026-10-02T14:31:24Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 276,
-      "players": 4,
+      "latency_ms": 373,
+      "players": 3,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "MeowskX",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
         {
           "name": "Laser",
           "kingdom": "Sand Kingdom",
@@ -75,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 66,
+      "latency_ms": 65,
       "country_name": "United States",
       "country_code": "US"
     }
