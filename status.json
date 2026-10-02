@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-02T12:55:58Z",
+  "generated_at": "2026-10-02T13:01:40Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 513,
+      "latency_ms": 647,
       "players": 6,
       "max_players": 8,
       "player_list": [
@@ -40,12 +40,12 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
           "scenario": 3,
           "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioSuit"
+            "cap": "MarioMechanic",
+            "body": "MarioPeach"
           }
         },
         {
@@ -61,7 +61,7 @@
         {
           "name": "Lort0m",
           "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
+          "stage": "MoonAthleticExStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioSuit",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 45,
+      "latency_ms": 24,
       "country_name": "United States",
       "country_code": "US"
     }
