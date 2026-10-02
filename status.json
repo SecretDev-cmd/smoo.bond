@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-02T20:51:08Z",
+  "generated_at": "2026-10-02T20:55:55Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 417,
-      "players": 1,
+      "latency_ms": 453,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
@@ -14,8 +14,18 @@
           "stage": "SkyWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioColorGold"
+            "cap": "MarioHappi",
+            "body": "MarioTuxedo"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
           }
         }
       ],
@@ -45,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 66,
       "country_name": "United States",
       "country_code": "US"
     }
