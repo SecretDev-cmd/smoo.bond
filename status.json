@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T18:16:09Z",
+  "generated_at": "2026-10-02T18:21:11Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 281,
-      "players": 3,
+      "latency_ms": 309,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -20,8 +20,8 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -30,12 +30,22 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioPoncho",
+            "cap": "MarioSwimwear",
             "body": "MarioPoncho"
+          }
+        },
+        {
+          "name": "Lort0m",
+          "kingdom": "Bowser's Kingdom",
+          "stage": "SkyWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioSuit",
+            "body": "MarioSuit"
           }
         }
       ],
@@ -65,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 34,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
