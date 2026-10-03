@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-10-03T16:41:07Z",
+  "generated_at": "2026-10-03T16:46:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 544,
-      "players": 1,
+      "latency_ms": 515,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Thanatos",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -45,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 31,
       "country_name": "United States",
       "country_code": "US"
     }
