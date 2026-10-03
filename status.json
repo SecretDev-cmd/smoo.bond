@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T11:26:01Z",
+  "generated_at": "2026-10-03T11:32:01Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 525,
+      "latency_ms": 223,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Thanatos",
           "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 37,
+      "latency_ms": 67,
       "country_name": "United States",
       "country_code": "US"
     }
