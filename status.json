@@ -1,10 +1,30 @@
 {
-  "generated_at": "2026-10-03T10:11:32Z",
+  "generated_at": "2026-10-03T10:16:16Z",
   "servers": [
     {
       "idx": 0,
-      "status": "offline",
-      "error": "[Errno -3] Temporary failure in name resolution",
+      "status": "online",
+      "latency_ms": 4052,
+      "players": 1,
+      "max_players": 8,
+      "player_list": [
+        {
+          "name": "Thanatos",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldCaptureParadeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
+          }
+        }
+      ],
+      "settings_info": {
+        "scenario_merge": false,
+        "shine_sync": false,
+        "persist_shines": false,
+        "capture_sync": true
+      },
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 41,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
