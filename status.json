@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T21:02:24Z",
+  "generated_at": "2026-10-03T21:05:57Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 653,
+      "latency_ms": 666,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Ruined Kingdom",
-          "stage": "DotTowerExStage",
+          "stage": "BossRaidWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -20,8 +20,8 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioAloha",
@@ -30,8 +30,8 @@
         },
         {
           "name": "Ilka-_-",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 16,
+      "latency_ms": 52,
       "country_name": "United States",
       "country_code": "US"
     }
