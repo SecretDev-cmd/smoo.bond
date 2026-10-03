@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T19:41:21Z",
+  "generated_at": "2026-10-03T19:46:07Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
       "latency_ms": 484,
-      "players": 5,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
@@ -20,12 +20,12 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Bowser's Kingdom",
-          "stage": "SkyWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioSwimwear",
-            "body": "MarioPoncho"
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
           }
         },
         {
@@ -35,13 +35,13 @@
           "scenario": 4,
           "costume": {
             "cap": "MarioSuit",
-            "body": "MarioSuit"
+            "body": "MarioTuxedo"
           }
         },
         {
           "name": "Thanatos",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -50,12 +50,22 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
+            "cap": "MarioAloha",
+            "body": "Mario"
+          }
+        },
+        {
+          "name": "Ilka-_-",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioMechanic",
+            "body": "MarioScientist"
           }
         }
       ],
@@ -85,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 41,
+      "latency_ms": 60,
       "country_name": "United States",
       "country_code": "US"
     }
