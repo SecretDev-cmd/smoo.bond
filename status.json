@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T12:01:36Z",
+  "generated_at": "2026-10-03T12:06:13Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 401,
+      "latency_ms": 9608,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Thanatos",
           "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
+          "stage": "RocketFlowerExStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 4,
       "country_name": "United States",
       "country_code": "US"
     }
