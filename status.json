@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-03T14:06:20Z",
+  "generated_at": "2026-10-03T14:11:39Z",
   "servers": [
     {
       "idx": 0,
       "status": "offline",
-      "error": "[Errno -5] No address associated with hostname",
-      "country_name": "Unknown",
-      "country_code": null
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "country_name": "France",
+      "country_code": "FR"
     },
     {
       "idx": 1,
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 26,
+      "latency_ms": 65,
       "country_name": "United States",
       "country_code": "US"
     }
