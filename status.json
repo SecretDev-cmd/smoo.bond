@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-10-03T10:21:16Z",
+  "generated_at": "2026-10-03T10:25:56Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 8475,
-      "players": 1,
+      "latency_ms": 252,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Thanatos",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -45,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 6,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
