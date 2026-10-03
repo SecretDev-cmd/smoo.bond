@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-03T23:51:05Z",
+  "generated_at": "2026-10-03T23:55:55Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 458,
+      "latency_ms": 453,
       "players": 3,
       "max_players": 8,
       "player_list": [
@@ -30,8 +30,8 @@
         },
         {
           "name": "ManiacDoc",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioDoctor",
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 20,
       "country_name": "United States",
       "country_code": "US"
     }
