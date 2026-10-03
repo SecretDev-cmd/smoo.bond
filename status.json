@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T18:51:10Z",
+  "generated_at": "2026-10-03T18:55:59Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 524,
-      "players": 1,
+      "latency_ms": 520,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
@@ -16,6 +16,16 @@
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
           }
         }
       ],
