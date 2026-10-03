@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-03T11:46:06Z",
+  "generated_at": "2026-10-03T11:51:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 578,
+      "latency_ms": 710,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Thanatos",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 31,
+      "latency_ms": 16,
       "country_name": "United States",
       "country_code": "US"
     }
