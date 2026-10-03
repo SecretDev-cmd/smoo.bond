@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T23:01:58Z",
+  "generated_at": "2026-10-03T23:05:54Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 433,
+      "latency_ms": 341,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioAloha",
@@ -20,8 +20,8 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -30,8 +30,8 @@
         },
         {
           "name": "ManiacDoc",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioDoctor",
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 24,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
