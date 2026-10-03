@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T20:01:31Z",
+  "generated_at": "2026-10-03T20:06:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 406,
+      "latency_ms": 391,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "stage": "PushBlockExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -20,8 +20,8 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -41,7 +41,7 @@
         {
           "name": "Ilka-_-",
           "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "stage": "PushBlockExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -50,8 +50,8 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWario",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 20,
       "country_name": "United States",
       "country_code": "US"
     }
