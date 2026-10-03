@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T21:16:06Z",
+  "generated_at": "2026-10-03T21:21:10Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 416,
-      "players": 6,
+      "latency_ms": 624,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
@@ -29,26 +29,6 @@
           }
         },
         {
-          "name": "Ilka-_-",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "Mario"
-          }
-        },
-        {
-          "name": "Laser",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorWario",
-            "body": "MarioBone"
-          }
-        },
-        {
           "name": "Thanatos",
           "kingdom": "Ruined Kingdom",
           "stage": "BossRaidWorldHomeStage",
@@ -66,6 +46,16 @@
           "costume": {
             "cap": "MarioPeach",
             "body": "MarioTuxedo"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Ruined Kingdom",
+          "stage": "BossRaidWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWario",
+            "body": "MarioBone"
           }
         }
       ],
@@ -95,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 31,
+      "latency_ms": 69,
       "country_name": "United States",
       "country_code": "US"
     }
