@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T12:11:22Z",
+  "generated_at": "2026-10-03T12:16:33Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 14177,
+      "latency_ms": 10104,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Thanatos",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldPyramid000Stage",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 60,
+      "latency_ms": 53,
       "country_name": "United States",
       "country_code": "US"
     }
