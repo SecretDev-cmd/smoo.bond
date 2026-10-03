@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T21:57:11Z",
+  "generated_at": "2026-10-03T21:59:42Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 451,
-      "players": 5,
+      "latency_ms": 470,
+      "players": 3,
       "max_players": 8,
       "player_list": [
         {
@@ -16,16 +16,6 @@
           "costume": {
             "cap": "MarioAloha",
             "body": "Mario"
-          }
-        },
-        {
-          "name": "Thanatos",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
           }
         },
         {
@@ -45,16 +35,6 @@
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "Rover_V",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioPeach",
             "body": "MarioTuxedo"
           }
         }
@@ -85,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 3,
       "country_name": "United States",
       "country_code": "US"
     }
