@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T19:46:07Z",
+  "generated_at": "2026-10-03T19:51:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 484,
+      "latency_ms": 353,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -19,39 +19,29 @@
           }
         },
         {
-          "name": "Laser",
+          "name": "Rover_V",
           "kingdom": "Odyssey",
           "stage": "HomeShipInsideStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
-        },
-        {
-          "name": "Rover_V",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioSuit",
+            "cap": "MarioPeach",
             "body": "MarioTuxedo"
           }
         },
         {
           "name": "Thanatos",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
+            "body": "MarioBone"
           }
         },
         {
           "name": "Sanyx",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "PushBlockExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioAloha",
@@ -60,12 +50,22 @@
         },
         {
           "name": "Ilka-_-",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "PoisonWaveExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
-            "body": "MarioScientist"
+            "body": "Mario"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWario",
+            "body": "MarioBone"
           }
         }
       ],
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 60,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
