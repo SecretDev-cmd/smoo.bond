@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-03T22:41:07Z",
+  "generated_at": "2026-10-03T22:46:07Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 511,
+      "latency_ms": 639,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioAloha",
             "body": "Mario"
@@ -20,9 +20,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -30,9 +30,9 @@
         },
         {
           "name": "ManiacDoc",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioDoctor",
             "body": "MarioTailCoat"
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 64,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
