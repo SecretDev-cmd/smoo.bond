@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-03T21:25:58Z",
+  "generated_at": "2026-10-03T21:31:25Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 667,
+      "latency_ms": 556,
       "players": 5,
       "max_players": 8,
       "player_list": [
@@ -35,7 +35,7 @@
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
-            "body": "MarioBone"
+            "body": "MarioColorWaluigi"
           }
         },
         {
@@ -85,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 33,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
