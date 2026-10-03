@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T22:46:07Z",
+  "generated_at": "2026-10-03T22:51:08Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 639,
+      "latency_ms": 355,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
           "scenario": 3,
           "costume": {
             "cap": "MarioAloha",
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
