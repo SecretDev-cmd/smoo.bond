@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-03T20:31:25Z",
+  "generated_at": "2026-10-03T20:36:03Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 317,
+      "latency_ms": 442,
       "players": 6,
       "max_players": 8,
       "player_list": [
@@ -31,7 +31,7 @@
         {
           "name": "Ilka-_-",
           "kingdom": "Cap Kingdom",
-          "stage": "CapWorldTowerStage",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -61,7 +61,7 @@
         {
           "name": "Rover_V",
           "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
+          "stage": "CapWorldTowerStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPeach",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
