@@ -1,32 +1,12 @@
 {
-  "generated_at": "2026-10-03T14:01:37Z",
+  "generated_at": "2026-10-03T14:06:20Z",
   "servers": [
     {
       "idx": 0,
-      "status": "online",
-      "latency_ms": 745,
-      "players": 1,
-      "max_players": 8,
-      "player_list": [
-        {
-          "name": "Thanatos",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
-          }
-        }
-      ],
-      "settings_info": {
-        "scenario_merge": false,
-        "shine_sync": false,
-        "persist_shines": false,
-        "capture_sync": true
-      },
-      "country_name": "France",
-      "country_code": "FR"
+      "status": "offline",
+      "error": "[Errno -5] No address associated with hostname",
+      "country_name": "Unknown",
+      "country_code": null
     },
     {
       "idx": 1,
@@ -45,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 26,
       "country_name": "United States",
       "country_code": "US"
     }
