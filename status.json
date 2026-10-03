@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T20:11:05Z",
+  "generated_at": "2026-10-03T20:16:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 693,
+      "latency_ms": 302,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Cap Kingdom",
-          "stage": "PushBlockExStage",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -21,7 +21,7 @@
         {
           "name": "Sanyx",
           "kingdom": "Cap Kingdom",
-          "stage": "PushBlockExStage",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioAloha",
@@ -31,7 +31,7 @@
         {
           "name": "Ilka-_-",
           "kingdom": "Cap Kingdom",
-          "stage": "PushBlockExStage",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
@@ -51,7 +51,7 @@
         {
           "name": "Rover_V",
           "kingdom": "Cap Kingdom",
-          "stage": "PushBlockExStage",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPeach",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 27,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
