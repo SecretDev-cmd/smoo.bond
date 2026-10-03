@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T21:21:10Z",
+  "generated_at": "2026-10-03T21:25:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 624,
+      "latency_ms": 667,
       "players": 5,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -20,8 +20,8 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioAloha",
@@ -30,8 +30,8 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -40,8 +40,8 @@
         },
         {
           "name": "Rover_V",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPeach",
@@ -50,12 +50,12 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Ruined Kingdom",
-          "stage": "BossRaidWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioColorWario",
-            "body": "MarioBone"
+            "cap": "MarioMechanic",
+            "body": "MarioSuit"
           }
         }
       ],
@@ -85,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 69,
+      "latency_ms": 33,
       "country_name": "United States",
       "country_code": "US"
     }
