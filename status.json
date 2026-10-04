@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-04T00:05:54Z",
+  "generated_at": "2026-10-04T00:11:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 335,
-      "players": 5,
+      "latency_ms": 689,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
@@ -26,16 +26,6 @@
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
-          }
-        },
-        {
-          "name": "HyperWG :3",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioShopman"
           }
         },
         {
@@ -85,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 6,
+      "latency_ms": 64,
       "country_name": "United States",
       "country_code": "US"
     }
