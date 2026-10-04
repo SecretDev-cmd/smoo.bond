@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-04T11:25:59Z",
+  "generated_at": "2026-10-04T11:31:23Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 419,
+      "latency_ms": 323,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Metro Kingdom",
-          "stage": "BikeSteelExStage",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
@@ -31,7 +31,7 @@
         {
           "name": "Thanatos",
           "kingdom": "Metro Kingdom",
-          "stage": "BikeSteelExStage",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 65,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
