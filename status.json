@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-04T21:16:07Z",
+  "generated_at": "2026-10-04T21:21:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 686,
-      "players": 1,
+      "latency_ms": 382,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
@@ -15,6 +15,16 @@
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
+            "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "MarioCaptain",
             "body": "MarioPainter"
           }
         }
@@ -45,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 23,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
