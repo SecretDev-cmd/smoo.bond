@@ -1,64 +1,12 @@
 {
-  "generated_at": "2026-10-04T17:11:07Z",
+  "generated_at": "2026-10-04T17:16:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 545,
-      "players": 5,
+      "latency_ms": 678,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldWoodsStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioPainter"
-          }
-        },
-        {
-          "name": "Laser",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldWoodsStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioPainter"
-          }
-        },
-        {
-          "name": "Nononx :3",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldWoodsStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioPainter"
-          }
-        },
-        {
-          "name": "Lort0m",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldWoodsStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioSuit",
-            "body": "MarioSuit"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldWoodsStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioPainter"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -85,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 33,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
