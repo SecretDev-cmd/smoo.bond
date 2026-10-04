@@ -1,10 +1,50 @@
 {
-  "generated_at": "2026-10-04T15:46:09Z",
+  "generated_at": "2026-10-04T15:51:13Z",
   "servers": [
     {
       "idx": 0,
-      "status": "offline",
-      "error": "[Errno 111] Connection refused",
+      "status": "online",
+      "latency_ms": 467,
+      "players": 3,
+      "max_players": 8,
+      "player_list": [
+        {
+          "name": "Laser",
+          "kingdom": "Luncheon Kingdom",
+          "stage": "LavaWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioMechanic",
+            "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Luncheon Kingdom",
+          "stage": "LavaWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioPainter"
+          }
+        }
+      ],
+      "settings_info": {
+        "scenario_merge": false,
+        "shine_sync": false,
+        "persist_shines": false,
+        "capture_sync": true
+      },
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 60,
+      "latency_ms": 35,
       "country_name": "United States",
       "country_code": "US"
     }
