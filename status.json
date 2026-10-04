@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-04T22:31:22Z",
+  "generated_at": "2026-10-04T22:35:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 568,
-      "players": 4,
+      "latency_ms": 518,
+      "players": 1,
       "max_players": 8,
       "player_list": [
         {
@@ -16,36 +16,6 @@
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioPainter"
-          }
-        },
-        {
-          "name": "kleinere_Lyrik",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioUnderwear"
-          }
-        },
-        {
-          "name": "Naps",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioAloha"
           }
         }
       ],
@@ -75,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 32,
       "country_name": "United States",
       "country_code": "US"
     }
