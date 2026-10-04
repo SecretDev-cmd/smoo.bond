@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-04T00:01:40Z",
+  "generated_at": "2026-10-04T00:05:54Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 306,
+      "latency_ms": 335,
       "players": 5,
       "max_players": 8,
       "player_list": [
@@ -40,9 +40,9 @@
         },
         {
           "name": "AJ",
-          "kingdom": "Moon Kingdom",
-          "stage": "MoonWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioAloha",
             "body": "MarioNew3DS"
@@ -85,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
