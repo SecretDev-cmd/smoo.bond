@@ -1,23 +1,13 @@
 {
-  "generated_at": "2026-10-04T13:46:07Z",
+  "generated_at": "2026-10-04T13:51:27Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 245,
+      "latency_ms": 437,
       "players": 4,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Thanatos",
-          "kingdom": "Metro Kingdom",
-          "stage": "SwingSteelExStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioPainter"
-          }
-        },
         {
           "name": "Sanyx",
           "kingdom": "Metro Kingdom",
@@ -31,7 +21,7 @@
         {
           "name": "Laser",
           "kingdom": "Metro Kingdom",
-          "stage": "BikeSteelExStage",
+          "stage": "ElectricWireExStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioMechanic",
@@ -41,10 +31,20 @@
         {
           "name": "MeowskX",
           "kingdom": "Metro Kingdom",
-          "stage": "ShootingCityExStage",
+          "stage": "ElectricWireExStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
+            "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioColorWaluigi",
             "body": "MarioPainter"
           }
         }
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 6,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
