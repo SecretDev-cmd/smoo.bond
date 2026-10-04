@@ -1,27 +1,17 @@
 {
-  "generated_at": "2026-10-04T00:51:06Z",
+  "generated_at": "2026-10-04T00:56:28Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 409,
-      "players": 2,
+      "latency_ms": 330,
+      "players": 1,
       "max_players": 8,
       "player_list": [
         {
-          "name": "MeowskX",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        },
-        {
           "name": "Sanyx",
           "kingdom": "Cap Kingdom",
-          "stage": "PushBlockExStage",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -55,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 18,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
