@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-04T11:46:08Z",
+  "generated_at": "2026-10-04T11:51:10Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 539,
+      "latency_ms": 488,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Sand Kingdom",
-          "stage": "SandWorldSphinxExStage",
+          "stage": "SandWorldKillerExStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioCaptain",
@@ -31,7 +31,7 @@
         {
           "name": "Thanatos",
           "kingdom": "Sand Kingdom",
-          "stage": "SandWorldSphinxExStage",
+          "stage": "SandWorldCostumeStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 61,
+      "latency_ms": 24,
       "country_name": "United States",
       "country_code": "US"
     }
