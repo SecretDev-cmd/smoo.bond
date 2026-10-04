@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-04T16:06:00Z",
+  "generated_at": "2026-10-04T16:11:07Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 443,
-      "players": 4,
+      "latency_ms": 451,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioPainter"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Metro Kingdom",
-          "stage": "RadioControlExStage",
-          "scenario": 8,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioPainter"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioPainter"
@@ -40,11 +40,21 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
+            "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "Nononx :3",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioPainter",
             "body": "MarioPainter"
           }
         }
@@ -75,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 66,
       "country_name": "United States",
       "country_code": "US"
     }
