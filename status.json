@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-10-04T21:25:55Z",
+  "generated_at": "2026-10-04T21:31:23Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 245,
-      "players": 3,
+      "latency_ms": 739,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorLuigi",
-            "body": "MarioPainter"
+            "body": "MarioColorLuigi"
           }
         },
         {
           "name": "MeowskX",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioPainter"
@@ -30,12 +30,22 @@
         },
         {
           "name": "kleinere_Lyrik",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioUnderwear"
+          }
+        },
+        {
+          "name": "Naps",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioMechanic",
+            "body": "MarioAloha"
           }
         }
       ],
@@ -65,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 31,
       "country_name": "United States",
       "country_code": "US"
     }
