@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-03T23:55:55Z",
+  "generated_at": "2026-10-04T00:01:40Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 453,
-      "players": 3,
+      "latency_ms": 306,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
@@ -26,6 +26,26 @@
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
+          }
+        },
+        {
+          "name": "HyperWG :3",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioShopman"
+          }
+        },
+        {
+          "name": "AJ",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioAloha",
+            "body": "MarioNew3DS"
           }
         },
         {
@@ -65,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 20,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
