@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-04T12:55:55Z",
+  "generated_at": "2026-10-04T13:01:38Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 192,
+      "latency_ms": 348,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "BikeSteelExStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioPainter"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 255,
+          "kingdom": "Metro Kingdom",
+          "stage": "BikeSteelExStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioPainter"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CapRotatePackunExStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioPainter"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CapRotatePackunExStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 79,
       "country_name": "United States",
       "country_code": "US"
     }
