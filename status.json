@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-04T00:16:06Z",
+  "generated_at": "2026-10-04T00:21:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 363,
-      "players": 4,
+      "latency_ms": 555,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
@@ -26,26 +26,6 @@
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
-          }
-        },
-        {
-          "name": "AJ",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioAloha",
-            "body": "MarioNew3DS"
-          }
-        },
-        {
-          "name": "ManiacDoc",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioDoctor",
-            "body": "MarioTailCoat"
           }
         }
       ],
@@ -75,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 28,
+      "latency_ms": 39,
       "country_name": "United States",
       "country_code": "US"
     }
