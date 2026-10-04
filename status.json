@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-04T19:36:00Z",
+  "generated_at": "2026-10-04T19:41:09Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 488,
+      "latency_ms": 561,
       "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Luncheon Kingdom",
+          "stage": "LavaWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioPainter"
@@ -45,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 63,
+      "latency_ms": 42,
       "country_name": "United States",
       "country_code": "US"
     }
