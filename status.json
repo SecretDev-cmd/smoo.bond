@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-04T13:17:17Z",
+  "generated_at": "2026-10-04T13:21:10Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 532,
+      "latency_ms": 415,
       "players": 4,
       "max_players": 8,
       "player_list": [
@@ -41,7 +41,7 @@
         {
           "name": "Sanyx",
           "kingdom": "Metro Kingdom",
-          "stage": "CityWorldMainTowerStage",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 39,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
