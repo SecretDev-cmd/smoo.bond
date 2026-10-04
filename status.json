@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-04T22:21:12Z",
+  "generated_at": "2026-10-04T22:25:55Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 428,
+      "latency_ms": 450,
       "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -20,8 +20,8 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
@@ -30,8 +30,8 @@
         },
         {
           "name": "kleinere_Lyrik",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -40,11 +40,11 @@
         },
         {
           "name": "Naps",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioMechanic",
+            "cap": "MarioHappi",
             "body": "MarioAloha"
           }
         }
@@ -75,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 58,
+      "latency_ms": 36,
       "country_name": "United States",
       "country_code": "US"
     }
