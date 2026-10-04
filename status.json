@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-04T15:51:13Z",
+  "generated_at": "2026-10-04T15:55:58Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 467,
-      "players": 3,
+      "latency_ms": 506,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "Laser",
-          "kingdom": "Luncheon Kingdom",
-          "stage": "LavaWorldHomeStage",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioMechanic",
@@ -30,11 +30,21 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Luncheon Kingdom",
-          "stage": "LavaWorldHomeStage",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioColorWaluigi",
+            "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioColorLuigi",
             "body": "MarioPainter"
           }
         }
@@ -65,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 35,
+      "latency_ms": 63,
       "country_name": "United States",
       "country_code": "US"
     }
