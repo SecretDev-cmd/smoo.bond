@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-10-04T19:46:06Z",
+  "generated_at": "2026-10-04T19:51:12Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 585,
-      "players": 1,
+      "latency_ms": 479,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Luncheon Kingdom",
-          "stage": "LavaWorldHomeStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioPainter"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -45,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 16,
+      "latency_ms": 17,
       "country_name": "United States",
       "country_code": "US"
     }
