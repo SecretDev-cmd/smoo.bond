@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-04T11:35:59Z",
+  "generated_at": "2026-10-04T11:41:14Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 425,
+      "latency_ms": 750,
       "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 8,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioPainter"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 8,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldUnderground000Stage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioPainter"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Metro Kingdom",
-          "stage": "CapRotatePackunExStage",
-          "scenario": 8,
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldUnderground000Stage",
+          "scenario": 5,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioPainter"
@@ -65,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 27,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
