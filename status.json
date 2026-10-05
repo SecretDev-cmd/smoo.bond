@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-05T07:41:10Z",
+  "generated_at": "2026-10-05T07:46:06Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 638,
+      "latency_ms": 729,
       "players": 0,
       "max_players": 8,
       "settings_info": {
