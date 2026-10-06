@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T12:01:55Z",
+  "generated_at": "2026-10-06T12:06:04Z",
   "servers": [
     {
       "idx": 0,
@@ -11,7 +11,7 @@
     {
       "idx": 1,
       "status": "offline",
-      "error": "timed out",
+      "error": "[Errno 111] Connection refused",
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 44,
+      "latency_ms": 22,
       "country_name": "United States",
       "country_code": "US"
     }
