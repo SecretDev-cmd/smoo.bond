@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-07T10:16:22Z",
+  "generated_at": "2026-10-07T10:21:43Z",
   "servers": [
     {
       "idx": 0,
       "status": "offline",
-      "error": "timed out",
-      "country_name": "France",
-      "country_code": "FR"
+      "error": "[Errno -3] Temporary failure in name resolution",
+      "country_name": "Unknown",
+      "country_code": null
     },
     {
       "idx": 1,
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
