@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T15:35:52Z",
+  "generated_at": "2026-10-08T15:41:04Z",
   "servers": [
     {
       "idx": 0,
@@ -11,7 +11,7 @@
     {
       "idx": 1,
       "status": "online",
-      "latency_ms": 114,
+      "latency_ms": 146,
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 26,
+      "latency_ms": 65,
       "country_name": "United States",
       "country_code": "US"
     }
