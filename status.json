@@ -1,80 +1,10 @@
 {
-  "generated_at": "2026-10-19T13:55:56Z",
+  "generated_at": "2026-10-19T14:01:42Z",
   "servers": [
     {
       "idx": 0,
-      "status": "online",
-      "latency_ms": 480,
-      "players": 6,
-      "max_players": 8,
-      "player_list": [
-        {
-          "name": "Sneaky",
-          "kingdom": "Metro Kingdom",
-          "stage": "BikeSteelExStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioDiddyKong",
-            "body": "MarioDiddyKong"
-          }
-        },
-        {
-          "name": "Sanyx",
-          "kingdom": "Metro Kingdom",
-          "stage": "PoleGrabCeilExStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "Ilka-_-",
-          "kingdom": "Metro Kingdom",
-          "stage": "CityWorldMainTowerStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioColorGold",
-            "body": "MarioUnderwear"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Metro Kingdom",
-          "stage": "RadioControlExStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        },
-        {
-          "name": "Laser",
-          "kingdom": "Metro Kingdom",
-          "stage": "PoleGrabCeilExStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioSwimwear",
-            "body": "MarioPainter"
-          }
-        },
-        {
-          "name": "Nolan",
-          "kingdom": "Metro Kingdom",
-          "stage": "PoleKillerExStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioSpaceSuit",
-            "body": "MarioMechanic"
-          }
-        }
-      ],
-      "settings_info": {
-        "scenario_merge": false,
-        "shine_sync": false,
-        "persist_shines": false,
-        "capture_sync": true
-      },
+      "status": "offline",
+      "error": "timed out",
       "country_name": "France",
       "country_code": "FR"
     },
@@ -95,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 59,
+      "latency_ms": 60,
       "country_name": "United States",
       "country_code": "US"
     }
