@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-19T13:46:05Z",
+  "generated_at": "2026-10-19T13:51:00Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 718,
-      "players": 5,
+      "latency_ms": 211,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
@@ -41,7 +41,7 @@
         {
           "name": "MeowskX",
           "kingdom": "Metro Kingdom",
-          "stage": "BikeSteelExStage",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
@@ -51,11 +51,21 @@
         {
           "name": "Laser",
           "kingdom": "Metro Kingdom",
-          "stage": "PoleGrabCeilExStage",
+          "stage": "CityWorldHomeStage",
           "scenario": 8,
           "costume": {
             "cap": "MarioSwimwear",
             "body": "MarioPainter"
+          }
+        },
+        {
+          "name": "Nolan",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioSpaceSuit",
+            "body": "MarioMechanic"
           }
         }
       ],
@@ -85,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 62,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
