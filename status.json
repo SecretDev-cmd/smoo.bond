@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-19T13:41:04Z",
+  "generated_at": "2026-10-19T13:46:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 438,
+      "latency_ms": 718,
       "players": 5,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sneaky",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioDiddyKong"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Ilka-_-",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioColorGold",
             "body": "MarioUnderwear"
@@ -40,9 +40,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "BikeSteelExStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
@@ -50,9 +50,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Metro Kingdom",
+          "stage": "PoleGrabCeilExStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioSwimwear",
             "body": "MarioPainter"
@@ -85,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 59,
+      "latency_ms": 62,
       "country_name": "United States",
       "country_code": "US"
     }
