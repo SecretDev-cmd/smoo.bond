@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-19T13:31:20Z",
+  "generated_at": "2026-10-19T13:35:55Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 435,
-      "players": 6,
+      "latency_ms": 504,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sneaky",
           "kingdom": "Seaside Kingdom",
-          "stage": "SenobiTowerExStage",
+          "stage": "SeaWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioDiddyKong",
@@ -21,7 +21,7 @@
         {
           "name": "Sanyx",
           "kingdom": "Seaside Kingdom",
-          "stage": "CloudExStage",
+          "stage": "SeaWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -36,16 +36,6 @@
           "costume": {
             "cap": "MarioColorGold",
             "body": "MarioUnderwear"
-          }
-        },
-        {
-          "name": "Nolan",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioSpaceSuit",
-            "body": "MarioMechanic"
           }
         },
         {
@@ -95,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 24,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
