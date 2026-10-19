@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-19T12:46:01Z",
+  "generated_at": "2026-10-19T12:51:01Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 541,
-      "players": 5,
+      "latency_ms": 252,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
@@ -20,9 +20,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,8 +30,8 @@
         },
         {
           "name": "Ilka-_-",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorGold",
@@ -40,9 +40,9 @@
         },
         {
           "name": "Nolan",
-          "kingdom": "Luncheon Kingdom",
-          "stage": "LavaWorldHomeStage",
-          "scenario": 8,
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioSpaceSuit",
             "body": "MarioMechanic"
@@ -56,6 +56,16 @@
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Moon Kingdom",
+          "stage": "MoonWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioSwimwear",
+            "body": "MarioPainter"
           }
         }
       ],
@@ -85,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 30,
+      "latency_ms": 6,
       "country_name": "United States",
       "country_code": "US"
     }
