@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T13:31:18Z",
+  "generated_at": "2026-10-20T13:35:57Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 535,
-      "players": 3,
+      "latency_ms": 527,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
@@ -20,22 +20,12 @@
         },
         {
           "name": "Nolan",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Luncheon Kingdom",
+          "stage": "LavaWorldHomeStage",
+          "scenario": 8,
           "costume": {
             "cap": "MarioGunman",
             "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "Ilka-_-",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioGolf"
           }
         }
       ],
@@ -65,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 51,
+      "latency_ms": 34,
       "country_name": "United States",
       "country_code": "US"
     }
