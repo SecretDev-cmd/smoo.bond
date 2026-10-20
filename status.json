@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-20T13:35:57Z",
+  "generated_at": "2026-10-20T13:41:02Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 527,
-      "players": 2,
+      "latency_ms": 534,
+      "players": 1,
       "max_players": 8,
       "player_list": [
         {
@@ -16,16 +16,6 @@
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
-          }
-        },
-        {
-          "name": "Nolan",
-          "kingdom": "Luncheon Kingdom",
-          "stage": "LavaWorldHomeStage",
-          "scenario": 8,
-          "costume": {
-            "cap": "MarioGunman",
-            "body": "MarioTuxedo"
           }
         }
       ],
@@ -55,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 34,
+      "latency_ms": 23,
       "country_name": "United States",
       "country_code": "US"
     }
