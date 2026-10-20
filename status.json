@@ -1,31 +1,21 @@
 {
-  "generated_at": "2026-10-20T14:16:02Z",
+  "generated_at": "2026-10-20T14:21:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 496,
-      "players": 2,
+      "latency_ms": 466,
+      "players": 1,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
           "kingdom": "Lake Kingdom",
           "stage": "LakeWorldHomeStage",
-          "scenario": 4,
+          "scenario": 255,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
-          }
-        },
-        {
-          "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
           }
         }
       ],
@@ -55,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 36,
+      "latency_ms": 67,
       "country_name": "United States",
       "country_code": "US"
     }
