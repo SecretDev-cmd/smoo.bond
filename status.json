@@ -1,38 +1,28 @@
 {
-  "generated_at": "2026-10-20T13:05:55Z",
+  "generated_at": "2026-10-20T13:11:04Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 544,
-      "players": 4,
+      "latency_ms": 422,
+      "players": 3,
       "max_players": 8,
       "player_list": [
         {
           "name": "MeowskX",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
           }
         },
         {
-          "name": "Sanyx",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
           "name": "Nolan",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioGunman",
             "body": "MarioTuxedo"
@@ -40,9 +30,9 @@
         },
         {
           "name": "Ilka-_-",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioGolf"
@@ -75,7 +65,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 38,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
