@@ -1,24 +1,12 @@
 {
-  "generated_at": "2026-10-20T13:41:02Z",
+  "generated_at": "2026-10-20T13:46:12Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 534,
-      "players": 1,
+      "latency_ms": 328,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "MeowskX",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -45,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 23,
+      "latency_ms": 31,
       "country_name": "United States",
       "country_code": "US"
     }
