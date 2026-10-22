@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-22T18:46:02Z",
+  "generated_at": "2026-10-22T18:51:05Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 284,
+      "latency_ms": 481,
       "players": 6,
       "max_players": 8,
       "player_list": [
@@ -49,16 +49,6 @@
           }
         },
         {
-          "name": "Laser",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
-        {
           "name": "Nolan",
           "kingdom": "Sand Kingdom",
           "stage": "SandWorldHomeStage",
@@ -66,6 +56,16 @@
           "costume": {
             "cap": "MarioGunman",
             "body": "MarioSuit"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioTuxedo"
           }
         }
       ],
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 51,
       "country_name": "United States",
       "country_code": "US"
     }
