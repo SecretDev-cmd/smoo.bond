@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22T17:31:18Z",
+  "generated_at": "2026-10-22T17:35:54Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 558,
+      "latency_ms": 424,
       "players": 7,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 255,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Nolan",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioGunman",
             "body": "MarioSuit"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Sneaky",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioDiddyKong"
@@ -64,8 +64,8 @@
           "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioHappi"
+            "cap": "MarioCook",
+            "body": "MarioCook"
           }
         },
         {
@@ -105,7 +105,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 34,
+      "latency_ms": 18,
       "country_name": "United States",
       "country_code": "US"
     }
