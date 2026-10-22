@@ -1,21 +1,31 @@
 {
-  "generated_at": "2026-10-22T18:11:03Z",
+  "generated_at": "2026-10-22T18:16:02Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 533,
-      "players": 1,
+      "latency_ms": 308,
+      "players": 2,
       "max_players": 8,
       "player_list": [
         {
-          "name": "Thanatos",
+          "name": "Ilka-_-",
           "kingdom": "Sand Kingdom",
           "stage": "SandWorldHomeStage",
           "scenario": 5,
           "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
+            "cap": "MarioMechanic",
+            "body": "MarioGolf"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
           }
         }
       ],
@@ -45,7 +55,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 35,
+      "latency_ms": 20,
       "country_name": "United States",
       "country_code": "US"
     }
