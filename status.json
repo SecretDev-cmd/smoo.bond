@@ -1,58 +1,18 @@
 {
-  "generated_at": "2026-10-22T17:41:03Z",
+  "generated_at": "2026-10-22T17:46:00Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 631,
-      "players": 7,
+      "latency_ms": 221,
+      "players": 4,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "Sanyx",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "Laser",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "Nolan",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioGunman",
-            "body": "MarioSuit"
-          }
-        },
-        {
-          "name": "Sneaky",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioDiddyKong",
-            "body": "MarioDiddyKong"
-          }
-        },
         {
           "name": "Nonoxeuuuh",
           "kingdom": "Cascade Kingdom",
           "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
+          "scenario": 255,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
@@ -69,13 +29,23 @@
           }
         },
         {
-          "name": "Ilka-_-",
+          "name": "Nolan",
           "kingdom": "Cascade Kingdom",
           "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioGolf"
+            "cap": "MarioGunman",
+            "body": "MarioSuit"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioTuxedo"
           }
         }
       ],
@@ -105,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 66,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
