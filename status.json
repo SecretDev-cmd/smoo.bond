@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22T16:21:03Z",
+  "generated_at": "2026-10-22T16:25:56Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 475,
-      "players": 8,
+      "latency_ms": 464,
+      "players": 9,
       "max_players": 8,
       "player_list": [
         {
           "name": "SrDev",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioTailCoat"
@@ -20,9 +20,9 @@
         },
         {
           "name": "MeowskX",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioCaptain",
             "body": "MarioGunman"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Nonoxeuuuh",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
@@ -40,9 +40,9 @@
         },
         {
           "name": "AdriienSR",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioNew3DS",
             "body": "MarioNew3DS"
@@ -50,9 +50,9 @@
         },
         {
           "name": "Ilka-_-",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioMechanic",
             "body": "MarioGolf"
@@ -62,7 +62,7 @@
           "name": "Laser",
           "kingdom": "Odyssey",
           "stage": "HomeShipInsideStage",
-          "scenario": 3,
+          "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -70,9 +70,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -80,12 +80,22 @@
         },
         {
           "name": "RoverV",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldTowerStage",
+          "kingdom": "Lake Kingdom",
+          "stage": "LakeWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioHappi"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
           }
         }
       ],
@@ -115,7 +125,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 27,
+      "latency_ms": 59,
       "country_name": "United States",
       "country_code": "US"
     }
