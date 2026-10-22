@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-22T18:41:06Z",
+  "generated_at": "2026-10-22T18:46:02Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 561,
+      "latency_ms": 284,
       "players": 6,
       "max_players": 8,
       "player_list": [
@@ -31,7 +31,7 @@
         {
           "name": "Sanyx",
           "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
+          "stage": "MeganeLiftExStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioColorLuigi",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 65,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
