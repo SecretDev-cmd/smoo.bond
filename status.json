@@ -1,12 +1,24 @@
 {
-  "generated_at": "2026-10-22T18:05:53Z",
+  "generated_at": "2026-10-22T18:11:03Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 397,
-      "players": 0,
+      "latency_ms": 533,
+      "players": 1,
       "max_players": 8,
+      "player_list": [
+        {
+          "name": "Thanatos",
+          "kingdom": "Sand Kingdom",
+          "stage": "SandWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
+          }
+        }
+      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -33,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 30,
+      "latency_ms": 35,
       "country_name": "United States",
       "country_code": "US"
     }
