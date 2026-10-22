@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T17:16:02Z",
+  "generated_at": "2026-10-22T17:21:03Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 424,
-      "players": 8,
+      "latency_ms": 442,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
@@ -20,8 +20,8 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
+          "kingdom": "Odyssey",
+          "stage": "HomeShipInsideStage",
           "scenario": 5,
           "costume": {
             "cap": "MarioHappi",
@@ -44,8 +44,8 @@
           "stage": "SandWorldHomeStage",
           "scenario": 5,
           "costume": {
-            "cap": "MarioExplorer",
-            "body": "MarioTailCoat"
+            "cap": "MarioGunman",
+            "body": "MarioSuit"
           }
         },
         {
@@ -56,26 +56,6 @@
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioDiddyKong"
-          }
-        },
-        {
-          "name": "Nonoxeuuuh",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioMaker"
-          }
-        },
-        {
-          "name": "RoverV",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioHappi"
           }
         },
         {
@@ -115,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 23,
+      "latency_ms": 26,
       "country_name": "United States",
       "country_code": "US"
     }
