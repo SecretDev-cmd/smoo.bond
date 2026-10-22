@@ -1,67 +1,17 @@
 {
-  "generated_at": "2026-10-22T21:11:01Z",
+  "generated_at": "2026-10-22T21:16:01Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 499,
-      "players": 6,
+      "latency_ms": 455,
+      "players": 1,
       "max_players": 8,
       "player_list": [
         {
-          "name": "Sneaky",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldTownStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioDiddyKong",
-            "body": "MarioDiddyKong"
-          }
-        },
-        {
-          "name": "Laser",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldTownStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "Sanyx",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldTownStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
-          "name": "Nolan",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldTownStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioGunman",
-            "body": "MarioSuit"
-          }
-        },
-        {
-          "name": "Nonoxeuuuh",
-          "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldTownStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioMaker"
-          }
-        },
-        {
           "name": "Thanatos",
           "kingdom": "Snow Kingdom",
-          "stage": "SnowWorldTownStage",
+          "stage": "SnowWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
@@ -95,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 67,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
