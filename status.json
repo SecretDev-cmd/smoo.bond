@@ -1,12 +1,24 @@
 {
-  "generated_at": "2026-10-22T15:55:53Z",
+  "generated_at": "2026-10-22T16:01:31Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 411,
-      "players": 0,
+      "latency_ms": 508,
+      "players": 1,
       "max_players": 8,
+      "player_list": [
+        {
+          "name": "SrDev",
+          "kingdom": "Wooded Kingdom",
+          "stage": "ForestWorldHomeStage",
+          "scenario": 5,
+          "costume": {
+            "cap": "Mario",
+            "body": "Mario"
+          }
+        }
+      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -33,7 +45,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 3,
+      "latency_ms": 26,
       "country_name": "United States",
       "country_code": "US"
     }
