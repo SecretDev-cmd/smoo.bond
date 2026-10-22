@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T16:41:02Z",
+  "generated_at": "2026-10-22T16:46:01Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 503,
-      "players": 10,
+      "latency_ms": 256,
+      "players": 7,
       "max_players": 8,
       "player_list": [
         {
@@ -16,16 +16,6 @@
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
-          }
-        },
-        {
-          "name": "AdriienSR",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioNew3DS",
-            "body": "MarioNew3DS"
           }
         },
         {
@@ -49,16 +39,6 @@
           }
         },
         {
-          "name": "RoverV",
-          "kingdom": "Lake Kingdom",
-          "stage": "LakeWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioHappi"
-          }
-        },
-        {
           "name": "Thanatos",
           "kingdom": "Seaside Kingdom",
           "stage": "SeaWorldHomeStage",
@@ -79,16 +59,6 @@
           }
         },
         {
-          "name": "Nolan",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioExplorer",
-            "body": "MarioTailCoat"
-          }
-        },
-        {
           "name": "Laser",
           "kingdom": "Cap Kingdom",
           "stage": "CapWorldHomeStage",
@@ -99,13 +69,13 @@
           }
         },
         {
-          "name": "Shibby",
+          "name": "HuskxEmu",
           "kingdom": "Cap Kingdom",
           "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "Mario64",
-            "body": "Mario64"
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
           }
         }
       ],
@@ -135,7 +105,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 26,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
