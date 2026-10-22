@@ -1,54 +1,12 @@
 {
-  "generated_at": "2026-10-22T17:46:00Z",
+  "generated_at": "2026-10-22T17:51:04Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 221,
-      "players": 4,
+      "latency_ms": 523,
+      "players": 0,
       "max_players": 8,
-      "player_list": [
-        {
-          "name": "Nonoxeuuuh",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 255,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioMaker"
-          }
-        },
-        {
-          "name": "RoverV",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCook",
-            "body": "MarioCook"
-          }
-        },
-        {
-          "name": "Nolan",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioGunman",
-            "body": "MarioSuit"
-          }
-        },
-        {
-          "name": "Laser",
-          "kingdom": "Cascade Kingdom",
-          "stage": "WaterfallWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        }
-      ],
       "settings_info": {
         "scenario_merge": false,
         "shine_sync": false,
@@ -75,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 50,
       "country_name": "United States",
       "country_code": "US"
     }
