@@ -1,33 +1,13 @@
 {
-  "generated_at": "2026-10-22T16:35:54Z",
+  "generated_at": "2026-10-22T16:41:02Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 631,
-      "players": 8,
+      "latency_ms": 503,
+      "players": 10,
       "max_players": 8,
       "player_list": [
-        {
-          "name": "SrDev",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioMechanic",
-            "body": "MarioTailCoat"
-          }
-        },
-        {
-          "name": "MeowskX",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioCaptain",
-            "body": "MarioGunman"
-          }
-        },
         {
           "name": "Nonoxeuuuh",
           "kingdom": "Seaside Kingdom",
@@ -59,16 +39,6 @@
           }
         },
         {
-          "name": "Laser",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SeaWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioTuxedo"
-          }
-        },
-        {
           "name": "Sanyx",
           "kingdom": "Seaside Kingdom",
           "stage": "SeaWorldHomeStage",
@@ -86,6 +56,56 @@
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioHappi"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
+          }
+        },
+        {
+          "name": "Sneaky",
+          "kingdom": "Snow Kingdom",
+          "stage": "SnowWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioDiddyKong",
+            "body": "MarioDiddyKong"
+          }
+        },
+        {
+          "name": "Nolan",
+          "kingdom": "Seaside Kingdom",
+          "stage": "SeaWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioExplorer",
+            "body": "MarioTailCoat"
+          }
+        },
+        {
+          "name": "Laser",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioTuxedo"
+          }
+        },
+        {
+          "name": "Shibby",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "Mario64",
+            "body": "Mario64"
           }
         }
       ],
@@ -115,7 +135,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 50,
+      "latency_ms": 26,
       "country_name": "United States",
       "country_code": "US"
     }
