@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T16:11:02Z",
+  "generated_at": "2026-10-22T16:16:04Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 670,
-      "players": 9,
+      "latency_ms": 364,
+      "players": 7,
       "max_players": 8,
       "player_list": [
         {
@@ -46,26 +46,6 @@
           "costume": {
             "cap": "MarioNew3DS",
             "body": "MarioNew3DS"
-          }
-        },
-        {
-          "name": "RoverV",
-          "kingdom": "Mushroom Kingdom",
-          "stage": "PeachWorldHomeStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioHappi"
-          }
-        },
-        {
-          "name": "Thanatos",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
-          "scenario": 3,
-          "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
           }
         },
         {
@@ -125,7 +105,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 65,
+      "latency_ms": 27,
       "country_name": "United States",
       "country_code": "US"
     }
