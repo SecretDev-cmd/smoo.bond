@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T16:16:04Z",
+  "generated_at": "2026-10-22T16:21:03Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 364,
-      "players": 7,
+      "latency_ms": 475,
+      "players": 8,
       "max_players": 8,
       "player_list": [
         {
@@ -76,6 +76,16 @@
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "RoverV",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldTowerStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioHappi"
           }
         }
       ],
