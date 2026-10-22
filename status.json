@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22T19:01:28Z",
+  "generated_at": "2026-10-22T19:05:55Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 374,
+      "latency_ms": 501,
       "players": 7,
       "max_players": 8,
       "player_list": [
         {
           "name": "Ilka-_-",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioUnderwear"
@@ -20,9 +20,9 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
@@ -30,9 +30,9 @@
         },
         {
           "name": "Sanyx",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -40,9 +40,9 @@
         },
         {
           "name": "Sneaky",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "JangoExStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioDiddyKong",
             "body": "MarioDiddyKong"
@@ -50,9 +50,9 @@
         },
         {
           "name": "Nolan",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioGunman",
             "body": "MarioSuit"
@@ -60,9 +60,9 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
@@ -70,9 +70,9 @@
         },
         {
           "name": "Nonoxeuuuh",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
@@ -105,7 +105,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 23,
+      "latency_ms": 35,
       "country_name": "United States",
       "country_code": "US"
     }
