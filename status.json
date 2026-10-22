@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T20:16:01Z",
+  "generated_at": "2026-10-22T20:21:02Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 304,
-      "players": 6,
+      "latency_ms": 457,
+      "players": 5,
       "max_players": 8,
       "player_list": [
         {
@@ -26,16 +26,6 @@
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "Nonoxeuuuh",
-          "kingdom": "Cap Kingdom",
-          "stage": "CapWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioPainter",
-            "body": "MarioMaker"
           }
         },
         {
@@ -95,7 +85,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 7,
+      "latency_ms": 27,
       "country_name": "United States",
       "country_code": "US"
     }
