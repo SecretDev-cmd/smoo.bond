@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-22T17:25:53Z",
+  "generated_at": "2026-10-22T17:31:18Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 395,
-      "players": 6,
+      "latency_ms": 558,
+      "players": 7,
       "max_players": 8,
       "player_list": [
         {
           "name": "Sanyx",
           "kingdom": "Seaside Kingdom",
           "stage": "SeaWorldHomeStage",
-          "scenario": 4,
+          "scenario": 255,
           "costume": {
             "cap": "MarioColorLuigi",
             "body": "MarioColorLuigi"
@@ -20,22 +20,12 @@
         },
         {
           "name": "Laser",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
-          "scenario": 5,
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
             "body": "MarioTuxedo"
-          }
-        },
-        {
-          "name": "Shibby",
-          "kingdom": "Sand Kingdom",
-          "stage": "SandWorldHomeStage",
-          "scenario": 5,
-          "costume": {
-            "cap": "Mario64",
-            "body": "Mario64"
           }
         },
         {
@@ -49,23 +39,43 @@
           }
         },
         {
-          "name": "Thanatos",
+          "name": "Sneaky",
           "kingdom": "Sand Kingdom",
           "stage": "SandWorldHomeStage",
           "scenario": 5,
           "costume": {
-            "cap": "MarioColorWaluigi",
-            "body": "MarioColorWaluigi"
+            "cap": "MarioDiddyKong",
+            "body": "MarioDiddyKong"
           }
         },
         {
-          "name": "Sneaky",
-          "kingdom": "Seaside Kingdom",
-          "stage": "SenobiTowerExStage",
+          "name": "Nonoxeuuuh",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
           "scenario": 4,
           "costume": {
-            "cap": "MarioDiddyKong",
-            "body": "MarioDiddyKong"
+            "cap": "MarioPainter",
+            "body": "MarioMaker"
+          }
+        },
+        {
+          "name": "RoverV",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioHappi"
+          }
+        },
+        {
+          "name": "Ilka-_-",
+          "kingdom": "Cascade Kingdom",
+          "stage": "WaterfallWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioMechanic",
+            "body": "MarioGolf"
           }
         }
       ],
@@ -95,7 +105,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 28,
+      "latency_ms": 34,
       "country_name": "United States",
       "country_code": "US"
     }
