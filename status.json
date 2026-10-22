@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-22T16:03:24Z",
+  "generated_at": "2026-10-22T16:05:55Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
       "latency_ms": 492,
-      "players": 4,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
@@ -14,8 +14,8 @@
           "stage": "PeachWorldHomeStage",
           "scenario": 3,
           "costume": {
-            "cap": "Mario",
-            "body": "Mario"
+            "cap": "MarioMechanic",
+            "body": "MarioTailCoat"
           }
         },
         {
@@ -36,6 +36,26 @@
           "costume": {
             "cap": "MarioPainter",
             "body": "MarioMaker"
+          }
+        },
+        {
+          "name": "AdriienSR",
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
+          "costume": {
+            "cap": "MarioNew3DS",
+            "body": "MarioNew3DS"
+          }
+        },
+        {
+          "name": "RoverV",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioHappi",
+            "body": "MarioHappi"
           }
         },
         {
@@ -75,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 2,
+      "latency_ms": 16,
       "country_name": "United States",
       "country_code": "US"
     }
