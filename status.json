@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-22T18:31:19Z",
+  "generated_at": "2026-10-22T18:35:53Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 502,
+      "latency_ms": 325,
       "players": 6,
       "max_players": 8,
       "player_list": [
         {
           "name": "Ilka-_-",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -40,8 +40,8 @@
         },
         {
           "name": "Sneaky",
-          "kingdom": "Odyssey",
-          "stage": "HomeShipInsideStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "RollingExStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioDiddyKong",
@@ -95,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 21,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
