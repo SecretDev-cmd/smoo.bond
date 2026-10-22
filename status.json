@@ -1,21 +1,51 @@
 {
-  "generated_at": "2026-10-22T16:01:31Z",
+  "generated_at": "2026-10-22T16:03:24Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 508,
-      "players": 1,
+      "latency_ms": 492,
+      "players": 4,
       "max_players": 8,
       "player_list": [
         {
           "name": "SrDev",
-          "kingdom": "Wooded Kingdom",
-          "stage": "ForestWorldHomeStage",
-          "scenario": 5,
+          "kingdom": "Mushroom Kingdom",
+          "stage": "PeachWorldHomeStage",
+          "scenario": 3,
           "costume": {
             "cap": "Mario",
             "body": "Mario"
+          }
+        },
+        {
+          "name": "MeowskX",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioCaptain",
+            "body": "MarioGunman"
+          }
+        },
+        {
+          "name": "Nonoxeuuuh",
+          "kingdom": "Lost Kingdom",
+          "stage": "ClashWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioPainter",
+            "body": "MarioMaker"
+          }
+        },
+        {
+          "name": "Thanatos",
+          "kingdom": "Metro Kingdom",
+          "stage": "CityWorldHomeStage",
+          "scenario": 8,
+          "costume": {
+            "cap": "MarioColorWaluigi",
+            "body": "MarioColorWaluigi"
           }
         }
       ],
@@ -45,7 +75,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 26,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
