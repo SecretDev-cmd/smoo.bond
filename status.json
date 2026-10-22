@@ -1,37 +1,17 @@
 {
-  "generated_at": "2026-10-22T19:11:01Z",
+  "generated_at": "2026-10-22T19:16:02Z",
   "servers": [
     {
       "idx": 0,
       "status": "online",
-      "latency_ms": 459,
-      "players": 7,
+      "latency_ms": 575,
+      "players": 6,
       "max_players": 8,
       "player_list": [
         {
-          "name": "Ilka-_-",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioHappi",
-            "body": "MarioUnderwear"
-          }
-        },
-        {
-          "name": "Sanyx",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioColorLuigi",
-            "body": "MarioColorLuigi"
-          }
-        },
-        {
           "name": "Sneaky",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioDiddyKong",
@@ -39,19 +19,9 @@
           }
         },
         {
-          "name": "Nolan",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
-          "scenario": 4,
-          "costume": {
-            "cap": "MarioGunman",
-            "body": "MarioSuit"
-          }
-        },
-        {
           "name": "Laser",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioHappi",
@@ -60,8 +30,8 @@
         },
         {
           "name": "Nonoxeuuuh",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioPainter",
@@ -70,12 +40,32 @@
         },
         {
           "name": "Thanatos",
-          "kingdom": "Lost Kingdom",
-          "stage": "ClashWorldHomeStage",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
           "scenario": 4,
           "costume": {
             "cap": "MarioColorWaluigi",
             "body": "MarioColorWaluigi"
+          }
+        },
+        {
+          "name": "Sanyx",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioColorLuigi",
+            "body": "MarioColorLuigi"
+          }
+        },
+        {
+          "name": "Nolan",
+          "kingdom": "Cap Kingdom",
+          "stage": "CapWorldHomeStage",
+          "scenario": 4,
+          "costume": {
+            "cap": "MarioGunman",
+            "body": "MarioSuit"
           }
         }
       ],
@@ -105,7 +95,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 39,
+      "latency_ms": 2,
       "country_name": "United States",
       "country_code": "US"
     }
