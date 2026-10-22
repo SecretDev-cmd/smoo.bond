@@ -1,10 +1,18 @@
 {
-  "generated_at": "2026-10-22T15:51:15Z",
+  "generated_at": "2026-10-22T15:55:53Z",
   "servers": [
     {
       "idx": 0,
-      "status": "offline",
-      "error": "timed out",
+      "status": "online",
+      "latency_ms": 411,
+      "players": 0,
+      "max_players": 8,
+      "settings_info": {
+        "scenario_merge": false,
+        "shine_sync": false,
+        "persist_shines": false,
+        "capture_sync": true
+      },
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +33,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 62,
+      "latency_ms": 3,
       "country_name": "United States",
       "country_code": "US"
     }
