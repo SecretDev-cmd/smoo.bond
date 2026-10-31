@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-31T08:05:59Z",
+  "generated_at": "2026-10-31T14:30:13Z",
   "servers": [
     {
       "idx": 0,
-      "status": "offline",
-      "error": "timed out",
+      "status": "online",
+      "latency_ms": 409,
       "country_name": "France",
       "country_code": "FR"
     },
     {
       "idx": 1,
-      "status": "offline",
-      "error": "timed out",
+      "status": "online",
+      "latency_ms": 101,
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 33,
+      "latency_ms": 16,
       "country_name": "United States",
       "country_code": "US"
     }
