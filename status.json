@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T22:56:10Z",
+  "generated_at": "2026-11-22T02:56:15Z",
   "servers": [
     {
       "idx": 0,
@@ -11,7 +11,7 @@
     {
       "idx": 1,
       "status": "offline",
-      "error": "[Errno 113] No route to host",
+      "error": "timed out",
       "country_name": "France",
       "country_code": "FR"
     },
@@ -25,7 +25,7 @@
     {
       "idx": 3,
       "status": "online",
-      "latency_ms": 75,
+      "latency_ms": 30,
       "country_name": "United States",
       "country_code": "US"
     }
